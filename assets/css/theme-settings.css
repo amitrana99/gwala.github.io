@@ -1,0 +1,35 @@
+/*
+Error: Invalid CSS after "...f the body text": expected selector or at-rule, was "$font-size-root..."
+        on line 15 of D:\krishnayan\gwala\assets\css\theme-settings.scss
+
+10: 	
+11: // stylelint-enable value-keyword-case
+12: 
+13: // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+14: // $font-size-base affects the font size of the body text
+15: $font-size-root:              null;
+16: $font-size-base:              1rem; // Assumes the browser default, typically `16px`
+17: $font-size-sm:                $font-size-base * .875;
+18: $font-size-lg:                $font-size-base * 1.25;
+19: 
+20: $font-weight-lighter:         lighter;
+
+Backtrace:
+D:\krishnayan\gwala\assets\css\theme-settings.scss:15
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...f the body text\": expected selector or at-rule, was \"$font-size-root...\"\A         on line 15 of D:\krishnayan\gwala\assets\css\theme-settings.scss\A \A 10: 	\A 11: // stylelint-enable value-keyword-case\A 12: \A 13: // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins\A 14: // $font-size-base affects the font size of the body text\A 15: $font-size-root:              null;\A 16: $font-size-base:              1rem; // Assumes the browser default, typically `16px`\A 17: $font-size-sm:                $font-size-base * .875;\A 18: $font-size-lg:                $font-size-base * 1.25;\A 19: \A 20: $font-weight-lighter:         lighter;"; }
