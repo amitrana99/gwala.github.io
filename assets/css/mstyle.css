@@ -710,9 +710,9 @@ a {
 }
 .skin-base .nav-sidebar .nav-item.active .nav-link {
   color: var(--primarybg);
-  border: 1px solid var(--primarybg);
+  /* border: 1px solid var(--primarybg); */
   background-color: #FEEBE0;
-  box-shadow: 0 1px 1px rgb(217 203 202 / 25%), 0 2px 2px rgb(217 206 202 / 20%), 0 4px 4px rgb(217 208 202 / 15%);
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
 .skin-base .nav-sidebar .nav-item.active .nav-link svg {
   color: var(--primarybg);
