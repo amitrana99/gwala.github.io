@@ -644,7 +644,7 @@ a {
 .content-body .nav-link {
   display: block;
   padding: 8px 20px;
-  border: 1.5px solid #fffaf7;
+  border: 1.5px solid var(--primarybg2);
   border-radius: 6px;
   white-space: nowrap;
   /* margin-right: 10px; */
@@ -665,7 +665,7 @@ a {
   color: var(--primarybg);
 }
 .content-body .nav-link {
-  background-color: #fffaf7;
+  background-color: var(--primarybg2);
   border-color: #feebe0;
   color: #444444;
 }
@@ -685,7 +685,7 @@ a {
   background-color: #ffffff;
 }
 .skin-base .sidebar {
-  background-color: #FFFAF7;
+  background-color: var(--primarybg2);
   box-shadow: 1px 0 1px rgb(230 224 216 / 25%), 2px 0 2px rgb(230 223 216 / 20%), 4px 0 4px rgb(230 226 216 / 12%), 8px 0 8px rgb(230 226 216 / 10%), 16px 0 16px rgb(230 223 216 / 5%);
 }
 .skin-base .sidebar hr {
@@ -941,7 +941,7 @@ a {
   color: #000000;
 }
 .card-1 {
-  background-color: #FFFAF7;
+  background-color: var(--primarybg2);
   border-color: #FBF1EB;
 }
 .text-primary1 {
@@ -1034,7 +1034,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  border: 2px solid #fffaf7;
+  border: 2px solid var(--primarybg2);
 }
 .avatars2 > li > a {
   display: block;
@@ -1045,7 +1045,7 @@ a {
 }
 .btn-outline-primary2 {
   border: 1px solid var(--primarybg);
-  background-color: #FFF5EF;
+  background-color: var(--primarybg2);
   font-weight: 500;
 }
 .btn-outline-primary2:hover {
