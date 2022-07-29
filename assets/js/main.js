@@ -24,6 +24,14 @@ $(function () {
     }
   });
 
+// checkbox in tabbed panel
+$('#pills-tab li').click(function () {
+	$(".dataTable tr th").click();
+   var activetab = $(this).find('button');
+     $(this).closest('ul').find('input[type="checkbox"]').prop('checked','');
+     $(this).closest('li').find('input[type="checkbox"]').prop('checked','checked');
+	$(".resdatatable").click();
+});	
 
   // single level menu
   $('.nav-sidebar > .nav-link').on('click', function () {
@@ -289,6 +297,4 @@ buttons: [{
 });
 
 
-setTimeout( function () {
-    table.columns.adjust();
-}, 500);
+

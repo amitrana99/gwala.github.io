@@ -501,9 +501,7 @@ a {
   display: flex;
   align-items: center;
 }
-.sub-link.active {
-  font-weight: 500;
-}
+
 .nav-group {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -769,7 +767,7 @@ a {
   color: #ff6400;
 }
 .skin-base .sub-link.active {
-  color: #394867;
+  color: #ff6400;
 }
 .skin-base .nav-group {
   border-top-color: #d8dee6;
@@ -1400,10 +1398,10 @@ label.input-has-value {
     text-indent: 25px;
     background: transparent;
     border: 2px solid #f6ccbe;
-    min-width: 200px;
     padding: 10px 13px;
     border-radius: 6px;
     font-size: 16px;
+    max-width: 182px;
 }
 .dataTables_wrapper .dataTables_filter label img {
     position: absolute;
@@ -1466,9 +1464,7 @@ label.input-has-value {
 }
 .dataTables_scrollBody .resdatatable{
 	border-collapse: separate!important;
-    border-spacing: 0 15px!important;
-	
-	
+	border-spacing: 0 15px!important;
 }
 
 .dataTables_scrollBody .resdatatable tbody tr td:first-child, .resdatatable thead tr th:first-child{
@@ -1489,12 +1485,15 @@ div.dataTables_scrollBody{
 }
 .resdatatable tr td{
 	background-color: #ff64000d!important;
+	font-weight: bold;
+	padding: 10px 6px;
 }
 .resdatatable tr{
 	/*box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;*/
 }
 table.dataTable{
 	margin-top: 0px!important;
+	vertical-align: middle;
 }
 .dataTables_scrollHeadInner, .table{
       width:100%!important
@@ -1524,4 +1523,20 @@ table.dataTable{
 div.dataTables_wrapper div.dataTables_length {
     top: 70px !important;
 }
+}
+.ecstabs li{
+	margin-right: 15px;
+}
+.ecstabs li button{
+	display: flex!important;
+	align-items: center;
+}
+.form-check-input:checked {
+    background-color: #ff6400;
+    border-color: #ff6400;
+}
+.btn-info2{
+	font-weight: bold;
+	background-color: #f2bb96!important;
+	box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
