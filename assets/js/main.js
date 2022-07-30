@@ -36,15 +36,79 @@ $(function () {
   $('.overlay-box').on('click', function () {
     $(this).hide();
   })
+
+  // toggle update ecs
 	
-	// checkbox as radio
-  $('.selecttypes .stypes').click(function () {   
-   // var activetab = $(this).find('button');
-    $(this).closest('.selecttypes').find('input[type="checkbox"]').prop('checked', '');
-    $(this).closest('.stypes').find('input[type="checkbox"]').prop('checked', 'checked');
+	$('.togglebginside').on('click', function(){
+		$('.bg-inside').slideToggle();
+	})
+	
+
+  // checkbox as radio
+  $('.selecttypes .form-check').click(function () {
+    var postecs = new bootstrap.Modal(document.getElementById("postpondecsmodal"), {
+		backdrop:false
+	});
+	var stopecs = new bootstrap.Modal(document.getElementById("stopecsmodal"), {
+		backdrop:false
+	});
+	  var bankdetails = new bootstrap.Modal(document.getElementById("bankdetailsmodal"), {
+		backdrop:false
+	});
+	  var changeamt = new bootstrap.Modal(document.getElementById("changecsamtmodal"), {
+		backdrop:false
+	});
+	  var changeperiod = new bootstrap.Modal(document.getElementById("changeperiodmodal"), {
+		backdrop:false
+	});var othertext = new bootstrap.Modal(document.getElementById("othermodal"), {
+		backdrop:false
+	});
+	  var checks = $('input[type="checkbox"]');
+    $('input#postpondecs[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+		postecs.show();
+      }
+    });
+	  
+	  $('input#stopecs[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+          stopecs.show();
+      }
+    });
+	  
+	   $('input#bankdetails[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+          bankdetails.show();
+      }
+    });
+	  
+	  $('input#changeecsamt[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+          changeamt.show();
+      }
+    });
+	  
+	   $('input#changeperiod[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+          changeperiod.show();
+      }
+    });
+	  
+	  $('input#otherm[type="checkbox"]').on('change', function (e) {
+      if (e.target.checked) {
+		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+          othertext.show();
+      }
+    });
+	  
   });
 
-	
+
   // single level menu
   $('.nav-sidebar > .nav-link').on('click', function () {
     // e.preventDefault();

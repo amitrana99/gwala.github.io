@@ -39,77 +39,155 @@
 </div>
 <!-- sidebar -->
 
-<div class="content">
-  <div class="offcanvas offcanvas-top" tabindex="-1" id="showdetails" >
+<div class="content"> 
+  <!-- Modal -->
+	
+	
+	
+  <div class="modal fade" id="postpondecsmodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <label class="col-form-label fw-bold text-black">Till What date you want to stop your Donation</label>
+          <input type="date" class="form-control form-control-lg ">
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Send Mail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<div class="modal fade" id="stopecsmodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <label for="" class="col-form-label fw-bold text-black">Reasons For stopping your ECS</label>
+          <div class="form-floating mt-2">
+                <textarea class="form-control shadow-none" placeholder="Leave a comment here" id="floatingTextarea2" style="height:120px;"></textarea>
+                <label for="floatingTextarea2">Your Request</label>
+              </div>
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Send Mail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<div class="modal fade" id="bankdetailsmodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="text-center fs-5">Bank details cannot be changed for an active ECS. Create a new ECS</h1>
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Create ECS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<div class="modal fade" id="changecsamtmodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="text-center fs-5">Amount cannot be changed for an active ECS. Create a new ECS</h1>
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Create ECS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<div class="modal fade" id="changeperiodmodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="text-center fs-5">Period cannot be changed for an active ECS. Create a new ECS</h1>
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Create ECS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<div class="modal fade" id="othermodal" tabindex="2"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <label for="" class="col-form-label fw-bold text-black">What do you want to update</label>
+          <div class="form-floating mt-2">
+                <textarea class="form-control shadow-none" placeholder="Leave a comment here" id="othertext" style="height:120px;"></textarea>
+                <label for="othertext">Type Here</label>
+              </div>
+          <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary mw-100px rounded-pill">Send Mail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+  <div class="offcanvas offcanvas-top" tabindex="1" id="showdetails" >
     <div class="bank-details-canvas">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title text-primary1">Monthly Donation Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body pb-0">
         <div class="row gy-3">
           <div class="col-lg-4">Bank Name : <strong>Punjab National Bank</strong></div>
           <div class="col-lg-4">Bank Account No : <strong>4694000100015835</strong></div>
           <div class="col-lg-4">IFSC Code : <strong>PUNB0469400</strong></div>
           <div class="col-lg-4">Period To : <strong>20-7-2025</strong></div>
           <div class="col-lg-4">Amount : <strong>100</strong></div>
-          <div class="col-lg-4">Until Cancel</div>
           <div class="col-lg-12">
-            <div class="bg-inside">
-				<div class="overlay-box">
-				Click here for update your monthly donation status
-				</div>
-			<span class="fw-bold mb-3 d-block">Select Type</span>
+			 <span class="fw-bold  btn btn-primary1  px-4 togglebginside rounded-pill py-2">Update</span>
+			  <div class="bg-inside mt-3">
+              
+             
               <div class="selecttypes">
-                <div class="stypes">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault"> Postpone or temporary stop My ECS </label>
-                  </div>
+                    <input class="form-check-input" type="checkbox" value="" id="postpondecs">
+                    <label class="form-check-label" for="postpondecs"> Postpone or temporary stop My ECS </label>
                 </div>
-                <div class="stypes">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                    <label class="form-check-label" for="flexCheckDefault1"> Stop My ECS </label>
+                    <input class="form-check-input" type="checkbox" value="" id="stopecs">
+                    <label class="form-check-label" for="stopecs"> Stop My ECS </label>
                   </div>
-                </div>
-                <div class="stypes">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                    <label class="form-check-label" for="flexCheckDefault2"> Change My Bank details </label>
+                    <input class="form-check-input" type="checkbox" value="" id="bankdetails">
+                    <label class="form-check-label" for="bankdetails"> Change My Bank details </label>
                   </div>
-                </div>
-                <div class="stypes">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                    <label class="form-check-label" for="flexCheckDefault3"> Change ECS amount </label>
+                    <input class="form-check-input displaymsg" type="checkbox" value="" id="changeecsamt">
+                    <label class="form-check-label" for="changeecsamt"> Change ECS amount </label>
                   </div>
-                </div>
-                <div class="stypes">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
-                    <label class="form-check-label" for="flexCheckDefault4"> Change ECS Period </label>
+                    <input class="form-check-input displaymsg" type="checkbox" value="" id="changeperiod">
+                    <label class="form-check-label" for="changeperiod"> Change ECS Period </label>
                   </div>
-                </div>
-                <div class="stypes">
+                  
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                    <label class="form-check-label" for="flexCheckDefault5"> Change ECS Freuency </label>
-                  </div>
-                </div>
-                <div class="stypes">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
-                    <label class="form-check-label" for="flexCheckDefault6"> Others </label>
-                  </div>
+                    <input class="form-check-input" type="checkbox" value="" id="otherm">
+                    <label class="form-check-label" for="otherm"> Others </label>
                 </div>
               </div>
-              <div class="form-floating mt-2">
-                <textarea class="form-control shadow-none" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
-                <label for="floatingTextarea2">Your Request</label>
-              </div>
-              <button class="btn btn-primary1 mt-3 px-4 rounded-pill py-2"> Send Mail </button>
+             
             </div>
+			</div>
+          <div class="col-lg-12">
+            
           </div>
         </div>
       </div>
@@ -221,7 +299,6 @@
                     <td>100 </td>
                     <td>Active but the donor has been stopped it</td>
                   </tr>
-                
                 </tbody>
               </table>
             </div>

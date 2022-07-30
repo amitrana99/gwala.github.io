@@ -1166,7 +1166,7 @@ ul.dropdown-menu li a {
 }
 .floatinginput .form-control, .floatingselect .form-select, .floatingdate input, .form-floating textarea {
   border: 0px;
-  background-color: #feebe0;
+  background-color: #feebe0!important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .floatinginput .form-control:disabled, .floatingselect .form-select:disabled, .floatingdate input:disabled, .form-floating textarea:disabled{
@@ -1564,6 +1564,7 @@ div.dataTables_wrapper div.dataTables_length {
     padding: 13px;
     position: relative;
     overflow: hidden;
+	display: none;
 }
 .overlay-box{
 	display: flex;
@@ -1584,4 +1585,7 @@ div.dataTables_wrapper div.dataTables_length {
 }
 .form-check-input:focus{
 	box-shadow: none;
+}
+.mw-100px{
+	min-width: 130px;
 }
