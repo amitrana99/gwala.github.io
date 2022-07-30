@@ -24,15 +24,27 @@ $(function () {
     }
   });
 
-// checkbox in tabbed panel
-$('#pills-tab li').click(function () {
-	$(".dataTable tr th").click();
-   var activetab = $(this).find('button');
-     $(this).closest('ul').find('input[type="checkbox"]').prop('checked','');
-     $(this).closest('li').find('input[type="checkbox"]').prop('checked','checked');
-	$(".resdatatable").click();
-});	
+  // checkbox in tabbed panel
+  $('#pills-tab li').click(function () {
+    $(".dataTable tr th").click();
+    //var activetab = $(this).find('button');
+    $(this).closest('ul').find('input[type="checkbox"]').prop('checked', '');
+    $(this).closest('li').find('input[type="checkbox"]').prop('checked', 'checked');
+  });
 
+  // hide overlay box
+  $('.overlay-box').on('click', function () {
+    $(this).hide();
+  })
+	
+	// checkbox as radio
+  $('.selecttypes .stypes').click(function () {   
+   // var activetab = $(this).find('button');
+    $(this).closest('.selecttypes').find('input[type="checkbox"]').prop('checked', '');
+    $(this).closest('.stypes').find('input[type="checkbox"]').prop('checked', 'checked');
+  });
+
+	
   // single level menu
   $('.nav-sidebar > .nav-link').on('click', function () {
     // e.preventDefault();
@@ -98,7 +110,7 @@ $('#pills-tab li').click(function () {
   // content menu
   $('.contentMenu').on('click', function (e) {
     e.preventDefault();
-	  
+
     $(this).children().toggleClass('fa-arrow-right-long')
     $('.sidebar').toggleClass('minimized');
 
@@ -252,49 +264,46 @@ $(document).ready(function () {
 // datatable
 
 $('.resdatatable').DataTable({
-dom: 'Bfrltip',
-"bLengthChange": true,
-oLanguage: {
-  sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
-},
-responsive: true,
-scrollX: '100%',
-pageLength: 10,
-lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
-language: {
-  search: '<img src="assets/images/search.svg">',
-  searchPlaceholder: "Search records",
-  paginate: {
-    next: '&#8594;', // or '→'
-    previous: '&#8592;' // or '←' 
-  }
-},
+  dom: 'Bfrltip',
+  "bLengthChange": true,
+  oLanguage: {
+    sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
+  },
+  responsive: true,
+  scrollX: '100%',
+  pageLength: 10,
+  lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
+  language: {
+    search: '<img src="assets/images/search.svg">',
+    searchPlaceholder: "Search records",
+    paginate: {
+      next: '&#8594;', // or '→'
+      previous: '&#8592;' // or '←' 
+    }
+  },
 
-buttons: [{
-    extend: 'copyHtml5',
-    text: '<img src="assets/images/copy.svg">',
-    titleAttr: 'Copy'
-  }, {
-    extend: 'excelHtml5',
-    text: '<img src="assets/images/excel.svg">',
-    titleAttr: 'Excel'
-  }, {
-    extend: 'csvHtml5',
-    text: '<img src="assets/images/csv.svg">',
-    titleAttr: 'CSV'
-  }, {
-    extend: 'pdfHtml5',
-    text: '<img src="assets/images/pdf.svg">',
-    titleAttr: 'PDF'
-  }, {
-    extend: 'print',
-    text: '<img src="assets/images/print.svg">',
-    titleAttr: 'Print'
-  }
+  buttons: [{
+      extend: 'copyHtml5',
+      text: '<img src="assets/images/copy.svg">',
+      titleAttr: 'Copy'
+    }, {
+      extend: 'excelHtml5',
+      text: '<img src="assets/images/excel.svg">',
+      titleAttr: 'Excel'
+    }, {
+      extend: 'csvHtml5',
+      text: '<img src="assets/images/csv.svg">',
+      titleAttr: 'CSV'
+    }, {
+      extend: 'pdfHtml5',
+      text: '<img src="assets/images/pdf.svg">',
+      titleAttr: 'PDF'
+    }, {
+      extend: 'print',
+      text: '<img src="assets/images/print.svg">',
+      titleAttr: 'Print'
+    }
 
-]
+  ]
 
 });
-
-
-

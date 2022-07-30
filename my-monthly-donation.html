@@ -40,6 +40,81 @@
 <!-- sidebar -->
 
 <div class="content">
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="showdetails" >
+    <div class="bank-details-canvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-primary1">Monthly Donation Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row gy-3">
+          <div class="col-lg-4">Bank Name : <strong>Punjab National Bank</strong></div>
+          <div class="col-lg-4">Bank Account No : <strong>4694000100015835</strong></div>
+          <div class="col-lg-4">IFSC Code : <strong>PUNB0469400</strong></div>
+          <div class="col-lg-4">Period To : <strong>20-7-2025</strong></div>
+          <div class="col-lg-4">Amount : <strong>100</strong></div>
+          <div class="col-lg-4">Until Cancel</div>
+          <div class="col-lg-12">
+            <div class="bg-inside">
+				<div class="overlay-box">
+				Click here for update your monthly donation status
+				</div>
+			<span class="fw-bold mb-3 d-block">Select Type</span>
+              <div class="selecttypes">
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault"> Postpone or temporary stop My ECS </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1"> Stop My ECS </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2"> Change My Bank details </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label" for="flexCheckDefault3"> Change ECS amount </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                    <label class="form-check-label" for="flexCheckDefault4"> Change ECS Period </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="form-check-label" for="flexCheckDefault5"> Change ECS Freuency </label>
+                  </div>
+                </div>
+                <div class="stypes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                    <label class="form-check-label" for="flexCheckDefault6"> Others </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mt-2">
+                <textarea class="form-control shadow-none" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                <label for="floatingTextarea2">Your Request</label>
+              </div>
+              <button class="btn btn-primary1 mt-3 px-4 rounded-pill py-2"> Send Mail </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i
           data-feather="menu"></i> </a>
     <div class="d-flex align-items-center justify-content-between w-100">
@@ -72,34 +147,28 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-        <div class="h-100">
-			
-			<div class="d-flex align-items-center flex-wrap justify-content-between">
-			  <h1 class="fs-4 fw-bold mb-4"> My Monthly Donations</h1>
-        <ul class="nav nav-pills mb-3 ecstabs" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-mecs-tab" data-bs-toggle="pill" data-bs-target="#pills-mecs" type="button" role="tab" aria-controls="pills-mecs" aria-selected="true">
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" checked value="">
-          </div>
-          My ECS
-          </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-fecs-tab" data-bs-toggle="pill" data-bs-target="#pills-fecs" type="button" role="tab" aria-controls="pills-fecs" aria-selected="false">
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="">
-          </div>
-          Failed ECS Installment
-          </button>
-          </li>
-        </ul>
-			</div>
-      
-			
-			
-			
-			
+          <div class="h-100">
+          <div class="d-flex align-items-center flex-wrap justify-content-between">
+          <h1 class="fs-4 fw-bold mb-4"> My Monthly Donations</h1>
+          <ul class="nav nav-pills mb-3 ecstabs" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-mecs-tab" data-bs-toggle="pill" data-bs-target="#pills-mecs" type="button" role="tab" aria-controls="pills-mecs" aria-selected="true">
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" checked value="">
+            </div>
+            My ECS
+            </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-fecs-tab" data-bs-toggle="pill" data-bs-target="#pills-fecs" type="button" role="tab" aria-controls="pills-fecs" aria-selected="false">
+              <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="">
+            </div>
+            Failed ECS Installment
+            </button>
+            </li>
+          </ul>
+        </div>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-mecs" role="tabpanel" aria-labelledby="pills-mecs-tab" tabindex="0">
             <div class="table-responsive mt-2 dashboard">
@@ -116,25 +185,24 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td><button class="btn btn-sm rounded-pill btn-info2 text-black">PUNB0000000006584559</button></td>
+                    <td><button class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</button></td>
                     <td>Monthly</td>
                     <td>100 </td>
                     <td>Active but the donor has been stopped it</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td><button class="btn btn-sm rounded-pill btn-info2 ">PUNB0000000006584559</button></td>
+                    <td><button class="btn btn-sm rounded-pill btn-info2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</button></td>
                     <td>Monthly</td>
                     <td>100 </td>
                     <td>Active</td>
                   </tr>
-               
                 </tbody>
               </table>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-fecs" role="tabpanel" aria-labelledby="pills-fecs-tab" tabindex="0">
-			<div class="table-responsive mt-2 dashboard">
+            <div class="table-responsive mt-2 dashboard">
               <table class="table w-100 fs-6 resdatatable ">
                 <thead>
                   <tr>
@@ -148,23 +216,16 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td><a href="">PUNB0000000006584559</a></td>
+                    <td><button class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</button></td>
                     <td>Monthly</td>
                     <td>100 </td>
                     <td>Active but the donor has been stopped it</td>
                   </tr>
-                  <tr>
-                    <td>1</td>
-                    <td><a href="">PUNB0000000006584559</a></td>
-                    <td>Monthly</td>
-                    <td>100 </td>
-                    <td>Active</td>
-                  </tr>
-                 
+                
                 </tbody>
               </table>
             </div>
-			</div>
+          </div>
         </div>
       </div>
     </div>

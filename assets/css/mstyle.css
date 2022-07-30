@@ -1482,6 +1482,7 @@ label.input-has-value {
 }
 div.dataTables_scrollBody{
 	border: 0px!important;
+	margin-top: -15px;
 }
 .resdatatable tr td{
 	background-color: #ff64000d!important;
@@ -1539,4 +1540,48 @@ div.dataTables_wrapper div.dataTables_length {
 	font-weight: bold;
 	background-color: #f2bb96!important;
 	box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+.bank-details-canvas{
+	border: 1px solid #eaddcf;
+	height: 100%;
+	margin: 15px auto;
+	border-radius: 14px;
+	max-width: 1024px;
+	width: 100%;
+}
+#showdetails{
+	background: linear-gradient(#fdf3f1 0%, #f4ebe7 52.63%, #f4eae7 52.71%, #fef8f5 100%)!important;
+	height: fit-content;
+}
+.selecttypes{
+	display: flex;
+	flex-wrap: wrap;
+	gap:15px;
+}
+.bg-inside {
+    background: #efdcd6;
+    border-radius: 10px;
+    padding: 13px;
+    position: relative;
+    overflow: hidden;
+}
+.overlay-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsl(18deg 31% 17% / 77%);
+	z-index: 1;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+.form-check-input:focus{
+	box-shadow: none;
 }
