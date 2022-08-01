@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - My Profile</title>
+<title>Krishnayan Gwala</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -21,19 +21,11 @@
           class="fa-solid fa-arrow-left-long"></i></a> </div>
   <div class="sidebar-body">
     <ul class="nav-sidebar">
-      <li class="nav-item "> <a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
+      <li class="nav-item "><a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
       <li class="nav-item "> <a href="my_profile.html" class="nav-link"><i data-feather="user"></i><span class="lang" key="my profile">My Profile</span></a> </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="sun"></i><span class="lang" key="my donation">My Donation</span></a>
-        <nav class="nav-sub"> <a href="" class="sub-link lang" key="consolidated receipt">Consolidated receipt</a> </nav>
-      </li>
       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang" key="online donation">My Donation</span></a>
-           <nav class="nav-sub">
-			<a href="receipts.html" class="sub-link lang" key="donate monthly">My Payments</a>
-			<a href="my-monthly-donation.html" class="sub-link lang" key="donate monthly">My Monthly Donations</a>
-			<a href="consolidated" class="sub-link lang" key="birthday / anniversary">Consolidated Receipt</a>
-		  </nav>
+        <nav class="nav-sub"> <a href="my-payments.html" class="sub-link lang" key="donate monthly">My Payments</a> <a href="my-monthly-donation.html" class="sub-link lang " key="donate monthly">My Monthly Donations</a> <a href="consolidated-receipts.html" class="sub-link lang active" key="birthday / anniversary">Consolidated Receipt</a> </nav>
       </li>
-      <li class="nav-item"> <a href="" class="nav-link"><i data-feather="calendar"></i><span class="lang" key="my monthly donation">My Monthly Donations</span></a> </li>
       <li class="nav-item"><a href="" class="nav-link"><i data-feather="heart"></i><span class="lang" key="celebrate in gaushala">Celebrate in Gaushala</span></a></li>
       <li class="nav-item"><a href="" class="nav-link"><i data-feather="users"></i><span class="lang" key="my references">My References</span></a></li>
       <li class="nav-item"><a href="" class="nav-link"><i data-feather="headphones"></i><span class="lang" key="feedback / complaints">Feedback / Complaints</span></a> </li>
@@ -47,7 +39,9 @@
 </div>
 <!-- sidebar -->
 
-<div class="content">
+<div class="content"> 
+  <!-- Modal -->
+  
   <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i
           data-feather="menu"></i> </a>
     <div class="d-flex align-items-center justify-content-between w-100">
@@ -80,95 +74,38 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <div class="h-100">
-            <h1 class="fs-4 fw-bold mb-4"> My Donations</h1>
-            <div class="table-responsive mt-2 dashboard">
-              <table class="table w-100 fs-6 resdatatable ">
-                <thead>
-                  <tr>
-                    <th data-priority="1">#</th>
-                    <th>Download Receipt</th>
-                    <th>Payment Mode</th>
-                    <th>Payment Date</th>
-                    <th data-priority="2">Amount</th>
-                    <th>Payment</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-					
-					  <tr>
-                    <td>1</td>
-                    <td><a href="">GW0018750</a></td>
-                    <td>Online</td>
-                    <td>2022-07-15</td>
-                    <td>6.00</td>
-                    <td>Paid</td>
-                  </tr>
-    
-                </tbody>
-              </table>
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row w-100">
+                <div class="col-lg-8 offset-2">
+                  <div class="row gy-4 gx-2">
+                    <div class="col-lg-12">
+                      <h1 class="fs-4 fw-bold mb-4"> Consolidated Receipts</h1>
+                      <select class="form-select" aria-label="Default select example">
+                      <option value="0">--Select--</option>
+                        <option value="2015-2016">2015-2016</option>
+                        <option value="2016-2017">2016-2017</option>
+                        <option value="2017-2018">2017-2018</option>
+                        <option value="2018-2019">2018-2019</option>
+                        <option value="2019-2020">2019-2020</option>
+                        <option value="2020-2021">2020-2021</option>
+                        <option value="2021-2022">2021-2022</option>
+                        <option value="2022-2023">2022-2023</option>
+                      </select>
+						
+                    </div>
+                    <div class="col-lg-4">
+                      <button class="btn rouned-pill btn-primary1 w-100">Download</button>
+                    </div>
+                    <div class="col-lg-4">
+                      <button class="btn rouned-pill btn-primary1 w-100">Email Receipt</button>
+                    </div>
+                    <div class="col-lg-4">
+                      <button class="btn rouned-pill btn-primary1 w-100">Download Form 10BE</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
