@@ -1588,4 +1588,19 @@ div.dataTables_wrapper div.dataTables_length {
 }
 .mw-100px{
 	min-width: 130px;
+}.equalheight{
+	min-height: 73vh;
+	border: 1px solid #f8f1ec;
+	margin: 0 8px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 0 16%;
+	background: #fffaf7;
+}.newcontent {
+    background-color: #ffc0cb38;
+    padding: 15px;
+    border: 1px solid #ffe1e8;
+    border-radius: 8px;
 }
