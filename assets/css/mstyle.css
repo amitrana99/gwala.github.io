@@ -1089,6 +1089,9 @@ ul.dropdown-menu li a {
 	.content-body{
 		padding: 0
 	}
+	.equalheight{
+		padding: 0px;
+	}
   .login-box {
     margin: auto 5%;
   }
@@ -1596,7 +1599,7 @@ div.dataTables_wrapper div.dataTables_length {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	padding: 0 16%;
+	padding: 0 17%;
 	background: #fffaf7;
 }.newcontent {
     background-color: #ffc0cb38;
