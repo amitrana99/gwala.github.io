@@ -1607,3 +1607,13 @@ div.dataTables_wrapper div.dataTables_length {
     border: 1px solid #ffe1e8;
     border-radius: 8px;
 }
+
+/**/
+.mxw-300px{
+	    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+textarea:focus{
+	box-shadow:rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px!important
+}
