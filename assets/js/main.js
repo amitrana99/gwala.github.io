@@ -328,7 +328,7 @@ $(document).ready(function () {
 // datatable
 
 $('.resdatatable').DataTable({
-  dom: 'Bfrltip',
+  dom: 'Bfrltp',
   "bLengthChange": true,
   oLanguage: {
     sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",

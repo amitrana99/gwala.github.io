@@ -7,7 +7,7 @@
 <title>Krishnayan Gwala</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
-	<link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
+<link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
@@ -26,7 +26,7 @@
     <ul class="nav-sidebar">
       <li class="nav-item "><a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
       <li class="nav-item "> <a href="my_profile.html" class="nav-link"><i data-feather="user"></i><span class="lang" key="my profile">My Profile</span></a> </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang" key="online donation">My Donation</span></a>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="smile"></i><span class="lang" key="online donation">My Donation</span></a>
         <nav class="nav-sub"> <a href="my-payments.html" class="sub-link lang" key="donate monthly">My Payments</a> <a href="my-monthly-donation.html" class="sub-link lang " key="donate monthly">My Monthly Donations</a> <a href="consolidated-receipts.html" class="sub-link lang" key="birthday / anniversary">Consolidated Receipt</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang" key="online donation">Online Donation</span></a>
@@ -46,6 +46,43 @@
 <!-- sidebar -->
 
 <div class="content">
+  <div class="offcanvas offcanvas-top" tabindex="1" id="showdetails" >
+    <div class="bank-details-canvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-primary1">Schedule List</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-0">
+        <div class="table-responsive  dashboard">
+          <table class="table w-100 fs-6 resdatatable align-middle">
+            <thead>
+              <tr>
+                <th data-priority="1">#</th>
+                <th>Pay</th>
+                <th>Type</th>
+                <th align="center">Schedule Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Scheduled (1 lakh Mahamrityunjay Japa + 1 thousand Gayatri Japa + Purush Sukt)</td>
+                <td>Birthday</td>
+                <td>21-Sep-2021</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td align="center"><button class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#paynow">Pay Now</button></td>
+                <td>Birthday</td>
+                <td>21-Sep-2021</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i
           data-feather="menu"></i> </a>
     <div class="d-flex align-items-center justify-content-between w-100">
@@ -79,98 +116,91 @@
       <div class="row gy-4">
         <div class="col-md-12">
           <div class="h-100">
-           
-              <div class="d-flex align-items-start">
-                <div class="w-100 ">
-                  <div class="row gy-4">
-                    <div class="col-lg-12">
+            <div class="d-flex align-items-start">
+              <div class="w-100 ">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h2 class="fs-4 ">Celebrate in Gaushala</h2>
-                        <button class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Member</button>
-                      </div>
-                      <div class="table-responsive mt-4 dashboard">
-                        <table class="table w-100 fs-6 resdatatable align-middle">
-                          <thead>
-                            <tr>
-                              <th data-priority="1">#</th>
-                              <th>Photo</th>
-                              <th>Name</th>
-                              <th align="center">Schedule Status</th>
-                              <th>Delete</th>
-                              <th data-priority="2">Gender</th>
-                              <th>Relation</th>
-                              <th>Gotra</th>
-                              <th>Type</th>
-                              <th>Date</th>
-                              <th>Remark</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-							  <tr>
-							  <td>1</td>
-							  <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
-							  <td>Saubhagya Agarwal</td>
-							  <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black">View</button></td>
-							  <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
-							  <td>Male</td>
-							  <td>Son</td>
-							  <td>Jindal</td>
-							  <td>Birthday</td>
-							  <td>2018-18-21</td>
-								  <td></td>
-							  </tr>
-							  
-							   <tr>
-							  <td>1</td>
-							  <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
-							  <td>Saubhagya Agarwal</td>
-							  <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black">View</button></td>
-							  <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
-							  <td>Male</td>
-							  <td>Son</td>
-							  <td>Jindal</td>
-							  <td>Birthday</td>
-							  <td>2018-18-21</td>
-								  <td></td>
-							  </tr>
-							  
-							   <tr>
-							  <td>1</td>
-							  <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
-							  <td>Saubhagya Agarwal</td>
-							  <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black">View</button></td>
-							  <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
-							  <td>Male</td>
-							  <td>Son</td>
-							  <td>Jindal</td>
-							  <td>Birthday</td>
-							  <td>2018-18-21</td>
-								  <td></td>
-							  </tr>
-							  
-							   <tr>
-							  <td>1</td>
-							  <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
-							  <td>Saubhagya Agarwal</td>
-							  <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black">View</button></td>
-							  <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
-							  <td>Male</td>
-							  <td>Son</td>
-							  <td>Jindal</td>
-							  <td>Birthday</td>
-							  <td>2018-18-21</td>
-								  <td></td>
-							  </tr>
-							  
-							  
-                          </tbody>
-                        </table>
-                      </div>
+                      <h2 class="fs-4 ">Celebrate in Gaushala</h2>
+                      <button class="btn btn-primary1" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Member</button>
+                    </div>
+                    <div class="table-responsive mt-4 dashboard">
+                      <table class="table w-100 fs-6 resdatatable align-middle">
+                        <thead>
+                          <tr>
+                            <th data-priority="1">#</th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th align="center">Schedule Status</th>
+                            <th>Delete</th>
+                            <th data-priority="2">Gender</th>
+                            <th>Relation</th>
+                            <th>Gotra</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Remark</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
+                            <td>Saubhagya Agarwal</td>
+                            <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black" data-bs-toggle="offcanvas" data-bs-target="#showdetails">View</button></td>
+                            <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
+                            <td>Male</td>
+                            <td>Son</td>
+                            <td>Jindal</td>
+                            <td>Birthday</td>
+                            <td>2018-18-21</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
+                            <td>Saubhagya Agarwal</td>
+                            <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black" data-bs-toggle="offcanvas" data-bs-target="#showdetails">View</button></td>
+                            <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
+                            <td>Male</td>
+                            <td>Son</td>
+                            <td>Jindal</td>
+                            <td>Birthday</td>
+                            <td>2018-18-21</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
+                            <td>Saubhagya Agarwal</td>
+                            <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black" data-bs-toggle="offcanvas" data-bs-target="#showdetails">View</button></td>
+                            <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
+                            <td>Male</td>
+                            <td>Son</td>
+                            <td>Jindal</td>
+                            <td>Birthday</td>
+                            <td>2018-18-21</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td><img src="assets/images/avatar.png" class="" width="64" alt=""></td>
+                            <td>Saubhagya Agarwal</td>
+                            <td><button class="btn btn-sm rounded-pill btn-info2 px-4 text-black" data-bs-toggle="offcanvas" data-bs-target="#showdetails">View</button></td>
+                            <td><button class="btn"><i class="fa-solid fa-trash-can text-primary1"></i> </button></td>
+                            <td>Male</td>
+                            <td>Son</td>
+                            <td>Jindal</td>
+                            <td>Birthday</td>
+                            <td>2018-18-21</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
-           
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +269,7 @@
                   <label for="date" class="form-label">Date</label>
                 </div>
               </div>
-				<div class="col-lg-6">
+              <div class="col-lg-6">
                 <div class="floatingdate mt-4">
                   <input type="text" id="gotra" class="form-control" placeholder="gotra">
                   <label for="gotra" class="form-label">Gotra</label>
@@ -261,11 +291,64 @@
       </div>
     </div>
     <!-- content-body --> 
+	  
+	   <!-- Modal -->
+    <div class="modal fade" id="paynow" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Select Pooja Type</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-start">
+              <div class="col-lg-12">
+                <div class="row align-content-center gy-3">
+                  
+                  <div class="col-lg-12">
+                    <div class="inputGroup">
+                      <input id="radio3" name="paynow" type="radio" checked/>
+                      <label for="radio3">1 lakh Mahamrityunjay Japa + 1 thousand Gayatri Japa + Purush Sukt </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="inputGroup">
+                      <input id="radio4" name="paynow" type="radio"/>
+                      <label for="radio4">Yagya Pujan + Gau Pujan + Ganga Pujan + Rudrabhisek </label>
+                    </div>
+                  </div>
+					 <div class="col-lg-12">
+                    <div class="inputGroup">
+                      <input id="radio5" name="paynow" type="radio"/>
+                      <label for="radio5">Bhanadara and dakshina for 200 Fakkad Sadhus + & 21 Bhraman of Yagyashala + fodder for cows </label>
+                    </div>
+                  </div>
+					 <div class="col-lg-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="pothertext" style="min-height: 120px;"></textarea>
+                  <label for="pothertext">Enter Remark</label>
+                </div>
+              </div>
+					
+                </div>
+              </div>
+         
+            </div>
+          </div>
+			 <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Proceed</button>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <!-- content-body --> 
   </div>
   <!-- content --> 
 </div>
 <script src="assets/js/jquery-3.6.0.min.js"></script> 
-	<script src="assets/vendors/datatable/datatables.min.js"></script> 
+<script src="assets/vendors/datatable/datatables.min.js"></script> 
 <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script> 
 <script src="assets/vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> 
 <script src="assets/js/lazysizes.min.js" async=""></script> 
