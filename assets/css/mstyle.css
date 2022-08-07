@@ -1620,3 +1620,7 @@ textarea:focus{
 .offcanvas{
 	min-height: fit-content;
 }
+.form-control:focus{
+	box-shadow: none;
+	border-color: #ff6400
+}
