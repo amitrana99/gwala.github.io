@@ -1552,7 +1552,7 @@ div.dataTables_wrapper div.dataTables_length {
 	max-width: 1024px;
 	width: 100%;
 }
-#showdetails{
+#showdetails, #newecs{
 	background: linear-gradient(#fdf3f1 0%, #f4ebe7 52.63%, #f4eae7 52.71%, #fef8f5 100%)!important;
 	height: fit-content;
 }
@@ -1616,4 +1616,7 @@ div.dataTables_wrapper div.dataTables_length {
 }
 textarea:focus{
 	box-shadow:rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px!important
+}
+.offcanvas{
+	min-height: fit-content;
 }
