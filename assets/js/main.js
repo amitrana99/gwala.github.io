@@ -371,3 +371,8 @@ $('.resdatatable').DataTable({
   ]
 
 });
+
+
+$(function() {
+	$('.datepicker2').mask('00/00/0000');
+  });
