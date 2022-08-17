@@ -61,6 +61,9 @@
   src: url(https://fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgW8tenXg.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+.philofont{
+	font-family: 'Philosopher';
+}
 body {
   font-family: 'Open Sans';
   font-size: 15px;
@@ -1682,18 +1685,24 @@ textarea:focus {
 
 /**/
 .content.astropage {
-    background-color: #531f00;
+    background-color: #f4f0ed;
 }
 .form_box {
-    background-color: #6f2a00;
+    background-color: #ffffff;
     padding: 16px 20px 30px;
     border-radius: 7px;
+    border: 1px dashed #605853;
 }.form_box label{
-	color: #ffba90;
+	color: #585857;
 	font-family: 'Philosopher', sans-serif;
+	font-size: 12px;
 }
 .form_box .form-control{
-	background: #8c3602;
-    border: 0px;
-    color: #ffba90;
+	background: #f9f8f8;
+	border: 0px;
+}
+.astrologer_box img{
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 8px;
 }
