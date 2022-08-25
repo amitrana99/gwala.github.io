@@ -2,70 +2,9 @@
   --primarybg: #FF6400;
   --primarybg2: #FFFAF7;
 }
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@400;500;600&family=Philosopher:wght@400;700&display=swap');
 
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open-400';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open-500';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Philosopher';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/philosopher/v19/vEFV2_5QCwIS4_Dhez5jcWBjT00k0w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Philosopher';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/philosopher/v19/vEFV2_5QCwIS4_Dhez5jcWBqT00k0w.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Philosopher';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/philosopher/v19/vEFI2_5QCwIS4_Dhez5jcWjValgW8tenXg.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-.philofont{
-	font-family: 'Philosopher';
-}
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #444444;
 }
@@ -91,9 +30,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   transition: background-color 5000s ease-in-out 0s;
   background-color: #feebe0 !important;
 }
-body {
-  font-family: roboto;
-}
+
 a {
   text-decoration: none
 }
@@ -1016,6 +953,12 @@ a {
   background-size: 34%;
   background-position: calc(100% - 33px) center;
 }
+.income-bg {
+  background-image: url("../images/income.svg");
+  background-repeat: no-repeat;
+  background-size: 34%;
+  background-position: calc(100% - 33px) center;
+}
 .monthly-donation-bg {
   background-image: url("../images/monthly-donation.svg");
   background-repeat: no-repeat;
@@ -1740,11 +1683,18 @@ form.digit-group {
     justify-content: center;
     margin-top: 30px;
 }
+.singleboxes{
+	display: flex;
+	align-items: center;
+	
+}
 .singleboxes span{
-	width: 60px; height: 60px;
-	text-align: center; line-height: 58px
+	text-align: center;
+
+	
+	margin: 0 auto;
 }
 .singleboxes span img{
-	max-height: 30px;
-	width: auto
+	
+	
 }
