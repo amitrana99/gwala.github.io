@@ -1740,3 +1740,11 @@ form.digit-group {
     justify-content: center;
     margin-top: 30px;
 }
+.singleboxes span{
+	width: 60px; height: 60px;
+	text-align: center; line-height: 58px
+}
+.singleboxes span img{
+	max-height: 30px;
+	width: auto
+}
