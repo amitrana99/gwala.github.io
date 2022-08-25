@@ -2,7 +2,6 @@
   --primarybg: #FF6400;
   --primarybg2: #FFFAF7;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -30,7 +29,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   transition: background-color 5000s ease-in-out 0s;
   background-color: #feebe0 !important;
 }
-
 a {
   text-decoration: none
 }
@@ -939,11 +937,9 @@ a {
   background-color: var(--primarybg2);
   border-color: #FBF1EB;
 }
-.card-2{
-	
-border-color: #ff640080;
-	
-border-style: dashed;
+.card-2 {
+  border-color: #ff640080;
+  border-style: dashed;
 }
 .text-primary1 {
   color: var(--primarybg);
@@ -1627,37 +1623,34 @@ textarea:focus {
   border-color: #ff6400
 }
 .inputbg {
-	border-color: #feebe0;
+  border-color: #feebe0;
   background-color: #feebe0 !important;
   box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
-
 /**/
 .content.astropage {
-    background-color: #f4f0ed;
+  background-color: #f4f0ed;
 }
 .form_box {
-    background-color: #ffffff;
-    padding: 16px 20px 30px;
-    border-radius: 7px;
-    border: 1px dashed #605853;
-}.form_box label{
-	color: #585857;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 12px;
+  background-color: #ffffff;
+  padding: 16px 20px 30px;
+  border-radius: 7px;
+  border: 1px dashed #605853;
 }
-.form_box .form-control{
-	background: #f9f8f8;
-	border: 0px;
+.form_box label {
+  color: #585857;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 12px;
 }
-.astrologer_box img{
-	max-width: 200px;
-	margin: 0 auto;
-	border-radius: 8px;
+.form_box .form-control {
+  background: #f9f8f8;
+  border: 0px;
 }
-
-
-
+.astrologer_box img {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
 .digit-group input {
   width: 35px;
   height: 50px;
@@ -1677,30 +1670,48 @@ textarea:focus {
   color: #ff752f;
   font-size: 24px;
 }
-
 .prompt {
   margin-bottom: 20px;
   font-size: 20px;
   color: white;
 }
 form.digit-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
-.title-icon{
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	color: #4f3600;
-	border-radius: 6px;
-	position: absolute;
-	left: 0;
-	top: -34px;
-	background-color: #ffb000;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+.title-icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f3600;
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  top: -36px;
+  background-color: #ffcaa9;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.card-2 a {
+  color: #6c6c6c;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 7px;
+  background-color: #fffaf7;
+  margin-bottom: 11px;
+}
+.card-2 a:last-child{
+	margin-bottom: 0px
+}
+.card-2 a:hover {
+  background-color: #fff4e6;
+}
+.card-2 h2 {
+  margin-bottom: 0px;
 }
