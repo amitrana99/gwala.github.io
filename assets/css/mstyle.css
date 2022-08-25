@@ -939,6 +939,12 @@ a {
   background-color: var(--primarybg2);
   border-color: #FBF1EB;
 }
+.card-2{
+	
+border-color: #ff640080;
+	
+border-style: dashed;
+}
 .text-primary1 {
   color: var(--primarybg);
 }
@@ -1683,18 +1689,18 @@ form.digit-group {
     justify-content: center;
     margin-top: 30px;
 }
-.singleboxes{
-	display: flex;
-	align-items: center;
-	
-}
-.singleboxes span{
+.title-icon{
+	width: 60px;
+	height: 60px;
 	text-align: center;
-
-	
-	margin: 0 auto;
-}
-.singleboxes span img{
-	
-	
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #4f3600;
+	border-radius: 6px;
+	position: absolute;
+	left: 0;
+	top: -34px;
+	background-color: #ffb000;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
