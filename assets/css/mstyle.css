@@ -1693,7 +1693,7 @@ form.digit-group {
   position: absolute;
   left: 0;
   top: -36px;
-  background-color: #ffcaa9;
+  background-color: rgb(255, 176, 0);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .card-2 a {
@@ -1703,8 +1703,7 @@ form.digit-group {
   width: 100%;
   padding: 8px;
   border-radius: 7px;
-  background-color: #fffaf7;
-  margin-bottom: 11px;
+  margin-bottom: 3px;
 }
 .card-2 a:last-child{
 	margin-bottom: 0px
