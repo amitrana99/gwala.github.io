@@ -119,8 +119,8 @@ const data = {
   datasets: [{
       data: day,
       label: "Domestic",
-      backgroundColor: 'rgba(255, 205, 86, 0.5)',
-      borderColor: 'rgba(255, 205, 86, 1)',
+      backgroundColor: 'rgba(0, 130, 179, 0.5)',
+      borderColor: 'rgba(0, 130, 179, 1)',
       borderWidth: 1,
       borderRadius: 4,
       borderSkipped: false,
@@ -155,7 +155,7 @@ const config = {
       title: {
         display: false,
       },
-
+    legend: false,
     },
     maintainAspectRatio: false,
     scales: {
@@ -219,7 +219,7 @@ const newrddata = {
     backgroundColor: [
 
       'rgb(255, 100, 0)',
-      'rgb(255, 205, 86)'
+      'rgb(0, 130, 179)'
     ],
     hoverOffset: 4
   }]
@@ -257,7 +257,7 @@ const paymentdata = {
     data: [2000, 3000],
     backgroundColor: [
       'rgb(255, 100, 0)',
-      'rgb(255, 205, 86)'
+      'rgb(0, 130, 179)'
     ],
     hoverOffset: 4
   }]
