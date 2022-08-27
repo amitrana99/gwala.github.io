@@ -1714,3 +1714,9 @@ form.digit-group {
 .card-2 h2 {
   margin-bottom: 0px;
 }
+#domesticchart, #intcart {
+	max-height: 100px;
+}
+.w-100px{
+	width:110px; margin: 0 auto;
+}
