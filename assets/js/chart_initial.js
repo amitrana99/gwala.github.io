@@ -118,8 +118,9 @@ const data = {
   // labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   datasets: [{
       data: day,
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-      borderColor: 'rgba(54, 162, 235, 1)',
+	  label: "Domestic",
+      backgroundColor: 'rgba(255, 205, 86, 0.5)',
+      borderColor: 'rgba(255, 205, 86, 1)',
       borderWidth: 1,
       borderRadius: 4,
       borderSkipped: false,
@@ -130,8 +131,9 @@ const data = {
     },
     {
       data: intday,
-      backgroundColor: 'rgba(255, 26, 104, 0.2)',
-      borderColor: 'rgba(255, 26, 104, 1)',
+	  label: "International",
+      backgroundColor: 'rgba(250, 100, 0, 0.5)',
+      borderColor: 'rgba(250, 100, 0, 1)',
       borderWidth: 1,
       borderRadius: 4,
       borderSkipped: false,
@@ -153,7 +155,7 @@ const config = {
       title: {
         display: false,
       },
-      legend: false,
+     
     },
     maintainAspectRatio: false,
     scales: {
@@ -216,7 +218,7 @@ const newrddata = {
     data: [500, 200 ],
     backgroundColor: [
 
-      'rgb(54, 162, 235)',
+      'rgb(255, 100, 0)',
       'rgb(255, 205, 86)'
     ],
     hoverOffset: 4

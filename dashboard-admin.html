@@ -95,7 +95,7 @@
             <div class="card-body">
               <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"><i data-feather="dollar-sign"></i></span> <span class="ms-4">Online Donation</span>
                 <div class="ms-auto d-flex align-items-center">
-                  <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                  <div class="btn-group btn-group-sm ms-2" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onClick="timeframe(this)" value="day" checked>
                     <label class="btn btn-outline-primary" for="btnradio1">Day</label>
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onClick="timeframe(this)" value="month">
@@ -103,13 +103,17 @@
                   </div>
                 </div>
               </h1>
-              <div class="d-flex flex-column align-items-start mt-2">
-                <div class="d-flex justify-content-between w-100 mb-3"> <a href="#"> <span class="fs-14">Domestic</span>
-                  <h2 class="fs-4 text-primary1 fw-bold">₹ 2,64,57,183/-</h2>
-                  </a> <a href="#"> <span class="fs-14">International</span>
-                  <h2 class="fs-4 text-primary1 fw-bold">₹ 2,64,57,183/-</h2>
-                  </a> </div>
-                <canvas id="domesticchart" class="w-100 mw-100"></canvas>
+              <div class="d-flex flex-wrap justify-content-between align-items-center mt-2">
+               
+                  <div class="d-flex d-md-block"> <a href="#"> <span class="fs-14">Domestic</span>
+                    <h2 class="fs-4 text-primary1 fw-bold">₹ 2,64,57,183/-</h2>
+                    </a> <a href="#"> <span class="fs-14">International</span>
+                    <h2 class="fs-4 text-primary1 fw-bold">₹ 2,64,57,183/-</h2>
+                    </a> </div>
+                  <div class="chartbox">
+                    <canvas id="domesticchart" class="w-100 mw-100"></canvas>
+                  </div>
+               
               </div>
             </div>
           </div>
@@ -118,13 +122,15 @@
           <div class="card card-2 h-100">
             <div class="card-body">
               <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"> <i data-feather="users"></i> </span> <span class="ms-4">New online RD</span></h1>
-              
-              <div class="d-flex align-items-center justify-content-between mt-3"> <a href="#"> <span class="fs-14">Domestic</span>
-                <h2 class="fs-4 text-primary1 fw-bold">500</h2>
-                </a> <a href="#"><span class="fs-14 mt-3">International </span>
-                <h2 class="fs-4 text-primary1 fw-bold">200</h2>
-                </a> </div><div class="w-100px mt-2">
-                <canvas id="newrdcchart" class="w-100"></canvas>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <div class=""> <a href="#"> <span class="fs-14">Domestic</span>
+                  <h2 class="fs-4 text-primary1 fw-bold">500</h2>
+                  </a> <a href="#"><span class="fs-14 mt-3">International </span>
+                  <h2 class="fs-4 text-primary1 fw-bold">200</h2>
+                  </a> </div>
+                <div class="w-120px mx-auto mt-2">
+                  <canvas id="newrdcchart" class="w-100"></canvas>
+                </div>
               </div>
             </div>
           </div>
@@ -133,10 +139,10 @@
           <div class="card card-2 h-100">
             <div class="card-body">
               <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"> <i data-feather="dollar-sign"></i> </span> <span class="ms-4">Payments</span></h1>
-              <div class="d-flex flex-column align-items-start mt-4"> <a href="#"><span class="fs-14">Failed </span>
-                <h2 class="fs-3 text-primary1 fw-bold">2000</h2>
+              <div class="d-flex flex-column align-items-start mt-3"> <a href="#"><span class="fs-14">Failed </span>
+                <h2 class="fs-4 text-primary1 fw-bold">2000</h2>
                 </a> <a href="#"><span class="fs-14 mt-3">Pending </span>
-                <h2 class="fs-3 text-primary1 fw-bold">300</h2>
+                <h2 class="fs-4 text-primary1 fw-bold">300</h2>
                 </a> </div>
             </div>
           </div>

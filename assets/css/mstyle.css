@@ -1715,8 +1715,12 @@ form.digit-group {
   margin-bottom: 0px;
 }
 #domesticchart, #intcart {
-	max-height: 100px;
+	max-height: 130px;
 }
-.w-100px{
-	width:110px; margin: 0 auto;
+.w-120px{
+	width:120px; margin: 0 auto;
+}
+.chartbox{
+	max-width: 360px;
+	width: 100%;
 }
