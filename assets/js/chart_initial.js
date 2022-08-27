@@ -118,7 +118,7 @@ const data = {
   // labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   datasets: [{
       data: day,
-	  label: "Domestic",
+      label: "Domestic",
       backgroundColor: 'rgba(255, 205, 86, 0.5)',
       borderColor: 'rgba(255, 205, 86, 1)',
       borderWidth: 1,
@@ -131,7 +131,7 @@ const data = {
     },
     {
       data: intday,
-	  label: "International",
+      label: "International",
       backgroundColor: 'rgba(250, 100, 0, 0.5)',
       borderColor: 'rgba(250, 100, 0, 1)',
       borderWidth: 1,
@@ -155,7 +155,7 @@ const config = {
       title: {
         display: false,
       },
-     
+
     },
     maintainAspectRatio: false,
     scales: {
@@ -205,7 +205,7 @@ function timeframe(period) {
 }
 
 
-/// pie chart
+/// RD chart
 // <block:setup:1>
 const newrddata = {
   labels: [
@@ -215,7 +215,7 @@ const newrddata = {
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [500, 200 ],
+    data: [500, 200],
     backgroundColor: [
 
       'rgb(255, 100, 0)',
@@ -241,4 +241,40 @@ const rdconfig = {
 const newrdChart = new Chart(
   document.getElementById('newrdcchart'),
   rdconfig
+);
+
+
+
+/// payment chart
+
+const paymentdata = {
+  labels: [
+    'Failed',
+    'Pending'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [2000, 3000],
+    backgroundColor: [
+      'rgb(255, 100, 0)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+const paymentconfig = {
+  options: {
+    plugins: {
+      legend: false,
+    },
+  },
+  type: 'pie',
+  data: paymentdata,
+};
+
+
+const paymentsChart = new Chart(
+  document.getElementById('paymentchart'),
+  paymentconfig
 );
