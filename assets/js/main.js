@@ -38,74 +38,75 @@ $(function () {
   })
 
   // toggle update ecs
-	
-	$('.togglebginside').on('click', function(){
-		$('.bg-inside').slideToggle();
-	})
-	
+
+  $('.togglebginside').on('click', function () {
+    $('.bg-inside').slideToggle();
+  })
+
 
   // checkbox as radio
   $('.selecttypes .form-check').click(function () {
     var postecs = new bootstrap.Modal(document.getElementById("postpondecsmodal"), {
-		backdrop:false
-	});
-	var stopecs = new bootstrap.Modal(document.getElementById("stopecsmodal"), {
-		backdrop:false
-	});
-	  var bankdetails = new bootstrap.Modal(document.getElementById("bankdetailsmodal"), {
-		backdrop:false
-	});
-	  var changeamt = new bootstrap.Modal(document.getElementById("changecsamtmodal"), {
-		backdrop:false
-	});
-	  var changeperiod = new bootstrap.Modal(document.getElementById("changeperiodmodal"), {
-		backdrop:false
-	});var othertext = new bootstrap.Modal(document.getElementById("othermodal"), {
-		backdrop:false
-	});
-	  var checks = $('input[type="checkbox"]');
+      backdrop: false
+    });
+    var stopecs = new bootstrap.Modal(document.getElementById("stopecsmodal"), {
+      backdrop: false
+    });
+    var bankdetails = new bootstrap.Modal(document.getElementById("bankdetailsmodal"), {
+      backdrop: false
+    });
+    var changeamt = new bootstrap.Modal(document.getElementById("changecsamtmodal"), {
+      backdrop: false
+    });
+    var changeperiod = new bootstrap.Modal(document.getElementById("changeperiodmodal"), {
+      backdrop: false
+    });
+    var othertext = new bootstrap.Modal(document.getElementById("othermodal"), {
+      backdrop: false
+    });
+    var checks = $('input[type="checkbox"]');
     $('input#postpondecs[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-		postecs.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        postecs.show();
       }
     });
-	  
-	  $('input#stopecs[type="checkbox"]').on('change', function (e) {
+
+    $('input#stopecs[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-          stopecs.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        stopecs.show();
       }
     });
-	  
-	   $('input#bankdetails[type="checkbox"]').on('change', function (e) {
+
+    $('input#bankdetails[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-          bankdetails.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        bankdetails.show();
       }
     });
-	  
-	  $('input#changeecsamt[type="checkbox"]').on('change', function (e) {
+
+    $('input#changeecsamt[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-          changeamt.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        changeamt.show();
       }
     });
-	  
-	   $('input#changeperiod[type="checkbox"]').on('change', function (e) {
+
+    $('input#changeperiod[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-          changeperiod.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        changeperiod.show();
       }
     });
-	  
-	  $('input#otherm[type="checkbox"]').on('change', function (e) {
+
+    $('input#otherm[type="checkbox"]').on('change', function (e) {
       if (e.target.checked) {
-		$(this).parent('.form-check').siblings().find(checks).prop('checked', '');
-          othertext.show();
+        $(this).parent('.form-check').siblings().find(checks).prop('checked', '');
+        othertext.show();
       }
     });
-	  
+
   });
 
 
@@ -373,6 +374,8 @@ $('.resdatatable').DataTable({
 });
 
 
-$(function() {
-	$('.datepicker2').mask('00/00/0000');
-  });
+$(function () {
+  $('.datepicker2').mask('00/00/0000');
+});
+
+

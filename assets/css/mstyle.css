@@ -72,6 +72,8 @@ a {
   margin: auto 15%;
   z-index: 1;
   max-width: 1100px;
+  display: flex;
+  align-items: center;
 }
 .login-box .left_box {
   background-image: url("../images/left_bg.jpg");
@@ -1745,4 +1747,10 @@ form.digit-group {
 }
 .fs-10 {
 	font-size: 10px;
+}
+.mxw-500{
+	max-width: 700px;
+}
+#comAddress{
+	display: none
 }
