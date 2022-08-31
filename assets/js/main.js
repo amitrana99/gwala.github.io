@@ -252,7 +252,10 @@ function checkForInput(element) {
 $('input.textdemo').each(function () {
   checkForInput(this);
 });
-$('input.textdemo').on('change keyup', function () {
+$('input.textdemo').on('focusin', function () {
+  checkForInput(this);
+});
+$('input.textdemo').on('focusout', function () {
   checkForInput(this);
 });
 
