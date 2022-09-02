@@ -1707,8 +1707,8 @@ form.digit-group {
   border-radius: 7px;
   margin-bottom: 3px;
 }
-.card-2 a:last-child{
-	margin-bottom: 0px
+.card-2 a:last-child {
+  margin-bottom: 0px
 }
 .card-2 a:hover {
   background-color: #fff4e6;
@@ -1717,40 +1717,81 @@ form.digit-group {
   margin-bottom: 0px;
 }
 #domesticchart, #intcart {
-	max-height: 140px;
+  max-height: 140px;
 }
-.w-120px{
-	width:120px; margin: 0 auto;
+.w-120px {
+  width: 120px;
+  margin: 0 auto;
 }
-.chartbox{
-	max-width: 360px;
-	width: 100%;
+.chartbox {
+  max-width: 360px;
+  width: 100%;
 }
-.text-bl{
-	color: #0082b3;
+.text-bl {
+  color: #0082b3;
 }
-.task-home-list{
-	text-decoration: none;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.task-home-list {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.task-home-list li{
-	padding: 5px 0;
-	font-size: 16px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
+.task-home-list li {
+  padding: 5px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.task-home-list li span{
-	
-}
+.task-home-list li span {}
 .fs-10 {
-	font-size: 10px;
+  font-size: 10px;
 }
-.mxw-500{
-	max-width: 700px;
+.mxw-500 {
+  max-width: 700px;
 }
-#comAddress{
-	display: none
+#comAddress {
+  display: none
+}
+/*phone with flag*/
+.phonewithflag .iti {
+  width: 100%;
+}
+.phonewithflag .iti input#phone {
+  border: 0px;
+  background-color: #feebe0 !important;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+.filterbn {
+  border-width: 0 0 2px 0 !important;
+  border-radius: 0px !important;
+  padding-left: 36px !important;
+}
+ul.iti__country-list {
+  max-width: 338px;
+  min-width: 280px;
+}
+.border-bottom-2 {
+  padding: 6px 0px 6px 6px;
+  background-color: white
+}
+.flagssearch-icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 8px;
+  transform: translate(4px, -50%);
+  color: #767675;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #212529 !important;
+  font-size: 15px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #212529 !important;
+  font-size: 15px;
+}
+::placeholder {
+  color: #212529 !important;
+  font-size: 15px;
 }
