@@ -497,6 +497,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 .nav-group {
   border-top: 1px solid transparent;
@@ -1716,6 +1717,7 @@ form.digit-group {
 }
 .card-2 h2 {
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 #domesticchart, #intcart {
   max-height: 140px;
