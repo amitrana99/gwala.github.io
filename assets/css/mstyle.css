@@ -1461,26 +1461,28 @@ label.input-has-value {
 .dataTables_wrapper label .form-control:focus {
   box-shadow: none;
 }
-.resdatatable thead tr th {
+.dataTable thead tr th {
   background-color: #ff6400 !important;
   color: white;
+  white-space: nowrap;
+  vertical-align: middle;
 }
-.dataTables_scrollBody .resdatatable {
+.dataTables_scrollBody .dataTable {
   border-collapse: separate !important;
   border-spacing: 0 15px !important;
 }
-.dataTables_scrollBody .resdatatable tbody tr td:first-child, .resdatatable thead tr th:first-child {
+.dataTables_scrollBody .dataTable tbody tr td:first-child, .dataTable thead tr th:first-child {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-.dataTables_scrollBody .resdatatable tbody tr {
+.dataTables_scrollBody .dataTable tbody tr {
   border-radius: 7px;
 }
-.dataTables_scrollBody .resdatatable tbody tr td:last-child, .resdatatable thead tr th:last-child {
+.dataTables_scrollBody .dataTable tbody tr td:last-child, .dataTable thead tr th:last-child {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-.dataTables_scrollBody .resdatatable thead {
+.dataTables_scrollBody .dataTable thead {
   height: 0px;
   overflow: hidden;
   padding: 0px;
@@ -1489,12 +1491,12 @@ div.dataTables_scrollBody {
   border: 0px !important;
   margin-top: -15px;
 }
-.resdatatable tr td {
+.dataTable tr td {
   background-color: #ff64000d !important;
-  font-weight: bold;
-  padding: 10px 6px;
+  
+  
 }
-.resdatatable tr {
+.dataTable tr {
   /*box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;*/
 }
 table.dataTable {
@@ -1805,4 +1807,7 @@ ul.iti__country-list {
 }
 .header_logo img{
 	max-width: 120px;
+}
+table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before, table.dataTable>thead .sorting_desc_disabled:after{
+	bottom: 0.8rem
 }

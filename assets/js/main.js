@@ -312,6 +312,7 @@ $(function () {
 
 // quantity
 $(document).ready(function () {
+
   $('.cqbox .minus').click(function () {
     var $input = $(this).parent().find('input.cquantity');
     var count = parseInt($input.val()) - 1;
@@ -376,9 +377,60 @@ $('.resdatatable').DataTable({
 
 });
 
+$('#allcontacts').DataTable({
+  dom: 'Bfrltp',
+  "bLengthChange": true,
+  oLanguage: {
+    sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
+  },
+  responsive: true,
+  //scrollX: '100%',
+  pageLength: 10,
+  lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
+  language: {
+    search: '<img src="assets/images/search.svg">',
+    searchPlaceholder: "Search records",
+    paginate: {
+      next: '&#8594;', // or '→'
+      previous: '&#8592;' // or '←' 
+    }
+  },
+  order: [],
+  columnDefs: [ { orderable: false, targets: [0] } ],
+
+
+  buttons: [{
+      extend: 'copyHtml5',
+      text: '<img src="assets/images/copy.svg">',
+      titleAttr: 'Copy'
+    }, {
+      extend: 'excelHtml5',
+      text: '<img src="assets/images/excel.svg">',
+      titleAttr: 'Excel'
+    }, {
+      extend: 'csvHtml5',
+      text: '<img src="assets/images/csv.svg">',
+      titleAttr: 'CSV'
+    }, {
+      extend: 'pdfHtml5',
+      text: '<img src="assets/images/pdf.svg">',
+      titleAttr: 'PDF'
+    }, {
+      extend: 'print',
+      text: '<img src="assets/images/print.svg">',
+      titleAttr: 'Print'
+    }
+
+  ]
+
+});
+
 
 $(function () {
   $('.datepicker2').mask('00/00/0000');
 });
 
 
+$("#checkAll").on('change', function () {
+  $("td input").prop('checked', $(this).prop("checked"));
+});

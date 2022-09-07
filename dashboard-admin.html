@@ -19,28 +19,25 @@
 
 <body class="skin-base animate">
 <div class="sidebar">
-  <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img
-          src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#"
-        class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i
-          class="fa-solid fa-arrow-left-long"></i></a> </div>
+  <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
   <div class="sidebar-body">
     <ul class="nav-sidebar">
-      <li class="nav-item active show"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="users"></i><span  >Contacts</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">All Contacts</a> <a href="" class="sub-link">Not updated in Salesforce</a> <a href="" class="sub-link">Contact Merge</a> </nav>
+      <li class="nav-item active show">
+		  <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a>
+		</li>
+      <li class="nav-item">
+		  <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a>        
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="calendar"></i><span  >Recurring Donation</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">All Recurring donation </a> <a href="" class="sub-link">Not updated in Salesforce</a> <a href="" class="sub-link">User Request</a> </nav>
+      <li class="nav-item">
+		  <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a>       
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="dollar-sign"></i><span  >Payments </span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">All payments </a> <a href="" class="sub-link">Not updated in Salesforce</a> </nav>
-      </li>
+      <li class="nav-item">
+		  <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a>
+	  </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">All Records </a> <a href="" class="sub-link">Register New data</a> <a href="" class="sub-link">Schduled Events</a> </nav>
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="terminal"></i><span  >API</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">contact not saved in Gwala </a> <a href="" class="sub-link">payment not saved in Gwala</a> <a href="" class="sub-link">Payment not updated from Gateway Payu and Razor Pay</a> </nav>
-      </li>
+      
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
@@ -72,6 +69,11 @@
 		  <span class="">
 		   
 		  </span>
+		  <a href="allpayments.html" class="text-black me-3" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Last Donation Received At">
+		  43 Second Ago
+		  </a>
 		  <button class="ms-auto btn me-4 btn-light"><i data-feather="refresh-ccw"></i></button>
         <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
         <div class="dropdown position-relative">
