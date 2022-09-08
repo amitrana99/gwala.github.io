@@ -1,3 +1,8 @@
+
+
+$(window).on("load", function(){
+	$('.loader').hide();
+})
 $(function () {
   'use script'
 
@@ -452,12 +457,34 @@ var contacttable = $('#allcontacts').DataTable({
       extend: 'print',
       text: '<img src="assets/images/print.svg">',
       titleAttr: 'Print'
+    },
+	{
+      text: '<div class="text-black"><i data-feather="trash-2"></i></div>',
+      action: function () {
+              
+      }
     }
 
   ]
 
 
 });
+
+
+
+ $('<div class="pull-right ">' +
+        '<select class="form-select form-select-sm">'+
+  			'<option value="volvo">All Contacts</option>'+
+  			'<option value="saab">Pending for Salesforce</option>'+
+  			'<option value="opel">Duplicate Contacts</option>'+
+				'</select>' + 
+        '</div>').appendTo("#allcontacts_wrapper .dataTables_filter");
+
+ //$(".dataTables_filter label").addClass("pull-right");
+
+
+
+
 
 $(document).ready(function ($) {  
 $('.select2').select2().data('select2').$dropdown.addClass('zoomin');
@@ -478,3 +505,4 @@ $(function () {
 $("#checkAll").on('change', function () {
   $("td input").prop('checked', $(this).prop("checked"));
 });
+
