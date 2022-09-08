@@ -463,6 +463,12 @@ var contacttable = $('#allcontacts').DataTable({
       action: function () {
               
       }
+    },
+			{
+      text: '<img src="assets/images/combine-merge-icon.svg">',
+      action: function () {
+              
+      }
     }
 
   ]
@@ -484,10 +490,8 @@ var contacttable = $('#allcontacts').DataTable({
 
 
 
-
-
 $(document).ready(function ($) {  
-$('.select2').select2().data('select2').$dropdown.addClass('zoomin');
+$('.select2').select2();
 });
 
 

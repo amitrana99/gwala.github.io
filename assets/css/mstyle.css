@@ -1442,6 +1442,9 @@ label.input-has-value {
   max-width: 100%;
   max-height: 20px;
 }
+.dataTables_wrapper .dt-buttons button.btn:hover{
+	background: #ffcfb2!important;
+}
 .dataTables_wrapper .form-select {
   padding: 12px 26px 12px 10px !important;
   color: #212529;
@@ -1902,4 +1905,7 @@ table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after,
 }
 .dataTables_wrapper .dt-buttons button.btn:focus{
 	box-shadow: none;
+}
+.dataTables_wrapper .dt-buttons button.btn:active{
+	background: #ff6400!important;
 }
