@@ -377,7 +377,7 @@ $('.resdatatable').DataTable({
 
 });
 
-$('#allcontacts').DataTable({
+var contacttable = $('#allcontacts').DataTable({
   dom: 'Bfrltp',
   "bLengthChange": true,
   oLanguage: {
@@ -395,10 +395,43 @@ $('#allcontacts').DataTable({
       previous: '&#8592;' // or '←' 
     }
   },
+
   order: [],
-  columnDefs: [ { orderable: false, targets: [0] } ],
+  columnDefs: [{
+    orderable: false,
+    targets: [0, 2, 5]
+  }],
 
+  initComplete: function () {
+    this.api()
+      .columns([2, 5])
+      .every(function (d) {
+        var column = this;
+        var theadname = $("#allcontacts th").eq([d]).text();
+        var select = $(
+            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            + theadname
+            + "</option></select>"
+          )
+          .appendTo($(column.header()).empty())
+          .on('change', function () {
+            var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
+            column.search(val ? '^' + val + '$' : '', true, false).draw();
+
+          });
+
+        column
+          .data()
+          .unique()
+          //.adjust()
+          .sort()
+          .each(function (d, j) {
+            var val = $('<div/>').html(d).text();
+            select.append('<option value="' + val + '">' + val + '</option>');
+          });
+      });
+  },
   buttons: [{
       extend: 'copyHtml5',
       text: '<img src="assets/images/copy.svg">',
@@ -423,8 +456,19 @@ $('#allcontacts').DataTable({
 
   ]
 
+
 });
 
+$(document).ready(function ($) {  
+$('.select2').select2().data('select2').$dropdown.addClass('zoomin');
+});
+
+
+$('#allcontacts tbody').on('click', 'tr', function () {
+  $(this).toggleClass('selected');
+  var checkBoxes = $(this).children().children().find("input");
+  checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+});
 
 $(function () {
   $('.datepicker2').mask('00/00/0000');

@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
 <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
 <link rel="stylesheet" href="assets/css/mstyle.css">
+<link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -88,119 +89,167 @@
                 <thead>
                   <tr>
                     <th> <div class="form-check ms-2 mb-0">
-                        <input class="form-check-input" type="checkbox" value="" id="checkAll">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="checkAll">
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
                     <th>Donor ID</th>
-                    <th>Name</th>
+                    <th class="thname">Name</th>
                     <th>Email</th>
                     <th>Mobile</th>
+                    <th>Source</th>
+                    <th>Created Date</th>
                     <th>Address</th>
                   </tr>
                 </thead>
+				
                 <tbody>
                   <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact1">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
                     <td>KN61251959</td>
-                    <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>Siva Rama Krishna</td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact2">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact2">
                         <label class="form-check-label" for="contact2"> 2 </label>
                       </div></td>
-                    <td>KN61251959</td>
+                    <td>KN61251958</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact3">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact3">
                         <label class="form-check-label" for="contact3"> 3 </label>
                       </div></td>
                     <td>KN61251959</td>
-                    <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>Amit </td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact4">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact4">
                         <label class="form-check-label" for="contact4"> 4 </label>
                       </div></td>
                     <td>KN61251959</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact5">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact5">
                         <label class="form-check-label" for="contact5"> 5 </label>
                       </div></td>
                     <td>KN61251959</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact6">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact6">
                         <label class="form-check-label" for="contact6"> 6 </label>
                       </div></td>
                     <td>KN61251959</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact7">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact7">
                         <label class="form-check-label" for="contact7"> 7 </label>
                       </div></td>
                     <td>KN61251959</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td><a href="#">sivaramakrishna.com</a></td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
-					
-					 <tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" id="contact8">
+                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact8">
                         <label class="form-check-label" for="contact8"> 8 </label>
                       </div></td>
                     <td>KN61251959</td>
                     <td>Siva Rama Krishna </td>
-                    <td><a href="mailto:sivaramakrishna.vandanapu@hotmail.com">sivaramakrishna.vandanapu@hotmail.com</a></td>
+                    <td>sivaramakrishna.com</td>
                     <td>9959568281</td>
-                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat</td>
+                    <td>Krishnayan</td>
+                    <td>2022-09-08</td>
+                    <td>Sarada Sree, A-12, Hargovan Park, Motera, Ahmeabad -380005, Gujarat
+                      <ul class="actions">
+                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
+                        <li><a href=""><i data-feather="edit-2"></i></a></li>
+                        <li><a href=""><i data-feather="eye"></i></a></li>
+                      </ul></td>
                   </tr>
                 </tbody>
+                
               </table>
             </div>
           </div>
@@ -213,14 +262,12 @@
 <!-- content --> 
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script>
 <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
-<script src="assets/vendors/datatable/datatables.min.js"></script> 
-<script type="text/javascript" src="assets/js/lazysizes.min.js" async=""></script> 
+<script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
-<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
-<script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
-<script type="text/javascript" src="assets/js/chart_initial.js"></script> 
+
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

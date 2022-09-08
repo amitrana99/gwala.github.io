@@ -1426,7 +1426,6 @@ label.input-has-value {
   margin-right: 5px;
   border-radius: 6px !important;
   padding: 10px;
-  margin-bottom: 11px;
   width: 40px;
   height: 50px;
   display: flex;
@@ -1456,7 +1455,7 @@ label.input-has-value {
 .dashboard div.dataTables_wrapper div.dataTables_length {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 0px;
 }
 .dataTables_wrapper label .form-control:focus {
   box-shadow: none;
@@ -1466,10 +1465,6 @@ label.input-has-value {
   color: white;
   white-space: nowrap;
   vertical-align: middle;
-}
-.dataTables_scrollBody .dataTable {
-  border-collapse: separate !important;
-  border-spacing: 0 15px !important;
 }
 .dataTables_scrollBody .dataTable tbody tr td:first-child, .dataTable thead tr th:first-child {
   border-top-left-radius: 7px;
@@ -1493,8 +1488,6 @@ div.dataTables_scrollBody {
 }
 .dataTable tr td {
   background-color: #ff64000d !important;
-  
-  
 }
 .dataTable tr {
   /*box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;*/
@@ -1502,6 +1495,7 @@ div.dataTables_scrollBody {
 table.dataTable {
   margin-top: 0px !important;
   vertical-align: middle;
+  border-spacing: 0 10px;
 }
 .dataTables_scrollHeadInner, .table {
   width: 100% !important
@@ -1800,14 +1794,93 @@ ul.iti__country-list {
   color: #212529 !important;
   font-size: 15px;
 }
-.header_logo{
-	position: absolute;
-	top: 0px;
-	left: 20px;
+.header_logo {
+  position: absolute;
+  top: 0px;
+  left: 20px;
 }
-.header_logo img{
-	max-width: 120px;
+.header_logo img {
+  max-width: 120px;
 }
-table.dataTable>thead .sorting:before, table.dataTable>thead .sorting:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before, table.dataTable>thead .sorting_desc_disabled:after{
-	bottom: 0.8rem
+table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after, table.dataTable > thead .sorting_asc:before, table.dataTable > thead .sorting_asc:after, table.dataTable > thead .sorting_desc:before, table.dataTable > thead .sorting_desc:after, table.dataTable > thead .sorting_asc_disabled:before, table.dataTable > thead .sorting_asc_disabled:after, table.dataTable > thead .sorting_desc_disabled:before, table.dataTable > thead .sorting_desc_disabled:after {
+  bottom: 0.8rem
+}
+
+#allcontacts tbody tr {
+  position: relative;
+	cursor: pointer;
+}
+#allcontacts tbody tr:hover td ul.actions{
+	opacity: 1;
+}
+#allcontacts tbody tr td ul.actions {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0 9px;
+  right: 0;
+  background: linear-gradient(-90deg, #f5e5db, transparent);
+  bottom: 0;
+  align-items: center;
+  transition: all 0.3s;
+  flex-direction: row-reverse;
+}
+#allcontacts tbody tr td ul.actions li {}
+#allcontacts tbody tr td ul.actions li a {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 7px;
+  color: black;
+}
+#allcontacts tbody tr.selected{
+	background-color: #f8f1ed;
+}
+.deleterow{
+	color: red;
+}
+.dataTables_wrapper .form-select.tbhdarr{
+	padding: 0px 40px 0 0!important;
+	
+	background-color: #ff6400;
+	color: white;
+	border: 0;
+}
+.form-select-light{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e")!important;
+}
+.select2-container--default .select2-selection--single{
+	border:0px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff!important;
+    background-color: #ff6400;
+    padding-left: 0!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border-color: #ffffff transparent transparent transparent!important
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #ff6400!important;
+}
+.zoomin .select2-dropdown {
+    box-shadow: rgb(119 119 119 / 20%) 0px 2px 8px;
+    border: 0px;
+    border-radius: 8px!important;
+}
+.zoomin {
+    transform: scale(1.2);
+    margin-top: -34px;
+    transform-origin: left top;
+	font-size: 13px!important
+}
+.zoomin .select2-dropdown .select2-search .select2-search__field {
+    margin: 5px;
+    max-width: calc(100% - 10px);
+    border-radius: 4px;
+    border-color: #434a54;
 }
