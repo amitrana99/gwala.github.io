@@ -12,15 +12,14 @@
 <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
 <link rel="stylesheet" href="assets/css/mstyle.css">
 <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+<link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="skin-base animate">
-	<div class="loader">
-	 <img src="assets/images/loader.svg" alt="">
-	</div>
+<div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
   <div class="sidebar-body">
@@ -86,7 +85,24 @@
       <div class="row gy-5">
         <div class="col-md-12">
           <div class="h-100">
-            <h1 class="fs-4 fw-bold mb-4"> My Contacts</h1>
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h1 class="fs-4 fw-bold"> My Contacts</h1>
+              <div class="d-flex">
+                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+					<div class="d-flex align-items-center">
+					<img src="assets/images/daterange.svg" alt="" class="me-3">
+				    <input type="text" class="form-control me-md-3 mw-150px" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+					</div>
+                  <select class="form-select">
+                    <option value="volvo">All Contacts</option>
+                    <option value="saab">Pending for Salesforce</option>
+                    <option value="opel">Duplicate Contacts</option>
+                  </select>
+					<button class="btn  btn-primary1 py-2 ms-md-3"> <i data-feather="plus"></i> Add New Contact</button>
+                </div>
+              </div>
+            </div>
             <div class="table-responsive mt-2 dashboard">
               <table class="table w-100" id="allcontacts">
                 <thead>
@@ -266,6 +282,8 @@
 <script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
 <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script>

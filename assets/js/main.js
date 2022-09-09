@@ -1,7 +1,5 @@
-
-
-$(window).on("load", function(){
-	$('.loader').hide();
+$(window).on("load", function () {
+  $('.loader').hide();
 })
 $(function () {
   'use script'
@@ -458,16 +456,16 @@ var contacttable = $('#allcontacts').DataTable({
       text: '<img src="assets/images/print.svg">',
       titleAttr: 'Print'
     },
-	{
+    {
       text: '<div class="text-black"><i data-feather="trash-2"></i></div>',
       action: function () {
-              
+
       }
     },
-			{
+    {
       text: '<img src="assets/images/combine-merge-icon.svg">',
       action: function () {
-              
+
       }
     }
 
@@ -478,20 +476,10 @@ var contacttable = $('#allcontacts').DataTable({
 
 
 
- $('<div class="pull-right ">' +
-        '<select class="form-select form-select-sm">'+
-  			'<option value="volvo">All Contacts</option>'+
-  			'<option value="saab">Pending for Salesforce</option>'+
-  			'<option value="opel">Duplicate Contacts</option>'+
-				'</select>' + 
-        '</div>').appendTo("#allcontacts_wrapper .dataTables_filter");
-
- //$(".dataTables_filter label").addClass("pull-right");
 
 
-
-$(document).ready(function ($) {  
-$('.select2').select2();
+$(document).ready(function ($) {
+  $('.select2').select2();
 });
 
 
@@ -510,3 +498,11 @@ $("#checkAll").on('change', function () {
   $("td input").prop('checked', $(this).prop("checked"));
 });
 
+
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});

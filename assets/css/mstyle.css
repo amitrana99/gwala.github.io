@@ -41,6 +41,7 @@ a {
   border: 0;
   padding: 5px 15px;
   border-radius: 5px;
+  white-space: nowrap;
 }
 .btn-primary1:hover {
   background-color: #e25900;
@@ -1417,10 +1418,10 @@ label.input-has-value {
 }
 .dashboard div.dataTables_wrapper div.dataTables_filter {
   position: absolute;
-  right: 120px;
+  right: 108px;
   top: 0px;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 .dataTables_wrapper .dt-buttons button.btn {
   background: #feebe0 !important;
@@ -1908,4 +1909,7 @@ table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after,
 }
 .dataTables_wrapper .dt-buttons button.btn:active{
 	background: #ff6400!important;
+}	
+.mw-150px{
+	min-width: 220px;
 }
