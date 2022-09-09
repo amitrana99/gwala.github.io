@@ -381,7 +381,7 @@ $('.resdatatable').DataTable({
 });
 
 var contacttable = $('#allcontacts').DataTable({
-  dom: 'Bfrltp',
+  dom: 'Bfrltip',
   "bLengthChange": true,
   oLanguage: {
     sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
@@ -401,9 +401,18 @@ var contacttable = $('#allcontacts').DataTable({
 
   order: [],
   columnDefs: [{
-    orderable: false,
-    targets: [0, 2, 5]
-  }],
+      orderable: false,
+      targets: [0, 2, 5]
+    },
+    {
+      targets: 4,
+      "visible": false,
+    },
+    {
+      targets: 0,
+      className: 'noVis'
+    }
+  ],
 
   initComplete: function () {
     this.api()
@@ -438,22 +447,37 @@ var contacttable = $('#allcontacts').DataTable({
   buttons: [{
       extend: 'copyHtml5',
       text: '<img src="assets/images/copy.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
       titleAttr: 'Copy'
     }, {
       extend: 'excelHtml5',
+      exportOptions: {
+        columns: ':visible'
+      },
       text: '<img src="assets/images/excel.svg">',
       titleAttr: 'Excel'
     }, {
       extend: 'csvHtml5',
       text: '<img src="assets/images/csv.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
       titleAttr: 'CSV'
     }, {
       extend: 'pdfHtml5',
       text: '<img src="assets/images/pdf.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
       titleAttr: 'PDF'
     }, {
       extend: 'print',
       text: '<img src="assets/images/print.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
       titleAttr: 'Print'
     },
     {
@@ -467,15 +491,19 @@ var contacttable = $('#allcontacts').DataTable({
       action: function () {
 
       }
+    },
+    {
+      extend: 'colvis',
+      columns: ':not(.noVis)',
+      text: '<img src="assets/images/column.svg" class="me-2">',
+      titleAttr: 'Column Visibility'
     }
+
 
   ]
 
 
 });
-
-
-
 
 
 $(document).ready(function ($) {
@@ -499,10 +527,10 @@ $("#checkAll").on('change', function () {
 });
 
 
-$(function() {
+$(function () {
   $('input[name="daterange"]').daterangepicker({
     opens: 'left'
-  }, function(start, end, label) {
+  }, function (start, end, label) {
     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   });
 });

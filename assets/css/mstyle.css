@@ -1913,3 +1913,28 @@ table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after,
 .mw-150px{
 	min-width: 220px;
 }
+.buttons-colvis{
+	min-width: 70px;
+	color: black
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+	background-color: #ff6400;}
+
+div.dataTables_wrapper div.dataTables_info {   
+    max-width: 50%;
+    float: left;
+}
+div.dataTables_wrapper div.dataTables_paginate {   
+    max-width: 50%;
+    margin-left: auto;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #ff6400!important;
+   
+}
+.daterangepicker td.in-range {
+    background-color: #feebe0!important;
+   
+}
