@@ -404,46 +404,14 @@ var contacttable = $('#allcontacts').DataTable({
       orderable: false,
       targets: [0, 2, 5]
     },
-    {
-      targets: 4,
-      "visible": false,
-    },
+    
     {
       targets: 0,
       className: 'noVis'
     }
   ],
 
-  initComplete: function () {
-    this.api()
-      .columns([2, 5])
-      .every(function (d) {
-        var column = this;
-        var theadname = $("#allcontacts th").eq([d]).text();
-        var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
-            + theadname
-            + "</option></select>"
-          )
-          .appendTo($(column.header()).empty())
-          .on('change', function () {
-            var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-            column.search(val ? '^' + val + '$' : '', true, false).draw();
-
-          });
-
-        column
-          .data()
-          .unique()
-          //.adjust()
-          .sort()
-          .each(function (d, j) {
-            var val = $('<div/>').html(d).text();
-            select.append('<option value="' + val + '">' + val + '</option>');
-          });
-      });
-  },
   buttons: [{
       extend: 'copyHtml5',
       text: '<img src="assets/images/copy.svg">',
@@ -496,13 +464,43 @@ var contacttable = $('#allcontacts').DataTable({
       extend: 'colvis',
       columns: ':not(.noVis)',
       text: '<img src="assets/images/column.svg" class="me-2">',
-      titleAttr: 'Column Visibility'
+      titleAttr: 'Column Visibility',
+      position: 'dropdown'
     }
 
 
-  ]
+  ],
 
+  initComplete: function () {
+    this.api()
+      .columns([2, 6])
+      .every(function (d) {
+        var column = this;
+        var theadname = $("#allcontacts th").eq([d]).text();
+        var select = $(
+            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            + theadname
+            + "</option></select>"
+          )
+          .appendTo($(column.header()).empty())
+          .on('change', function () {
+            var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
+            column.search(val ? '^' + val + '$' : '', true, false).draw();
+
+          });
+
+        column
+          .data()
+          .unique()
+          //.adjust()
+          .sort()
+          .each(function (d, j) {
+            var val = $('<div/>').html(d).text();
+            select.append('<option value="' + val + '">' + val + '</option>');
+          });
+      });
+  },
 });
 
 

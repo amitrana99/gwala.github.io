@@ -1525,11 +1525,11 @@ table.dataTable {
 @media (max-width: 767px) {
   .dashboard .dataTables_wrapper .dataTables_filter {
     position: relative !important;
-    right: 72px !important;
-    margin-bottom: 15px;
+    right: 7px !important;
+    margin-bottom: -2px;
   }
   div.dataTables_wrapper div.dataTables_length {
-    top: 70px !important;
+    top: 58px !important;
   }
 }
 .ecstabs li {
@@ -1937,4 +1937,11 @@ div.dataTables_wrapper div.dataTables_paginate {
 .daterangepicker td.in-range {
     background-color: #feebe0!important;
    
+}
+table.dataTable>tbody>tr.selected>* {
+    box-shadow: inset 0 0 0 9999px rgb(247 231 221);
+    color: black;
+}
+#contactsbarchart{
+	max-height: 220px!important
 }

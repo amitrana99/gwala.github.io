@@ -58,10 +58,10 @@
   <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i> </a>
     <div class="d-flex align-items-center justify-content-between w-100">
       <div class=""> <img src="assets/images/logo2.png" width="280" alt="" class="d-none d-lg-block img-fluid"> </div>
-      <div class="d-flex align-items-center "> <a href="allpayments.html" class="text-black me-3" data-bs-toggle="tooltip" data-bs-placement="top"
+      <div class="d-flex align-items-center "> <a href="allpayments.html" class="text-black me-3 d-none d-md-block" data-bs-toggle="tooltip" data-bs-placement="top"
         data-bs-custom-class="custom-tooltip"
         data-bs-title="Last Donation Received At"> 43 Second Ago </a>
-        <button class="ms-auto btn me-4 btn-light"><i data-feather="refresh-ccw"></i></button>
+        <button class="ms-auto btn me-4 btn-light d-none d-lg-block"><i data-feather="refresh-ccw"></i></button>
         <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
         <div class="dropdown position-relative">
           <button class="btn btn-outline-light fs-14 d-flex align-items-center  lh-sm text-start text-black border-black-50 rounded-pill p-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,23 +84,24 @@
     <div class="container-fluid">
       <div class="row gy-5">
         <div class="col-md-12">
-			
           <div class="h-100">
-            <div class="d-flex align-items-center justify-content-between mb-4">
-              <h1 class="fs-4 fw-bold"> My Contacts</h1>
-              <div class="d-flex">
+            <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
+              <h1 class="fs-4 fw-bold text-nowrap"> My Contacts</h1>
+              <div class="d-flex mt-2 mt-md-0">
                 <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
-					<div class="d-flex align-items-center">
-					<img src="assets/images/daterange.svg" alt="" class="me-3">
-				    <input type="text" class="form-control me-md-3 mw-150px" name="daterange" value="01/01/2018 - 01/15/2018" />
-
-					</div>
-                  <select class="form-select">
+                  <div class="d-flex align-items-center"> <img src="assets/images/daterange.svg" alt="" class="me-3">
+                    <input type="text" class="form-control me-md-3 mw-150px" name="daterange" value="01/01/2018 - 01/15/2018" />
+                  </div>
+					<div class="d-flex  mt-3 mt-md-0 align-items-center">
+					<select class="form-select me-2 me-md-0">
                     <option value="volvo">All Contacts</option>
                     <option value="saab">Pending for Salesforce</option>
                     <option value="opel">Duplicate Contacts</option>
                   </select>
-					<button class="btn  btn-primary1 py-2 ms-md-3"> <i data-feather="plus"></i> Add New Contact</button>
+						 <button class="btn btn-primary1 py-2 ms-md-3 "> <i data-feather="plus"></i> Add New Contact</button>
+					</div>
+                  
+                 
                 </div>
               </div>
             </div>
@@ -272,6 +273,37 @@
             </div>
           </div>
         </div>
+        <div class="col-xl-12">
+           <div class="card card-2 h-100">
+            <div class="card-body">
+              <h1 class="card-title d-flex align-items-center ps-5 position-relative">
+				  <span class="title-icon"><i data-feather="users"></i></span>
+				  <span class="ms-4">New Contacts</span>
+				  
+				  
+                <div class="ms-auto d-flex align-items-center">
+                  <div class="btn-group btn-group-sm ms-2" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onClick="timeframe(this)" value="day" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Day</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onClick="timeframe(this)" value="month">
+                    <label class="btn btn-outline-primary" for="btnradio2">Month</label>
+                  </div>
+                </div>
+              </h1>
+				<div class="row mt-4 justify-content-center">
+                <div class="col-lg-3 d-flex align-items-center"> <a href="#"> <span class="fs-14">Domestic</span>
+                  <h2 class="fs-5 text-bl fw-bold">2000</h2> 
+                  </a> <a href="#"> <span class="fs-14">International</span>
+                  <h2 class="fs-5 text-primary1 fw-bold">1500</h2>
+                  </a> </div>
+                <div class="col-lg-12 mt-4">
+                  <canvas id="contactsbarchart" class="w-100 mw-100"></canvas>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -281,11 +313,16 @@
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
+
 <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
 <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script>
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script>
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
