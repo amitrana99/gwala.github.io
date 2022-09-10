@@ -155,6 +155,7 @@ a {
     left: 0;
     opacity: 1;
   }
+	
 }
 .sidebar.minimized {
   width: 60px;
@@ -1094,6 +1095,9 @@ ul.dropdown-menu li a {
   background: rgba(0, 0, 0, 0.9);
 }
 @media (max-width:1000px) {
+	.dataTables_wrapper .dt-buttons button.btn{
+		margin-bottom: 5px;
+	}
   .content-body {
     padding: 0
   }
@@ -1522,15 +1526,26 @@ table.dataTable {
   border: 1px solid #dee2e6 !important;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+@media (max-width: 600px) {
+	div#allcontacts_wrapper div.dataTables_length {
+    top: 116px !important;
+}	
+}
+
+@media  (min-width:600px) and (max-width: 767px) {
+div#allcontacts_wrapper div.dataTables_length {
+    top: 60px !important;
+}	
+}
+
 @media (max-width: 767px) {
   .dashboard .dataTables_wrapper .dataTables_filter {
     position: relative !important;
     right: 7px !important;
     margin-bottom: -2px;
   }
-  div.dataTables_wrapper div.dataTables_length {
-    top: 58px !important;
-  }
+	
+
 }
 .ecstabs li {
   margin-right: 15px;
@@ -1945,7 +1960,7 @@ table.dataTable>tbody>tr.selected>* {
 #allcontacts_wrapper .buttons-print:after{
 content:"";border-right: 2px solid #fbf3f0;position: absolute;right: -15px;height: 100%;}
 
-.apibtn{min-width:170px; color:black;}
+.apibtn{min-width:170px; color:black;max-width: 176px;}
 .apibtn span{
 	
 font-size: 14px;
@@ -1957,7 +1972,7 @@ font-weight: 500;
 .apibtn span:hover, .apibtn:hover{
 	color: black!important
 }
-table.dataTable td a{color: red;}
+table.dataTable td a{color: #e76512;font-weight: 500;}
 
 table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before{
 	background-color: #ff6400!important;
