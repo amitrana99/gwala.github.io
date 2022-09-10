@@ -1987,3 +1987,34 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 .h-20 {
   height: 20px;
 }
+.contactdetaillist{
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+.contactdetaillist li{
+	margin-bottom: 7px;
+	position: relative;
+	padding-left: 21px;
+	
+}
+
+.contactdetaillist li:last-child{
+	margin-bottom: 0
+}
+
+.contactdetaillist li:after{
+	content:
+	"";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	left: 0;
+	border-radius: 1px;
+	top: 7px;
+	transform: rotate(45deg);
+	background-color: #ff640038;
+	border: 1px solid #ff6400;
+}
+
+
