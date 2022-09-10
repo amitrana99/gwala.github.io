@@ -151,7 +151,7 @@ const config = {
   data,
   options: {
     responsive: true,
-   
+
     maintainAspectRatio: false,
     scales: {
       x: {
@@ -171,13 +171,13 @@ const config = {
       }
     },
     plugins: {
-		title: {
+      title: {
         display: false,
       },
       legend: false,
       datalabels: {
         //labels: 'y',
-        anchor: 'end',
+        //anchor: 'end',
         align: 'top',
         formatter: (val) => {
           return val.y

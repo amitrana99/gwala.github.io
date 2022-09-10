@@ -1428,7 +1428,7 @@ label.input-has-value {
   border: 2px solid #f6ccbe;
   margin-right: 5px;
   border-radius: 6px !important;
-  padding: 10px;
+  padding: 0;
   width: 40px;
   height: 50px;
   display: flex;
@@ -1945,3 +1945,20 @@ table.dataTable>tbody>tr.selected>* {
 #allcontacts_wrapper .buttons-print:after{
 content:"";border-right: 2px solid #fbf3f0;position: absolute;right: -15px;height: 100%;}
 
+.apibtn{min-width:170px; color:black;}
+.apibtn span{
+	
+font-size: 14px;
+	display: block;
+line-height: 20px;
+	
+font-weight: 500;
+}
+.apibtn span:hover, .apibtn:hover{
+	color: black!important
+}
+table.dataTable td a{color: red;}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before{
+	background-color: #ff6400!important;
+}

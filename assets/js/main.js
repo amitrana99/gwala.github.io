@@ -404,7 +404,7 @@ var contacttable = $('#allcontacts').DataTable({
       orderable: false,
       targets: [0, 2, 5]
     },
-    
+
     {
       targets: 0,
       className: 'noVis'
@@ -466,6 +466,14 @@ var contacttable = $('#allcontacts').DataTable({
       text: '<img src="assets/images/column.svg" class="me-2">',
       titleAttr: 'Column Visibility',
       position: 'dropdown'
+    },
+    {
+      text: 'save contact from krishnayan panel',
+      titleAttr: 'save contact from krishnayan panel',
+      className: "apibtn",
+      action: function (e, dt, node, config) {
+        alert('Button activated');
+      }
     }
 
 
@@ -473,7 +481,7 @@ var contacttable = $('#allcontacts').DataTable({
 
   initComplete: function () {
     this.api()
-      .columns([2, 6])
+      .columns([1, 2, 3, 4, 5, 6, 7, 8])
       .every(function (d) {
         var column = this;
         var theadname = $("#allcontacts th").eq([d]).text();
@@ -510,7 +518,7 @@ $(document).ready(function ($) {
 
 
 $('#allcontacts tbody').on('click', 'tr', function () {
-  $(this).toggleClass('selected');
+  // $(this).toggleClass('selected');
   var checkBoxes = $(this).children().children().find("input");
   checkBoxes.prop("checked", !checkBoxes.prop("checked"));
 });
