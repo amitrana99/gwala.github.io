@@ -1829,7 +1829,7 @@ table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after,
 }
 #allcontacts tbody tr {
   position: relative;
-  cursor: pointer;
+  
 }
 #allcontacts tbody tr:hover td ul.actions {
   opacity: 1;

@@ -382,7 +382,9 @@ $('.resdatatable').DataTable({
 
 var contacttable = $('#allcontacts').DataTable({
   dom: 'Bfrltip',
+  "aaSorting": [],
   "bLengthChange": true,
+ "ordering": false,
   oLanguage: {
     sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
   },
@@ -399,11 +401,11 @@ var contacttable = $('#allcontacts').DataTable({
     }
   },
 
-  order: [],
-  columnDefs: [{
-      orderable: false,
-      targets: [0, 2, 5]
-    },
+"aoColumnDefs": [
+        { "bSortable": false, "aTargets": [ 0, 1, 2, 3 ] }, 
+        { "bSearchable": false, "aTargets": [ 0, 1, 2, 3 ] }
+    ],
+  columnDefs: [
 
     {
       targets: 0,
@@ -516,12 +518,12 @@ $(document).ready(function ($) {
   $('.select2').select2();
 });
 
-
-$('#allcontacts tbody').on('click', 'tr', function () {
-  // $(this).toggleClass('selected');
-  var checkBoxes = $(this).children().children().find("input");
-  checkBoxes.prop("checked", !checkBoxes.prop("checked"));
-});
+//
+//$('#allcontacts tbody').on('click', 'tr', function () {
+//  // $(this).toggleClass('selected');
+//  var checkBoxes = $(this).children().children().find("input");
+//  checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+//});
 
 $(function () {
   $('.datepicker2').mask('00/00/0000');
