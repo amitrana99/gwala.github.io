@@ -1099,6 +1099,9 @@ ul.dropdown-menu li a {
   background: rgba(0, 0, 0, 0.9);
 }
 @media (max-width:1000px) {
+	.contactdetaillist li{
+		width: 100%!important
+	}
   .dataTables_wrapper .dt-buttons button.btn {
     margin-bottom: 5px;
   }
@@ -1990,13 +1993,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 .contactdetaillist{
 	list-style: none;
 	padding: 0;
-	margin: 0
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fef3ec;
+	padding: 9px;
+	gap: 5px;
 }
 .contactdetaillist li{
-	margin-bottom: 7px;
+	margin-bottom: 0px;
 	position: relative;
-	padding-left: 21px;
-	
+	padding-left: 22px;
+	width: calc(33% - 24px);
+	margin: 0 10px;
+	font-size: 14px;
 }
 
 .contactdetaillist li:last-child{
@@ -2009,7 +2019,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	position: absolute;
 	width: 9px;
 	height: 9px;
-	left: 0;
+	left: 0px;
 	border-radius: 1px;
 	top: 7px;
 	transform: rotate(45deg);
