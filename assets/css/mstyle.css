@@ -1952,11 +1952,11 @@ table.dataTable > tbody > tr.selected > * {
 #contactsbarchart {
   max-height: 220px !important
 }
-#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print {
+#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print, #allpayments_wrapper .buttons-print {
   margin-right: 26px !important;
   position: relative;
 }
-#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after{
+#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after, #allpayments_wrapper .buttons-print:after{
   content: "";
   border-right: 2px solid #fbf3f0;
   position: absolute;

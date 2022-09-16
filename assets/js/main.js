@@ -766,8 +766,8 @@ $('#allpayments').DataTable({
       position: 'dropdown'
     },
     {
-      text: "<div class='dropdown-toggle text-black d-flex align-items-center' data-bs-toggle='dropdown' aria-expanded='false'><span class='mx-2 py-25'>API</span></div><ul class='dropdown-menu'><li>save RD from krishnayan panel</li><li>Update RD from Razor pay</li></ul>",
-      titleAttr: 'save RD from krishnayan panel',
+      text: "<div class='dropdown-toggle text-black d-flex align-items-center' data-bs-toggle='dropdown' aria-expanded='false'><span class='mx-2 py-25'>API</span></div><ul class='dropdown-menu'><li> payment not saved in Gwala</li><li>Payment not updated from Gateway Payu</li><li>Payment not updated from Gateway Razor Pay</li></ul>",
+      titleAttr: 'All Payments',
       className: "apidropdown",
       position: 'dropdown'
      
