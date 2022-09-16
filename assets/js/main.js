@@ -380,11 +380,12 @@ $('.resdatatable').DataTable({
 
 });
 
-var contacttable = $('#allcontacts').DataTable({
+
+$('#allcontacts').DataTable({
   dom: 'Bfrltip',
   "aaSorting": [],
   "bLengthChange": true,
- "ordering": false,
+  "ordering": false,
   oLanguage: {
     sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
   },
@@ -401,10 +402,15 @@ var contacttable = $('#allcontacts').DataTable({
     }
   },
 
-"aoColumnDefs": [
-        { "bSortable": false, "aTargets": [ 0, 1, 2, 3 ] }, 
-        { "bSearchable": false, "aTargets": [ 0, 1, 2, 3 ] }
-    ],
+  "aoColumnDefs": [{
+      "bSortable": false,
+      "aTargets": [0, 1, 2, 3]
+    },
+    {
+      "bSearchable": false,
+      "aTargets": [0, 1, 2, 3]
+    }
+  ],
   columnDefs: [
 
     {
@@ -499,7 +505,10 @@ var contacttable = $('#allcontacts').DataTable({
             column.search(val ? '^' + val + '$' : '', true, false).draw();
 
           });
-
+        select.each(function () {
+          select.select2();
+          select.val(null).trigger('change');
+        });
         column
           .data()
           .unique()
@@ -511,12 +520,154 @@ var contacttable = $('#allcontacts').DataTable({
           });
       });
   },
+
 });
 
 
-$(document).ready(function ($) {
-  $('.select2').select2();
+$('#allrd').DataTable({
+  dom: 'Bfrltip',
+  "aaSorting": [],
+  "bLengthChange": true,
+  "ordering": false,
+  oLanguage: {
+    sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
+  },
+  responsive: true,
+  //scrollX: '100%',
+  pageLength: 10,
+  lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
+  language: {
+    search: '<img src="assets/images/search.svg">',
+    searchPlaceholder: "Search records",
+    paginate: {
+      next: '&#8594;', // or '→'
+      previous: '&#8592;' // or '←' 
+    }
+  },
+
+  "aoColumnDefs": [{
+      "bSortable": false,
+      "aTargets": [0, 1, 2, 3]
+    },
+    {
+      "bSearchable": false,
+      "aTargets": [0, 1, 2, 3]
+    }
+  ],
+  columnDefs: [
+
+    {
+      targets: 0,
+      className: 'noVis'
+    }
+  ],
+
+
+  buttons: [{
+      extend: 'copyHtml5',
+      text: '<img src="assets/images/copy.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
+      titleAttr: 'Copy'
+    }, {
+      extend: 'excelHtml5',
+      exportOptions: {
+        columns: ':visible'
+      },
+      text: '<img src="assets/images/excel.svg">',
+      titleAttr: 'Excel'
+    }, {
+      extend: 'csvHtml5',
+      text: '<img src="assets/images/csv.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
+      titleAttr: 'CSV'
+    }, {
+      extend: 'pdfHtml5',
+      text: '<img src="assets/images/pdf.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
+      titleAttr: 'PDF'
+    }, {
+      extend: 'print',
+      text: '<img src="assets/images/print.svg">',
+      exportOptions: {
+        columns: ':visible'
+      },
+      titleAttr: 'Print'
+    },
+    {
+      text: '<div class="text-black"><i data-feather="trash-2"></i></div>',
+      action: function () {
+
+      }
+    },
+    {
+      text: '<img src="assets/images/combine-merge-icon.svg">',
+      action: function () {
+
+      }
+    },
+    {
+      extend: 'colvis',
+      columns: ':not(.noVis)',
+      text: '<img src="assets/images/column.svg" class="me-2">',
+      titleAttr: 'Column Visibility',
+      position: 'dropdown'
+    },
+    {
+      text: "<div class='dropdown-toggle text-black d-flex align-items-center' data-bs-toggle='dropdown' aria-expanded='false'><span class='mx-2 py-25'>API</span></div><ul class='dropdown-menu'><li>save RD from krishnayan panel</li><li>Update RD from Razor pay</li></ul>",
+      titleAttr: 'save RD from krishnayan panel',
+      className: "apidropdown",
+      position: 'dropdown'
+     
+    }
+
+
+  ],
+
+  initComplete: function () {
+    this.api()
+      .columns([1, 2, 3, 4, 5, 6, 7, 8])
+      .every(function (d) {
+        var column = this;
+        var theadname = $("#allrd th").eq([d]).text();
+        var select = $(
+            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            + theadname
+            + "</option></select>"
+          )
+          .appendTo($(column.header()).empty())
+          .on('change', function () {
+            var val = $.fn.dataTable.util.escapeRegex($(this).val());
+
+            column.search(val ? '^' + val + '$' : '', true, false).draw();
+
+          });
+
+        select.each(function () {
+          select.select2();
+          select.val(null).trigger('change');
+        });
+        column
+          .data()
+          .unique()
+          //.adjust()
+          .sort()
+          .each(function (d, j) {
+            var val = $('<div/>').html(d).text();
+            select.append('<option value="' + val + '">' + val + '</option>');
+          });
+
+
+      });
+  },
+
 });
+
 
 //
 //$('#allcontacts tbody').on('click', 'tr', function () {

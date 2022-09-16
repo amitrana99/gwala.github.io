@@ -1952,11 +1952,11 @@ table.dataTable > tbody > tr.selected > * {
 #contactsbarchart {
   max-height: 220px !important
 }
-#allcontacts_wrapper .buttons-print {
+#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print {
   margin-right: 26px !important;
   position: relative;
 }
-#allcontacts_wrapper .buttons-print:after {
+#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after{
   content: "";
   border-right: 2px solid #fbf3f0;
   position: absolute;
@@ -2028,3 +2028,26 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 }
 
 
+.apidropdown{
+	min-width: 70px
+}
+
+
+.apidropdown span{
+	height: 100%;
+	width: 100%;
+}
+.apidropdown span .dropdown-toggle{
+	height: 100%;
+	padding: 0 8px 0 0;
+}
+.py-25{
+	padding-top: 11px!important;
+}
+.apidropdown .dropdown-menu li:hover{
+	background-color: #ff6400!important;
+	color: white;
+}
+.apidropdown .dropdown-menu li{
+	padding: 5px 10px;
+}

@@ -25,8 +25,8 @@
   <div class="sidebar-body">
     <ul class="nav-sidebar">
       <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
-      <li class="nav-item active"> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
-      <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item "> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
+      <li class="nav-item active"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
       <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">All Records </a> <a href="" class="sub-link">Register New data</a> <a href="" class="sub-link">Schduled Events</a> </nav>
@@ -84,7 +84,7 @@
         <div class="col-md-12">
           <div class="h-100">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
-              <h1 class="fs-4 fw-bold text-nowrap"> My Contacts</h1>
+              <h1 class="fs-4 fw-bold text-nowrap"> Recurring Donation</h1>
               <div class="d-flex mt-2 mt-md-0">
                 <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
                   <div class="d-flex align-items-center"> <img src="assets/images/daterange.svg" alt="" class="me-3">
@@ -92,17 +92,17 @@
                   </div>
                   <div class="d-flex  mt-3 mt-md-0 align-items-center">
                     <select class="form-select me-2 me-md-0">
-                      <option value="">All Contacts</option>
+                      <option value="">All RD</option>
                       <option value="">Pending for Salesforce</option>
-                      <option value="">Duplicate Contacts</option>
+                      
                     </select>
-                    <button class="btn btn-primary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Add New Contact</button>
+                    <button class="btn btn-primary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Add New RD</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="table-responsive mt-2 dashboard">
-              <table class="table w-100" id="allcontacts">
+              <table class="table w-100" id="allrd">
                 <thead>
                   <tr>
                     <th> <div class="form-check ms-2 mb-0">
@@ -110,200 +110,69 @@
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
-                    <th>Donor ID</th>
-                    <th class="thname">Name</th>
-                    <th>Email</th>
-                    <th>Mobile</th>
-                    <th>Whatsapp Number</th>
-                    <th>Created Date</th>
-                    <th>State</th>
-                    <th>City</th>
+                    <th>UMRN ID</th>
+                    <th class="thname">Payment Frequency</th>
+                    <th>ECS Amount</th>
+                    <th>Next Donation Date</th>                   
+                    <th>Mandate Status</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                 <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html"> Siva Rama Krishna </a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Haryana</td>
-                    <td>Gurgaon South City II Gurgaon
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
+                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</a></td>
+                    <td>Monthly</td>
+                    <td>100 </td>
+					<td>20-Aug-1992</td>
+                    <td>Active</td>
                   </tr>
-                  <tr>
+					
+					 <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact2">
                         <label class="form-check-label" for="contact2"> 2 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251958</a></td>
-                    <td><a href="contactdetail.html">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Mumbai
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
+                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</a></td>
+                    <td>Monthly</td>
+                    <td>100 </td>
+					<td>20-Aug-1992</td>
+                    <td>Active</td>
                   </tr>
-                  <tr>
+					
+					 <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact3">
                         <label class="form-check-label" for="contact3"> 3 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html">Amit</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>West Bengal </td>
-                    <td>Kolkata
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
+                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</a></td>
+                    <td>Monthly</td>
+                    <td>100 </td>
+					<td>20-Aug-1992</td>
+                    <td>Active</td>
                   </tr>
-                  <tr>
+					
+					 <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact4">
                         <label class="form-check-label" for="contact4"> 4 </label>
                       </div></td>
-                    <td><a href="#">KN61251959</a></td>
-                    <td><a href="#">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Pune
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
+                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#showdetails">PUNB0000000006584559</a></td>
+                    <td>Monthly</td>
+                    <td>100 </td>
+					<td>20-Aug-1992</td>
+                    <td>Active</td>
                   </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact5">
-                        <label class="form-check-label" for="contact5"> 5 </label>
-                      </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Pune
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
-                  </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact6">
-                        <label class="form-check-label" for="contact6"> 6 </label>
-                      </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Pune
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
-                  </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact7">
-                        <label class="form-check-label" for="contact7"> 7 </label>
-                      </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Pune
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
-                  </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact8">
-                        <label class="form-check-label" for="contact8"> 8 </label>
-                      </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
-                    <td><a href="contactdetail.html">Siva Rama Krishna</a></td>
-                    <td>sivaramakrishna.com</td>
-                    <td>9959568281</td>
-                    <td>9959568281</td>
-                    <td>2022-09-08</td>
-                    <td>Maharashtra</td>
-                    <td>Pune
-                      <ul class="actions">
-                        <li><a href=""><i data-feather="trash-2" class="deleterow"></i></a></li>
-                        <li><a href=""><i data-feather="edit-2"></i></a></li>
-                        <li><a href=""><i data-feather="eye"></i></a></li>
-                      </ul></td>
-                  </tr>
+					
+                
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <div class="col-xl-12">
-          <div class="card card-2 h-100">
-            <div class="card-body">
-              <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"><i data-feather="users"></i></span> <span class="ms-4">New Contacts</span>
-                <div class="ms-auto d-flex align-items-center">
-                  <div class="btn-group btn-group-sm ms-2" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onClick="timeframe(this)" value="day" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">Day</label>
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onClick="timeframe(this)" value="month">
-                    <label class="btn btn-outline-primary" for="btnradio2">Month</label>
-                  </div>
-                </div>
-              </h1>
-              <div class="row mt-4 justify-content-center">
-                <div class="col-lg-3 d-flex align-items-center"> <a href="#"> <span class="fs-14">Domestic</span>
-                  <h2 class="fs-5 text-bl fw-bold">2000</h2>
-                  </a> <a href="#"> <span class="fs-14">International</span>
-                  <h2 class="fs-5 text-primary1 fw-bold">1500</h2>
-                  </a> </div>
-                <div class="col-lg-12 mt-4">
-                  <canvas id="contactsbarchart" class="w-100 mw-100"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
