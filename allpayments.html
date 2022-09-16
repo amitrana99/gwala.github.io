@@ -80,11 +80,11 @@
   <!-- content-header -->
   <div class="content-body">
     <div class="container-fluid">
-      <div class="row gy-5">
+      <div class="row gy-4">
         <div class="col-md-12">
           <div class="h-100">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
-              <h1 class="fs-4 fw-bold text-nowrap"> My Payments</h1>
+              <h1 class="fs-4 fw-bold text-nowrap"> All Payments</h1>
               <div class="d-flex mt-2 mt-md-0">
                 <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
                   <div class="d-flex align-items-center"> <img src="assets/images/daterange.svg" alt="" class="me-3">
@@ -109,13 +109,13 @@
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
-                    <th>Donor ID</th>
+					<th>Receipt No.</th>
+                    
                     <th class="thname">Name</th>
                     <th>Amount</th>
                     <th>Payment Mode</th>
                     <th>Payment Date</th>
                     <th>Status</th>
-                    <th>Total payments Receipt</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -124,13 +124,12 @@
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
+                    <td><a href="allpayment-detail.html">KN61251959</a></td>
                     <td><a href="contactdetail.html"> Siva Rama Krishna </a></td>
                     <td>500</td>
                     <td>Offline</td>
                     <td>2022-09-08</td>
                     <td>Success</td>
-                    <td>15000</td>
                   </tr>
 					
 					<tr>
@@ -138,13 +137,12 @@
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact2">
                         <label class="form-check-label" for="contact2"> 1 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
+                    <td><a href="allpayment-detail.html">KN61251959</a></td>
                     <td><a href="contactdetail.html"> Siva Rama Krishna </a></td>
                     <td>500</td>
                     <td>Offline</td>
                     <td>2022-09-08</td>
                     <td>Success</td>
-                    <td>15000</td>
                   </tr>
 					
 					<tr>
@@ -152,13 +150,12 @@
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact3">
                         <label class="form-check-label" for="contact3"> 1 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
+                    <td><a href="allpayment-detail.html">KN61251959</a></td>
                     <td><a href="contactdetail.html"> Siva Rama Krishna </a></td>
                     <td>500</td>
                     <td>Offline</td>
                     <td>2022-09-08</td>
                     <td>Success</td>
-                    <td>15000</td>
                   </tr>
 					
 					<tr>
@@ -166,45 +163,130 @@
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact4">
                         <label class="form-check-label" for="contact4"> 1 </label>
                       </div></td>
-                    <td><a href="contactdetail.html">KN61251959</a></td>
+                    <td><a href="allpayment-detail.html">KN61251959</a></td>
                     <td><a href="contactdetail.html"> Siva Rama Krishna </a></td>
                     <td>500</td>
                     <td>Offline</td>
                     <td>2022-09-08</td>
                     <td>Success</td>
-                    <td>15000</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <div class="col-xl-12">
-          <div class="card card-2 h-100">
-            <div class="card-body">
-              <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"><i data-feather="users"></i></span> <span class="ms-4">New Payments</span>
-                <div class="ms-auto d-flex align-items-center">
-                  <div class="btn-group btn-group-sm ms-2" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onClick="timeframe(this)" value="day" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">Day</label>
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onClick="timeframe(this)" value="month">
-                    <label class="btn btn-outline-primary" for="btnradio2">Month</label>
-                  </div>
-                </div>
-              </h1>
-              <div class="row mt-4 justify-content-center">
-                <div class="col-lg-3 d-flex align-items-center"> <a href="#"> <span class="fs-14">Domestic</span>
-                  <h2 class="fs-5 text-bl fw-bold">20000000</h2>
-                  </a> <a href="#"> <span class="fs-14">International</span>
-                  <h2 class="fs-5 text-primary1 fw-bold">15000000</h2>
-                  </a> </div>
-                <div class="col-lg-12 mt-4">
-                  <canvas id="contactsbarchart" class="w-100 mw-100"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+		  
+		
+		  
+		  <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Online Payment</div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		  <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Online Failed Payment</div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		  <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Offline Payment</div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		  <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">ECS</div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		  <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">ECS Failed</div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		   <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Razor Pay ECS </div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		   <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Razor Pay Failed ECS </div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		   <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Total payment this year </div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		   <div class="col-lg-4">
+		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
+			  <div class="icon-box">
+			  <i data-feather="dollar-sign"></i>
+			  </div>
+			  <div class="carddetailbox ms-md-1">
+			  <div class="nm text-white">Total payment last year </div>
+			  <div class="amt text-white fw-bold fs-4">5000</div>
+			  </div>
+		  </div>
+		  </div>
+		  
+		  
+        
       </div>
     </div>
   </div>

@@ -2005,12 +2005,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	position: relative;
 	padding-left: 22px;
 	width: calc(33% - 24px);
-	margin: 0 10px;
+	margin: 5px 10px;
 	font-size: 14px;
+	font-weight: 500;
+	/* color: black; */
 }
 
 .contactdetaillist li:last-child{
-	margin-bottom: 0
+	/* margin-bottom: 0; */
 }
 
 .contactdetaillist li:after{
@@ -2048,6 +2050,39 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	background-color: #ff6400!important;
 	color: white;
 }
+.apidropdown .dropdown-menu{
+	min-width: 230px;
+}
 .apidropdown .dropdown-menu li{
 	padding: 5px 10px;
+}
+.bgclr1{
+	background-color: #0082b3
+}
+.bgclr2{
+	background-color: #00a2b3
+}
+.bgclr2 .icon-box{
+	color: #00a2b3!important
+}
+.bgclr3{
+	background-color: #b39600
+}.bgclr3 .icon-box{
+	color: #b39600!important
+}
+.bgclr4{
+	background-color: #b35b00
+}
+.bgclr4 .icon-box{
+	color: #b35b00!important
+}
+.card-box .icon-box{
+	background: white;
+	color: #0082b3;
+	padding: 15px;
+	margin: 5px;
+	border-radius: 4px;
+}
+.card-box{
+	border-radius: 7px;
 }
