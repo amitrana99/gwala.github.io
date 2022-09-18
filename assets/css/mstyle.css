@@ -2113,3 +2113,5 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 .mxw-150px{
 	max-width: 150px;
 }
+#allfamilyrecords thead tr th:first-child{min-width:auto; white-space:nowrap;}
+#allfamilyrecords thead tr th{min-width:150px; white-space:nowrap;}

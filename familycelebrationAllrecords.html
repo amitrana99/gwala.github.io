@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishnayan Gwala - All Records</title>
+<link rel="icon" href="assets/images/favicon.png" type="image/png" />
+<link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
+<link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
+<link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
+<link rel="stylesheet" href="assets/css/mstyle.css">
+<link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+<link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="skin-base animate">
+<div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
+<div class="sidebar">
+  <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
+  <div class="sidebar-body">
+    <ul class="nav-sidebar">
+      <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
+      <li class="nav-item "> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
+      <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link active">All Records </a> <a href="" class="sub-link">Register New data</a> <a href="" class="sub-link">Schduled Events</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >import &amp; export (Excel)</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Import new data </a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Email Templates </a> <a href="" class="sub-link">SMS Templates </a> <a href="" class="sub-link">Feed Back Report</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="sun"></i><span  >Astrology</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Query </a> <a href="" class="sub-link">SMS Templates </a> <a href="" class="sub-link">Query Reply</a> </nav>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- sidebar -->
+
+<div class="content">
+  <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i> </a>
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <div class=""> <img src="assets/images/logo2.png" width="350" alt="" class="d-none d-lg-block img-fluid"> </div>
+      <div class="d-flex align-items-center ">
+        <button class="ms-auto btn me-4 btn-light d-none d-lg-block"><i data-feather="refresh-ccw"></i></button>
+        <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
+        <div class="dropdown position-relative">
+          <button class="btn btn-outline-light fs-14 d-flex align-items-center  lh-sm text-start text-black border-black-50 rounded-pill p-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="d-flex align-items-center"> <img src="assets/images/avatar.png" class="me-2" width="56" alt="">
+            <div class=""> Welcome<br>
+              Shri Amit Rana<br>
+              <span class="fs-12 text-black-50">ADMIN</span></div>
+          </div>
+          </button>
+          <ul class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-header -->
+  <div class="content-body">
+    <div class="container-fluid">
+      <div class="row gy-5">
+        <div class="col-md-12">
+          <div class="h-100">
+            <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
+              <h1 class="fs-4 fw-bold text-nowrap">Family Celebration</h1>
+              <div class="d-flex mt-2 mt-md-0">
+                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+                  <div class="d-flex  mt-3 mt-md-0 align-items-center">
+                    <select class="form-select me-2 me-md-0">
+                      <option value="">All Events</option>
+                      <option value="">Pending for Salesforce</option>
+                      <option value="">Duplicate Contacts</option>
+                    </select>
+                    <button class="btn btn-primary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Add New Member</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive mt-2 dashboard">
+              <table class="table w-100" id="allfamilyrecords">
+                <thead>
+                  <tr>
+                    <th> <div class="form-check mb-0">
+                        <input class="form-check-input mx-2" type="checkbox" value="" name="selectrow" id="checkAll">
+                        <label class="form-check-label" for="checkAll"> S no </label>
+                      </div>
+                    </th>
+                    <th>Gwala contact ID</th>
+                    <th class="thname">Contact Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Member Name</th>
+                    <th>Gender</th>
+                    <th>Gotra</th>
+                    <th>Relation</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Remarks</th>
+                    <th>Gwala RD ID</th>
+                    <th>SF RD ID</th>
+                    <th>Amount</th>
+                    <th>Close Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                        <label class="form-check-label" for="check1"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check2">
+                        <label class="form-check-label" for="check2"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check3">
+                        <label class="form-check-label" for="check3"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check4">
+                        <label class="form-check-label" for="check4"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check5">
+                        <label class="form-check-label" for="check5"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check6">
+                        <label class="form-check-label" for="check6"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check7">
+                        <label class="form-check-label" for="check7"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check8">
+                        <label class="form-check-label" for="check8"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check9">
+                        <label class="form-check-label" for="check9"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					<tr>
+                    <td><div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check10">
+                        <label class="form-check-label" for="check10"> 1 </label>
+                      </div>
+                      </td>
+                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>8577911111</td>
+                    <td>vardhaman.vns@gmail.com</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>Female</td>
+                    <td>Nangal</td>
+                    <td>Wife</td>
+                    <td>Anniversary</td>
+                    <td>1989-09-17</td>
+                    <td></td>
+                    <td>KN63872656</td>
+                    <td></td>
+                    <td>500</td>
+                    <td>2022-09-17</td>
+                  </tr>
+					
+					
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- content-body --> 
+</div>
+<!-- content --> 
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
+<script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
+
+<script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

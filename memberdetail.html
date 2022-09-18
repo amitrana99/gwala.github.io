@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - All payments detail</title>
+<title>Krishnayan Gwala - Member detail</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -26,10 +26,10 @@
     <ul class="nav-sidebar">
       <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
       <li class="nav-item "> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
-      <li class="nav-item "> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
-      <li class="nav-item active"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
-        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a> <a href="" class="sub-link">Register New data</a> <a href="" class="sub-link">Schduled Events</a> </nav>
+      <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
+      <li class="nav-item  active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link active">All Records </a> <a href="" class="sub-link">Register New data</a> <a href="" class="sub-link">Schduled Events</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
@@ -37,7 +37,6 @@
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >import &amp; export (Excel)</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Import new data </a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
       </li>
-     
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
       </li>
@@ -80,13 +79,14 @@
     <div class="container-fluid">
       <div class="row gy-4	">
         <div class="col-md-12">
-          <div class="d-flex align-items-center justify-content-between flex-wrap " > <a href="allpayments.html" class="text-black"> <i data-feather="chevron-left"></i> Back to All Payments</a>
+          <div class="d-flex align-items-center justify-content-between flex-wrap " > <a href="familycelebrationAllrecords.html" class="text-black"> <i data-feather="chevron-left"></i> Back to All Records</a>
             <div class="d-flex mt-2 mt-md-0">
               <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
                 <div class="btn-inline">
-                  <button class="btn btn-primary"> <i data-feather="download" class="w-20 h-20"></i> Download Receipt</button>
-					<button class="btn btn-primary"> <i data-feather="mail" class="w-20 h-20"></i> 	Email Receipt</button>
-					
+                  <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Edit Member"><i data-feather="edit-2" class="w-20 h-20"></i></button>
+                  <button class="btn btn-primary"><i data-feather="user" class="w-20 h-20"></i> Add  New Member</button>
                 </div>
               </div>
             </div>
@@ -96,10 +96,13 @@
           <div class="card">
             <div class="card-body ">
               <div class="d-flex flex-wrap flex-sm-nowrap mb-6">
+                <div class="me-md-4 text-center mx-auto">
+                  <div class="symbol "> <img src="assets/images/profile-big.png" width="120" alt="image"> </div>
+                </div>
                 <div class="flex-grow-1 ms-1">
                   <div class="row gy-4">
                     <div class="col-lg-12">
-                      <div class="d-flex align-items-center"> <a href="#" class="fs-4 text-black fw-bold me-1">Surendra kumar sharma</a> <a href="#" class="text-primary1"> <span class="svg-icon svg-icon-1 svg-icon-primary">
+                      <div class="d-flex align-items-center"> <a href="#" class="fs-4 text-black fw-bold me-1">Abhishek Jain</a> <a href="#" class="text-primary1"> <span class="svg-icon svg-icon-1 svg-icon-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                           <path d="M10.0813 3.7242C10.8849 2.16438 13.1151 2.16438 13.9187 3.7242V3.7242C14.4016 4.66147 15.4909 5.1127 16.4951 4.79139V4.79139C18.1663 4.25668 19.7433 5.83365 19.2086 7.50485V7.50485C18.8873 8.50905 19.3385 9.59842 20.2758 10.0813V10.0813C21.8356 10.8849 21.8356 13.1151 20.2758 13.9187V13.9187C19.3385 14.4016 18.8873 15.491 19.2086 16.4951V16.4951C19.7433 18.1663 18.1663 19.7433 16.4951 19.2086V19.2086C15.491 18.8873 14.4016 19.3385 13.9187 20.2758V20.2758C13.1151 21.8356 10.8849 21.8356 10.0813 20.2758V20.2758C9.59842 19.3385 8.50905 18.8873 7.50485 19.2086V19.2086C5.83365 19.7433 4.25668 18.1663 4.79139 16.4951V16.4951C5.1127 15.491 4.66147 14.4016 3.7242 13.9187V13.9187C2.16438 13.1151 2.16438 10.8849 3.7242 10.0813V10.0813C4.66147 9.59842 5.1127 8.50905 4.79139 7.50485V7.50485C4.25668 5.83365 5.83365 4.25668 7.50485 4.79139V4.79139C8.50905 5.1127 9.59842 4.66147 10.0813 3.7242V3.7242Z" fill="currentColor"></path>
                           <path d="M14.8563 9.1903C15.0606 8.94984 15.3771 8.9385 15.6175 9.14289C15.858 9.34728 15.8229 9.66433 15.6185 9.9048L11.863 14.6558C11.6554 14.9001 11.2876 14.9258 11.048 14.7128L8.47656 12.4271C8.24068 12.2174 8.21944 11.8563 8.42911 11.6204C8.63877 11.3845 8.99996 11.3633 9.23583 11.5729L11.3706 13.4705L14.8563 9.1903Z" fill="white"></path>
@@ -108,63 +111,160 @@
                     </div>
                     <div class="col-lg-12">
                       <ul class="contactdetaillist">
-                        <li><strong>Receipt no:</strong> ADPR3067D</li>
-                        <li><strong>Sales force Receipt:</strong> ADPR3067D</li>
-                        <li><strong>Receipt Date:</strong> 2023-09-30</li>
-                        <li><strong>Amount:</strong> 500</li>
-						<li><strong>status: </strong>Active</li>
-						 <li><strong>Payment Mode:</strong> Online</li>
+                        <li><strong>Gwala contact ID :</strong> 0032v000030dDc7</li>
+                        <li><strong>Mobile :</strong>+91 9829141757</li>
+                        <li><strong>Email:</strong> <a href="mailto:surendrasharma@gmail.com">surendrasharma@gmail.com</a></li>
                       </ul>
                     </div>
-                    <div class="col-lg-12">
-                      <ul class="contactdetaillist">
-                        <li><strong>check number:</strong> 0019C00000</li>
-                        <li><strong>Check date:</strong> 2023-09-30</li>
-                        <li><strong>Bank Name:</strong>STATE BANK OF INDIA</li>
-                        <li><strong>UMRN No:</strong> SBIN7022608220152841</li>
-                        <li><strong>Recurring Donation Name: </strong> </li>
-                        <li><strong>Created Date: </strong> 2023-09-30</li>
-                        
-                      </ul>
-                    </div>
-                    
-					 
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-		  
-		  <div class="col-lg-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title mb-4">Tasks and Activities</h5>
-            <div class="table-responsive mt-2 dashboard">
-              <table class="table w-100  resdatatable ">
-                <thead>
-                  <tr>
-                    <th data-priority="1">#</th>
-                    <th>Task name</th>
-                    <th>Task Type</th>
-                    <th>Due Date</th>
-                    <th>Assigned to</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td>2022-07-02</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Member's list</h5>
+              <div class="table-responsive mt-2 dashboard">
+                <table class="table w-100  resdatatable ">
+                  <thead>
+                    <tr>
+                      <th data-priority="1">#</th>
+                      <th>Member</th>
+                      <th>Gender</th>
+                      <th>Gotra</th>
+                      <th>Relation</th>
+                      <th>Type</th>
+                      <th>Date</th>
+                      <th>Remarks</th>
+                      <th>Gwala RD ID</th>
+                      <th>SF RD ID</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td><a href="memsubdetail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >Ayushi</a></td>
+                      <td>Female</td>
+                      <td>Nangal</td>
+                      <td>Wife</td>
+                      <td>Anniversary</td>
+                      <td>1989-09-17</td>
+                      <td></td>
+                      <td>KN63872656</td>
+                      <td></td>
+                      <td>500</td>
+                    </tr>
+					  <tr>
+                      <td>1</td>
+                      <td><a href="memsubdetail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >Ayushi</a></td>
+                      <td>Female</td>
+                      <td>Nangal</td>
+                      <td>Wife</td>
+                      <td>Anniversary</td>
+                      <td>1989-09-17</td>
+                      <td></td>
+                      <td>KN63872656</td>
+                      <td></td>
+                      <td>500</td>
+                    </tr>
+					  <tr>
+                      <td>1</td>
+                      <td><a href="memsubdetail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >Ayushi</a></td>
+                      <td>Female</td>
+                      <td>Nangal</td>
+                      <td>Wife</td>
+                      <td>Anniversary</td>
+                      <td>1989-09-17</td>
+                      <td></td>
+                      <td>KN63872656</td>
+                      <td></td>
+                      <td>500</td>
+                    </tr>
+					  <tr>
+                      <td>1</td>
+                      <td><a href="memsubdetail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >Ayushi</a></td>
+                      <td>Female</td>
+                      <td>Nangal</td>
+                      <td>Wife</td>
+                      <td>Anniversary</td>
+                      <td>1989-09-17</td>
+                      <td></td>
+                      <td>KN63872656</td>
+                      <td></td>
+                      <td>500</td>
+                    </tr>
+					  
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Payment</h5>
+              <div class="table-responsive mt-2 dashboard">
+                <table class="table w-100  resdatatable ">
+                  <thead>
+                    <tr>
+                      <th data-priority="1">#</th>
+                      <th>Reeceipt no</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Member</th>
+                      <th>Type</th>
+                      <th>Products</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>KN63872656</td>
+                      <td>2022-07-02</td>
+                      <td>500</td>
+                      <td>Ayushi</td>
+                      <td>Anniversary</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Tasks and Activities</h5>
+              <div class="table-responsive mt-2 dashboard">
+                <table class="table w-100  resdatatable ">
+                  <thead>
+                    <tr>
+                      <th data-priority="1">#</th>
+                      <th>Task name</th>
+                      <th>Task Type</th>
+                      <th>Due Date</th>
+                      <th>Assigned to</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                      <td>2022-07-02</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
