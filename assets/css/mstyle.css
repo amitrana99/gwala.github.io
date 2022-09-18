@@ -2010,12 +2010,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	font-weight: 500;
 	/* color: black; */
 }
+.contactdetaillist li strong{
+	margin-right: 5px;
+}
 
 .contactdetaillist li:last-child{
 	/* margin-bottom: 0; */
 }
 
-.contactdetaillist li:after{
+.contactdetaillist li:before{
 	content:
 	"";
 	position: absolute;
@@ -2085,4 +2088,28 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 }
 .card-box{
 	border-radius: 7px;
+}
+.rdcreated{
+	height: 250px!important;
+}
+
+.contactdetaillist .editable{
+	cursor: pointer
+}
+.contactdetaillist .editable span{
+	position: relative
+}
+.contactdetaillist .editable span:after{
+	position: absolute;
+	content: "";
+	left: 110%;
+	background-image: url("../vendors/feathericons/icons/edit-2.svg");
+	width: 15px;
+	height: 15px;
+	background-size: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.mxw-150px{
+	max-width: 150px;
 }

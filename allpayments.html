@@ -80,7 +80,7 @@
   <!-- content-header -->
   <div class="content-body">
     <div class="container-fluid">
-      <div class="row gy-4">
+      <div class="row gy-4 gx-5">
         <div class="col-md-12">
           <div class="h-100">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
@@ -109,8 +109,7 @@
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
-					<th>Receipt No.</th>
-                    
+                    <th>Receipt No.</th>
                     <th class="thname">Name</th>
                     <th>Amount</th>
                     <th>Payment Mode</th>
@@ -131,8 +130,7 @@
                     <td>2022-09-08</td>
                     <td>Success</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact2">
                         <label class="form-check-label" for="contact2"> 1 </label>
@@ -144,8 +142,7 @@
                     <td>2022-09-08</td>
                     <td>Success</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact3">
                         <label class="form-check-label" for="contact3"> 1 </label>
@@ -157,8 +154,7 @@
                     <td>2022-09-08</td>
                     <td>Success</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact4">
                         <label class="form-check-label" for="contact4"> 1 </label>
@@ -176,116 +172,47 @@
           </div>
         </div>
 		  
-		
+		  <div class="col-lg-6">
 		  
-		  <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Online Payment</div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
+			  <div class="chartCard">
+            <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
+              <h4 class="text-nowrap fs-5">Payments(<span id="numberofsuccessptm"></span>)</h4>
+              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
+               <img src="assets/images/daterange.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Select Date Range">
+                <div class="input-group">
+                  <input type="date" class="form-control mxw-150px" id="startdate" onChange="filterdata();" value="2022-09-10">
+                  <input type="date" class="form-control mxw-150px" id="enddate" onChange="filterdata();" value="2022-09-16">
+                </div>
+              </div>
+            </div>
+            <div class="rdcreated">
+              <canvas id="numofpayments" class="rdcreated"></canvas>
+            </div>
+          </div>
 		  
-		  <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Online Failed Payment</div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
 		  </div>
-		  </div>
+		  <div class="col-lg-6">
+		    <div class="chartCard">
+            <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
+              <h4 class="text-nowrap fs-5">ECS and Rozar pay(<span id="numberofecsptm"></span>)</h4>
+              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
+                <img src="assets/images/daterange.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Select Date Range">
+                <div class="input-group">
+                  <input type="date" class="form-control mxw-150px" id="ecsstartdate" onChange="filterdataecs();" value="2022-09-10">
+                  <input type="date" class="form-control mxw-150px" id="ecsenddate" onChange="filterdataecs();" value="2022-09-16">
+                </div>
+              </div>
+            </div>
+            <div class="rdcreated">
+              <canvas id="ecsrozar" class="rdcreated"></canvas>
+            </div>
+          </div>
+			  
 		  
-		  <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Offline Payment</div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
 		  </div>
-		  </div>
-		  
-		  <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">ECS</div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		  
-		  <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">ECS Failed</div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		  
-		   <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Razor Pay ECS </div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		  
-		   <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr1 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Razor Pay Failed ECS </div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		  
-		   <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr2 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Total payment this year </div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		   <div class="col-lg-4">
-		  <div class="card-box d-flex bgclr3 p-2 text-white align-items-center">
-			  <div class="icon-box">
-			  <i data-feather="dollar-sign"></i>
-			  </div>
-			  <div class="carddetailbox ms-md-1">
-			  <div class="nm text-white">Total payment last year </div>
-			  <div class="amt text-white fw-bold fs-4">5000</div>
-			  </div>
-		  </div>
-		  </div>
-		  
-		  
+        
+        
+        
         
       </div>
     </div>
@@ -304,7 +231,7 @@
 <script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
-<script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
+<script type="text/javascript" src="assets/js/paymentchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

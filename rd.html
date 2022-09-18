@@ -110,9 +110,8 @@
                       </div>
                     </th>
                     <th>UMRN ID</th>
-					  <th>Name</th>
+                    <th>Name</th>
                     <th>Payment Frequency</th>
-					
                     <th>ECS Amount</th>
                     <th>Next Donation Date</th>
                     <th>Mandate Status</th>
@@ -126,7 +125,7 @@
                       </div></td>
                     <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black">PUNB0000000006584559</a></td>
                     <td><a href="contactdetail.html">Rahul sharma</a></td>
-					<td>Monthly</td>
+                    <td>Monthly</td>
                     <td>100 </td>
                     <td>20-Aug-1992</td>
                     <td>Active</td>
@@ -138,7 +137,7 @@
                       </div></td>
                     <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
                     <td><a href="contactdetail.html">Rahul sharma</a></td>
-					<td>Monthly</td>
+                    <td>Monthly</td>
                     <td>100 </td>
                     <td>20-Aug-1992</td>
                     <td>Active</td>
@@ -149,8 +148,8 @@
                         <label class="form-check-label" for="contact3"> 3 </label>
                       </div></td>
                     <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
-                     <td><a href="contactdetail.html">Rahul sharma</a></td>
-					  <td>Monthly</td>
+                    <td><a href="contactdetail.html">Rahul sharma</a></td>
+                    <td>Monthly</td>
                     <td>100 </td>
                     <td>20-Aug-1992</td>
                     <td>Active</td>
@@ -161,14 +160,38 @@
                         <label class="form-check-label" for="contact4"> 4 </label>
                       </div></td>
                     <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
-                     <td><a href="contactdetail.html">Rahul sharma</a></td>
-					  <td>Monthly</td>
+                    <td><a href="contactdetail.html">Rahul sharma</a></td>
+                    <td>Monthly</td>
                     <td>100 </td>
                     <td>20-Aug-1992</td>
                     <td>Active</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="chartCard">
+            <div class="chartBox">
+              <canvas id="activerdpie"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="chartCard">
+            <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
+              <h4 class="text-nowrap fs-5">Number of rd Created (<span id="numberofrdtotal"></span>)</h4>
+              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
+                <label for="" class="text-nowrap">select date range</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="startdate" onChange="filterdata();" value="2022-09-10">
+                  <input type="date" class="form-control" id="enddate" onChange="filterdata();" value="2022-09-16">
+                </div>
+              </div>
+            </div>
+            <div class="rdcreated">
+              <canvas id="numofrd" class="rdcreated"></canvas>
             </div>
           </div>
         </div>
@@ -189,7 +212,7 @@
 <script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
-<script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
+<script type="text/javascript" src="assets/js/rdchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
