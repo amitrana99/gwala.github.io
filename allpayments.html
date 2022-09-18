@@ -172,17 +172,18 @@
           </div>
         </div>
 		  
-		  <div class="col-lg-6">
+		  <div class="col-lg-12">
 		  
 			  <div class="chartCard">
             <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
-              <h4 class="text-nowrap fs-5">Payments(<span id="numberofsuccessptm"></span>)</h4>
-              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
-               <img src="assets/images/daterange.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Select Date Range">
-                <div class="input-group">
-                  <input type="date" class="form-control mxw-150px" id="startdate" onChange="filterdata();" value="2022-09-10">
-                  <input type="date" class="form-control mxw-150px" id="enddate" onChange="filterdata();" value="2022-09-16">
-                </div>
+              <h4 class="text-nowrap fs-5">Online Payments (<span id="numberofsuccessptm"></span>)</h4>
+              <div class="d-flex w-25">
+                <select name="" id="" class="form-select me-3">
+                  <option value="">Day</option>
+                </select>
+                <select name="" id="" class="form-select">
+                  <option value="">Month</option>
+                </select>
               </div>
             </div>
             <div class="rdcreated">
@@ -191,26 +192,7 @@
           </div>
 		  
 		  </div>
-		  <div class="col-lg-6">
-		    <div class="chartCard">
-            <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
-              <h4 class="text-nowrap fs-5">ECS and Rozar pay(<span id="numberofecsptm"></span>)</h4>
-              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
-                <img src="assets/images/daterange.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Select Date Range">
-                <div class="input-group">
-                  <input type="date" class="form-control mxw-150px" id="ecsstartdate" onChange="filterdataecs();" value="2022-09-10">
-                  <input type="date" class="form-control mxw-150px" id="ecsenddate" onChange="filterdataecs();" value="2022-09-16">
-                </div>
-              </div>
-            </div>
-            <div class="rdcreated">
-              <canvas id="ecsrozar" class="rdcreated"></canvas>
-            </div>
-          </div>
-			  
-		  
-		  </div>
-        
+		
         
         
         

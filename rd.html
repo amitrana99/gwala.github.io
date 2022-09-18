@@ -37,9 +37,6 @@
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >import &amp; export (Excel)</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Import new data </a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="zap"></i><span  >Salesforce API</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">Contact </a> <a href="" class="sub-link">Recurring Donation </a> <a href="" class="sub-link">Payments</a> <a href="" class="sub-link">Family Celebration</a> </nav>
-      </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
       </li>
@@ -171,29 +168,24 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-12">
           <div class="chartCard">
-            <div class="chartBox">
-              <canvas id="activerdpie"></canvas>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-9">
-          <div class="chartCard">
-            <div class="d-flex align-items-center justify-content-between gap-4 mb-4 flex-wrap">
-              <h4 class="text-nowrap fs-5">Number of rd Created (<span id="numberofrdtotal"></span>)</h4>
-              <div class="d-flex align-items-center gap-3 flex-wrap flex-md-nowrap">
-                <label for="" class="text-nowrap">select date range</label>
-                <div class="input-group">
-                  <input type="date" class="form-control" id="startdate" onChange="filterdata();" value="2022-09-10">
-                  <input type="date" class="form-control" id="enddate" onChange="filterdata();" value="2022-09-16">
-                </div>
+            <div class="d-flex align-items-center justify-content-between  mb-4 flex-wrap">
+              <h4 class="text-nowrap fs-5">ECS, Razorpay, Total (<span id="numberofecsptm"></span>)</h4>
+              <div class="d-flex w-25">
+                <select name="" id="" class="form-select me-3">
+                  <option value="">Day</option>
+                </select>
+                <select name="" id="" class="form-select">
+                  <option value="">Month</option>
+                </select>
               </div>
             </div>
             <div class="rdcreated">
-              <canvas id="numofrd" class="rdcreated"></canvas>
+              <canvas id="ecsrozar" class="rdcreated"></canvas>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
