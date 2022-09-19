@@ -2092,9 +2092,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 .rdcreated{
 	height: 250px!important;
 }
-
+.contactdetaillist{
+	position: relative;
+}
 .contactdetaillist .editable{
-	cursor: pointer
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	max-width: 34px;
+}
+.contactdetaillist .editable:before{
+	display: none;
 }
 .contactdetaillist .editable span{
 	position: relative
