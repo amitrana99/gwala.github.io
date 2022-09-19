@@ -1952,11 +1952,11 @@ table.dataTable > tbody > tr.selected > * {
 #contactsbarchart {
   max-height: 220px !important
 }
-#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print, #allpayments_wrapper .buttons-print {
+#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print, #allpayments_wrapper .buttons-print, #allfamilyrecords_wrapper .buttons-print {
   margin-right: 26px !important;
   position: relative;
 }
-#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after, #allpayments_wrapper .buttons-print:after{
+#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after, #allpayments_wrapper .buttons-print:after, #allfamilyrecords_wrapper .buttons-print:after{
   content: "";
   border-right: 2px solid #fbf3f0;
   position: absolute;
@@ -2122,4 +2122,4 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	max-width: 150px;
 }
 #allfamilyrecords thead tr th:first-child{min-width:auto; white-space:nowrap;}
-#allfamilyrecords thead tr th{min-width:150px; white-space:nowrap;}
+#allfamilyrecords thead tr th{min-width:120px; white-space:nowrap;}

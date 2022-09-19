@@ -650,7 +650,7 @@ $('#allfamilyrecords').DataTable({
 
           });
         select.each(function () {
-          select.select2();
+          select.select2({dropdownAutoWidth : true});
           select.val(null).trigger('change');
         });
         column
