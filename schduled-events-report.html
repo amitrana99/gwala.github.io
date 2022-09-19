@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - All Records</title>
+<title>Krishnayan Gwala - Schduled Events Report</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
       <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
       <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
-        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link active">All Records </a> <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a> <a href="schduled-events-report.html" class="sub-link active">Schduled Events Report</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
@@ -81,16 +81,12 @@
         <div class="col-md-12">
           <div class="h-100">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
-              <h1 class="fs-4 fw-bold text-nowrap">Family Celebration</h1>
+              <h1 class="fs-4 fw-bold text-nowrap">Schduled Events Report</h1>
               <div class="d-flex mt-2 mt-md-0">
                 <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
                   <div class="d-flex  mt-3 mt-md-0 align-items-center">
-                    <select class="form-select me-2 me-md-0">
-                      <option value="">All Events</option>
-                      <option value="">Pending for Salesforce</option>
-                      <option value="">Duplicate Contacts</option>
-                    </select>
-                    <button class="btn btn-primary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Add New Member</button>
+                   
+                    <button class="btn btn-primary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Add New Event</button>
                   </div>
                 </div>
               </div>
@@ -104,21 +100,19 @@
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
-                    <th>Member Name</th>
-                    <th>Type</th>
-                    <th>Date</th>
-                    <th>SF RD ID</th>
                     <th>Contact Name</th>
                     <th>Mobile</th>
-                    <th>Gwala contact ID</th>
-                    <th>Email</th>
-                    <th>Gender</th>
+                    <th>Family RD No</th>
+                    <th>Receipt No.</th>
+                    <th>Receipt Amount</th>
+                    <th>Receipt Date</th>
+                    <th>Schedule Date</th>
+                    <th>Name</th>
                     <th>Gotra</th>
-                    <th>Relation</th>
+                    <th>City</th>
+                    <th>Occassion</th>
                     <th>Remarks</th>
-                    <th>Gwala RD ID</th>
-                    <th>Amount</th>
-                    <th>Close Date</th>
+                   
                   </tr>
                 </thead>
                 <tbody>
@@ -128,168 +122,152 @@
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
-                  <tr>
+					
+					<tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                         <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
                     <td><a href="memsubdetail.html">Ayushi jain</a></td>
-                    <td>Anniversary</td>
-                    <td>1989-09-17</td>
-                    <td></td>
-                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
                     <td>8577911111</td>
-                    <td><a href="memberdetail.html">0032v000030dDc7</a></td>
-                    <td>vardhaman.vns@gmail.com</td>
-                    <td>Female</td>
-                    <td>Nangal</td>
-                    <td>Wife</td>
                     <td>KN63872656</td>
+					<td>KN63872656</td>
+					<td>500/-</td>
+					<td>20-12-2022</td>
+					<td>21-12-2022</td>
+                    <td><a href="memberdetail.html">Abhishek Jain</a></td>
+                    <td>Nangal</td>
+                    <td>Delhi</td>
+                    <td>Birthday</td>                    
                     <td></td>
-                    <td>500</td>
-                    <td>2022-09-17</td>
                   </tr>
+               
                 </tbody>
               </table>
             </div>
