@@ -619,14 +619,7 @@ $('#allfamilyrecords').DataTable({
       titleAttr: 'Column Visibility',
       position: 'dropdown'
     },
-    {
-      text: 'save contact from krishnayan panel',
-      titleAttr: 'save contact from krishnayan panel',
-      className: "apibtn",
-      action: function (e, dt, node, config) {
-        alert('Button activated');
-      }
-    }
+   
 
 
   ],
