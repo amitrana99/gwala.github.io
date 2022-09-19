@@ -65,10 +65,7 @@ const myChart2 = new Chart(ctx, {
       }
     },
     plugins: {
-      title: {
-        display: false,
-      },
-      legend: false,
+    
       datalabels: {
         //labels: 'y',
         anchor: 'end',

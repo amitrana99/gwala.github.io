@@ -64,10 +64,7 @@
        }
      },
      plugins: {
-       title: {
-         display: false,
-       },
-       legend: false,
+      
        datalabels: {
          //labels: 'y',
          anchor: 'end',
