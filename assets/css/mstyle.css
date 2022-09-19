@@ -1534,15 +1534,19 @@ table.dataTable {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 @media (max-width: 600px) {
-  div#allcontacts_wrapper div.dataTables_length {
+  div#allcontacts_wrapper div.dataTables_length, div#allrd_wrapper div.dataTables_length, div#allpayments_wrapper div.dataTables_length, div#allfamilyrecords_wrapper div.dataTables_length {
     top: 116px !important;
   }
+ .dataTables_length{
+		top: 60px!important
+	}
 }
 @media (min-width:600px) and (max-width: 767px) {
-  div#allcontacts_wrapper div.dataTables_length {
+  div#allcontacts_wrapper div.dataTables_length, div#allrd_wrapper div.dataTables_length, div#allpayments_wrapper div.dataTables_length, div#allfamilyrecords_wrapper div.dataTables_length {
     top: 60px !important;
   }
 }
+
 @media (max-width: 767px) {
   .dashboard .dataTables_wrapper .dataTables_filter {
     position: relative !important;
