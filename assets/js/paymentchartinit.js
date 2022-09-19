@@ -8,7 +8,7 @@ const myChart2 = new Chart(ctx, {
   data: {
     labels: dates,
     datasets: [{
-        label: 'Sucess payment',
+        label: 'Online payment',
         data: datapoints,
         backgroundColor: 'rgba(250, 100, 0, 0.5)',
         borderColor: 'rgba(250, 100, 0, 1)',
@@ -21,7 +21,7 @@ const myChart2 = new Chart(ctx, {
         borderWidth: 1
       },
       {
-        label: 'Failed payment',
+        label: 'Offline payment',
         data: faileddatapoints,
         backgroundColor: 'rgba(0, 130, 179, 0.5)',
         borderColor: 'rgba(0, 130, 179, 1)',
@@ -34,10 +34,10 @@ const myChart2 = new Chart(ctx, {
         borderWidth: 1
       },
       {
-        label: 'Total payment',
+        label: 'Ecs',
         data: faileddatapoints,
-        backgroundColor: 'rgba(0, 130, 179, 0.5)',
-        borderColor: 'rgba(0, 130, 179, 1)',
+       backgroundColor: 'rgba(153, 102, 255, 0.2)',
+         borderColor: 'rgba(153, 102, 255, 1)',
         borderRadius: 4,
         borderSkipped: false,
         //barPercentage: 0.5,
