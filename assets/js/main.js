@@ -981,10 +981,12 @@ $(function () {
 $(".editable").on('click', function(){
 	$(this).parent().hide();
 	$(this).parent().parent().find('.editform').show();
+	$(".editbuttons").show();
 })
 $(".closeeditform").on('click', function(){
-	$(this).parent().parent().parent().parent().hide();
-	$(this).parent().parent().parent().parent().parent().find('.contactdetaillist').show();
+	$(".editbuttons").hide();
+	$(".editform").hide();
+	$('.contactdetaillist').show();
 })
 
 

@@ -1102,6 +1102,12 @@ ul.dropdown-menu li a {
 	.contactdetaillist li{
 		width: 100%!important
 	}
+	.editbuttons{
+		position: relative!important;
+		margin: 0 auto;
+		top: auto!important;
+		right: auto!important;
+	}
   .dataTables_wrapper .dt-buttons button.btn {
     margin-bottom: 5px;
   }
@@ -2133,5 +2139,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 #allfamilyrecords thead tr th:first-child{min-width:auto; white-space:nowrap;}
 #allfamilyrecords thead tr th{min-width:120px; white-space:nowrap;}
 .editform {
+	display: none;
+}
+.editbuttons{
+	position: absolute;
+	    top: 20px;
+    right: 15px;
 	display: none;
 }
