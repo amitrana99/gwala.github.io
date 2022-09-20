@@ -2098,32 +2098,40 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 }
 .contactdetaillist{
 	position: relative;
+	
 }
-.contactdetaillist .editable{
+/*.contactdetaillist .editable span{
 	cursor: pointer;
 	position: absolute;
 	right: 0;
 	max-width: 34px;
+}*/
+.contactdetaillist .editable{
+	position: relative;
+		cursor:pointer;
+	
 }
-.contactdetaillist .editable:before{
-	display: none;
-}
-.contactdetaillist .editable span{
-	position: relative
-}
-.contactdetaillist .editable span:after{
+.contactdetaillist .editable:after{
 	position: absolute;
 	content: "";
-	left: 110%;
-	background-image: url("../vendors/feathericons/icons/edit-2.svg");
-	width: 15px;
-	height: 15px;
+	left: 96%;
+	background-image: url("../images/edit-3.svg");
+	width: 18px;
+	height: 18px;
 	background-size: 100%;
 	top: 50%;
 	transform: translateY(-50%);
+	opacity: .8;
+}
+.contactdetaillist .editable:hover:after{
+	background-image: url("../images/form-edit-hover.svg");
+	opacity: 1;
 }
 .mxw-150px{
 	max-width: 150px;
 }
 #allfamilyrecords thead tr th:first-child{min-width:auto; white-space:nowrap;}
 #allfamilyrecords thead tr th{min-width:120px; white-space:nowrap;}
+.editform {
+	display: none;
+}

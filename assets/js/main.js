@@ -978,6 +978,15 @@ $(function () {
 });
 
 
+$(".editable").on('click', function(){
+	$(this).parent().hide();
+	$(this).parent().parent().find('.editform').show();
+})
+$(".closeeditform").on('click', function(){
+	$(this).parent().parent().parent().parent().hide();
+	$(this).parent().parent().parent().parent().parent().find('.contactdetaillist').show();
+})
+
 
 
 
