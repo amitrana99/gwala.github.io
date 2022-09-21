@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - contacts</title>
+<title>Krishnayan Gwala - Schduled Events Report</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -26,10 +26,10 @@
     <ul class="nav-sidebar">
       <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
       <li class="nav-item "> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
-      <li class="nav-item active"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
       <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
-        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a>  <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a> <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
@@ -38,8 +38,8 @@
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
-        <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link">Feedback List</a> </nav>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
+        <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link active">Feedback List</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="sun"></i><span  >Astrology</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Query </a> <a href="" class="sub-link">SMS Templates </a> <a href="" class="sub-link">Query Reply</a> </nav>
@@ -79,109 +79,93 @@
         <div class="col-md-12">
           <div class="h-100">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
-              <h1 class="fs-4 fw-bold text-nowrap"> Recurring Donation</h1>
-              <div class="d-flex mt-2 mt-md-0">
-                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
-                  <div class="d-flex align-items-center"> <img src="assets/images/daterange.svg" alt="" class="me-3">
-                    <input type="text" class="form-control me-md-3 mw-150px" name="daterange" value="01/01/2018 - 01/15/2018" />
-                  </div>
-                  <div class="d-flex  mt-3 mt-md-0 align-items-center">
-                    <select class="form-select me-2 me-md-0">
-                      <option value="">All RD</option>
-                      <option value="">Pending for Salesforce</option>
-                    </select>
-                    <button class="btn btn-primary ms-md-3 text-nowrap"><i data-feather="plus"></i> Add New RD</button>
-                  </div>
-                </div>
-              </div>
+              <h1 class="fs-4 fw-bold text-nowrap">Feedback List</h1>
+              
             </div>
             <div class="table-responsive mt-2 dashboard">
-              <table class="table w-100" id="allrd">
+              <table class="table w-100" id="allfamilyrecords">
                 <thead>
                   <tr>
-                    <th> <div class="form-check ms-2 mb-0">
+                    <th> <div class="form-check mb-0">
                         <input class="form-check-input" type="checkbox" value="" name="selectrow" id="checkAll">
                         <label class="form-check-label" for="checkAll"> S no </label>
                       </div>
                     </th>
-                    <th>UMRN ID</th>
-                    <th>Name</th>
-                    <th>Payment Frequency</th>
-                    <th>ECS Amount</th>
-                    <th>Next Donation Date</th>
-                    <th>Mandate Status</th>
+                    <th>Donor Name</th>
+                    <th>Mobile No.</th>
+                    <th>Feedback Type</th>
+                    <th>Feedback Type Detail</th>
+                    <th>Attachment</th>
+                    <th>Remark</th>
+                    <th>Feedback Date</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
-                        <label class="form-check-label" for="contact1"> 1 </label>
+                    <td><div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                        <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
-                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black">PUNB0000000006584559</a></td>
-                    <td><a href="contactdetail.html">Rahul sharma</a></td>
-                    <td>Monthly</td>
-                    <td>100 </td>
-                    <td>20-Aug-1992</td>
-                    <td>Active</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>8577911111</td>
+                    <td>Donation</td>
+                    <td>My donations not displaying</td>
+                    <td></td>
+                    <td>My donation column is not updated</td>
+                    <td>20-12-2022</td>
                   </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact2">
-                        <label class="form-check-label" for="contact2"> 2 </label>
+					
+					<tr>
+                    <td><div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                        <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
-                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
-                    <td><a href="contactdetail.html">Rahul sharma</a></td>
-                    <td>Monthly</td>
-                    <td>100 </td>
-                    <td>20-Aug-1992</td>
-                    <td>Active</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>8577911111</td>
+                    <td>Donation</td>
+                    <td>My donations not displaying</td>
+                    <td></td>
+                    <td>My donation column is not updated</td>
+                    <td>20-12-2022</td>
                   </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact3">
-                        <label class="form-check-label" for="contact3"> 3 </label>
+					
+					<tr>
+                    <td><div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                        <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
-                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
-                    <td><a href="contactdetail.html">Rahul sharma</a></td>
-                    <td>Monthly</td>
-                    <td>100 </td>
-                    <td>20-Aug-1992</td>
-                    <td>Active</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>8577911111</td>
+                    <td>Donation</td>
+                    <td>My donations not displaying</td>
+                    <td></td>
+                    <td>My donation column is not updated</td>
+                    <td>20-12-2022</td>
                   </tr>
-                  <tr>
-                    <td><div class="form-check ms-2 mb-0">
-                        <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact4">
-                        <label class="form-check-label" for="contact4"> 4 </label>
+					
+					<tr>
+                    <td><div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                        <label class="form-check-label" for="check1"> 1 </label>
                       </div></td>
-                    <td><a href="rd-detail.html" class="btn btn-sm rounded-pill btn-info2 text-black" >PUNB0000000006584559</a></td>
-                    <td><a href="contactdetail.html">Rahul sharma</a></td>
-                    <td>Monthly</td>
-                    <td>100 </td>
-                    <td>20-Aug-1992</td>
-                    <td>Active</td>
+                    <td><a href="memsubdetail.html">Ayushi jain</a></td>
+                    <td>8577911111</td>
+                    <td>Donation</td>
+                    <td>My donations not displaying</td>
+                    <td></td>
+                    <td>My donation column is not updated</td>
+                    <td>20-12-2022</td>
                   </tr>
+					
+				
+					
+					
                 </tbody>
               </table>
             </div>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="chartCard">
-            <div class="d-flex align-items-center justify-content-between  mb-4 flex-wrap">
-              <h4 class="text-nowrap fs-5">ECS, Razorpay, Total (<span id="numberofecsptm"></span>)</h4>
-              <div class="d-flex flex-wrap flex-md-nowrap align-items-center gap-2 gap-md-3 mxw-500">
-				 <label for="">Day</label>  <input type="date" class="form-control">
-            <label for="">Month</label>   <input type="month" class="form-control" min="2022-03" value="2022-05">
-               
-              </div>
-            </div>
-            <div class="rdcreated">
-              <canvas id="ecsrozar" class="rdcreated"></canvas>
-            </div>
-          </div>
-          
-        </div>
+        
       </div>
     </div>
   </div>
@@ -199,7 +183,6 @@
 <script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
-<script type="text/javascript" src="assets/js/rdchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
