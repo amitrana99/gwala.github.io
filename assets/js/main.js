@@ -1,6 +1,22 @@
 $(window).on("load", function () {
   $('.loader').hide();
-})
+});
+
+// alert box
+var myModal = new bootstrap.Modal(document.getElementById("addnewmember"), {});
+document.querySelector(".selectfirst").onclick = function () {
+	var checkedselected = $("#allfamilyrecords > tbody > tr > td input[type=checkbox]:checked").length;
+  if (checkedselected == 1) {
+       myModal.show();
+	  console.log(checkedselected)
+  } else {
+    swal("Hey, Please select only one Donor first");
+	   console.log(checkedselected)
+  }
+
+}
+
+
 $(function () {
   'use script'
 
@@ -619,7 +635,6 @@ $('#allfamilyrecords').DataTable({
       titleAttr: 'Column Visibility',
       position: 'dropdown'
     },
-   
 
 
   ],
@@ -643,7 +658,9 @@ $('#allfamilyrecords').DataTable({
 
           });
         select.each(function () {
-          select.select2({dropdownAutoWidth : true});
+          select.select2({
+            dropdownAutoWidth: true
+          });
           select.val(null).trigger('change');
         });
         column
@@ -760,7 +777,7 @@ $('#allrd').DataTable({
       titleAttr: 'save RD from krishnayan panel',
       className: "apidropdown",
       position: 'dropdown'
-     
+
     }
 
 
@@ -804,8 +821,6 @@ $('#allrd').DataTable({
   },
 
 });
-
-
 
 
 $('#allpayments').DataTable({
@@ -907,7 +922,7 @@ $('#allpayments').DataTable({
       titleAttr: 'All Payments',
       className: "apidropdown",
       position: 'dropdown'
-     
+
     }
 
 
@@ -978,19 +993,13 @@ $(function () {
 });
 
 
-$(".editable").on('click', function(){
-	$(this).parent().hide();
-	$(this).parent().parent().find('.editform').show();
-	$(".editbuttons").show();
+$(".editable").on('click', function () {
+  $(this).parent().hide();
+  $(this).parent().parent().find('.editform').show();
+  $(".editbuttons").show();
 })
-$(".closeeditform").on('click', function(){
-	$(".editbuttons").hide();
-	$(".editform").hide();
-	$('.contactdetaillist').show();
+$(".closeeditform").on('click', function () {
+  $(".editbuttons").hide();
+  $(".editform").hide();
+  $('.contactdetaillist').show();
 })
-
-
-
-
-
-

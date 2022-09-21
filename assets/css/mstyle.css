@@ -2147,3 +2147,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
     right: 15px;
 	display: none;
 }
+.searchicon{
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.swal2-popup .swal2-styled.swal2-confirm{
+	background-color: #ff6400!important;
+}
+.swal2-popup .swal2-styled:focus {
+    outline: 0;
+    box-shadow:none!important;
+}
