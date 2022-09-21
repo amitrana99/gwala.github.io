@@ -963,21 +963,6 @@ $('#allpayments').DataTable({
 //  checkBoxes.prop("checked", !checkBoxes.prop("checked"));
 //});
 
-var membermodal = new bootstrap.Modal(document.getElementById("addnewmember"), {
-	 
-});
-document.querySelector(".selectfirst").onclick = function () {
-	var checkedselected = $("#allfamilyrecords > tbody > tr > td input[type=checkbox]:checked").length;
-  if (checkedselected == 1) {
-       membermodal.show();
-	  console.log(checkedselected)
-  } else {
-    swal("Hey, Please select only one Donor first");
-	   console.log(checkedselected)
-  }
-
-}
-
 $(function () {
   $('.datepicker2').mask('00/00/0000');
 });
@@ -1007,3 +992,20 @@ $(".closeeditform").on('click', function () {
   $(".editform").hide();
   $('.contactdetaillist').show();
 })
+
+
+var membermodal = new bootstrap.Modal(document.getElementById("addnewmember"), {
+	 
+});
+document.querySelector(".selectfirst").onclick = function () {
+	var checkedselected = $("#allfamilyrecords > tbody > tr > td input[type=checkbox]:checked").length;
+  if (checkedselected == 1) {
+       membermodal.show();
+	  console.log(checkedselected)
+  } else {
+    swal("Hey, Please select only one Donor first");
+	   console.log(checkedselected)
+  }
+
+}
+
