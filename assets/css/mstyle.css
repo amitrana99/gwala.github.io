@@ -2159,3 +2159,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
     outline: 0;
     box-shadow:none!important;
 }
+input[type="file"]::file-selector-button {
+  border: 1px solid #f2bb96 !important;
+  
+	font-weight: 600;
+  background-color: #f2bb96 !important;
+  transition: 1s;
+}
+
+input[type="file"]::-ms-browse:hover {
+	background-color: #ff6400!important;  border: 2px solid #00cec9;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+	background-color: #ff6400!important;  border: 2px solid #00cec9;
+}
+
+input[type="file"]::file-selector-button:hover {
+	background-color: #ff6400!important;  border: 2px solid #00cec9;
+}

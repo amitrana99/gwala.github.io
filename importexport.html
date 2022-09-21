@@ -18,34 +18,23 @@
 </head>
 
 <body class="skin-base animate">
-	<div class="loader">
-	 <img src="assets/images/loader.svg" alt="">
-	</div>
+<div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
   <div class="sidebar-body">
     <ul class="nav-sidebar">
-      <li class="nav-item active show">
-		  <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a>
-		</li>
-      <li class="nav-item">
-		  <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a>        
-      </li>
-      <li class="nav-item">
-		  <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a>       
-      </li>
-      <li class="nav-item">
-		  <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a>
-	  </li>
+      <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
+      <li class="nav-item"> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
+      <li class="nav-item"> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
-        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a>  <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a> <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
       </li>
-      
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >import &amp; export (Excel)</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">Import new data </a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Import &amp; Export</span> </a>
+        <nav class="nav-sub"> <a href="importexport.html" class="sub-link active">Import Contact</a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="zap"></i><span  >Salesforce API</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Contact </a> <a href="" class="sub-link">Recurring Donation </a> <a href="" class="sub-link">Payments</a> <a href="" class="sub-link">Family Celebration</a> </nav>
@@ -68,7 +57,7 @@
   <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i> </a>
     <div class="d-flex align-items-center justify-content-between w-100">
       <div class=""> <img src="assets/images/logo2.png" width="350" alt="" class="d-none d-lg-block img-fluid"> </div>
-      <div class="d-flex align-items-center "> 
+      <div class="d-flex align-items-center ">
         <button class="ms-auto btn me-4 btn-light d-none d-lg-block"><i data-feather="refresh-ccw"></i></button>
         <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
         <div class="dropdown position-relative">
@@ -90,10 +79,110 @@
   <!-- content-header -->
   <div class="content-body">
     <div class="container-fluid">
-      <div class="row gy-5">
-       
-		   
+      <div class="row gy-3">
+        <div class="col-lg-12">
+          <h1 class="fs-4 fw-bold text-nowrap">Contacts</h1>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Import New Contacts</h5>
+              <div class="my-4">
+                <label for="new" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="new">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Update Contacts</h5>
+              <div class="my-4">
+                <label for="Update" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="Update">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Update Account ID</h5>
+              <div class="my-4">
+                <label for="Account" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="Account">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <h1 class="fs-4 fw-bold text-nowrap mt-4">Recurring Donation</h1>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Import New RD</h5>
+              <div class="my-4">
+                <label for="newRD" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="newRD">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Update RD</h5>
+              <div class="my-4">
+                <label for="updatenewRD" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="updatenewRD">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
 		  
+		  <div class="col-lg-12">
+          <h1 class="fs-4 fw-bold text-nowrap mt-4">Receipts</h1>
+        </div>
+		  <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Import ECS receipt</h5>
+              <div class="my-4">
+                <label for="ECS" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="ECS">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+		  
+		  <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Import Non-ECS  receipt</h5>
+              <div class="my-4">
+                <label for="nonECS" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="nonECS">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
+		  
+		   <div class="col-lg-12">
+          <h1 class="fs-4 fw-bold text-nowrap mt-4">Family details</h1>
+        </div>
+		  <div class="col-lg-4">
+          <div class="card card-1">
+            <div class="card-body">
+              <h5 class="card-title">Add new members</h5>
+              <div class="my-4">
+                <label for="members" class="form-label fw-bold">Upload Excel File</label>
+                <input class="form-control shadow-sm" type="file" id="members">
+              </div>
+              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
