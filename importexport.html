@@ -33,12 +33,7 @@
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
-      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Import &amp; Export</span> </a>
-        <nav class="nav-sub"> <a href="importexport.html" class="sub-link active">Import Contact</a> <a href="" class="sub-link">Update data</a> <a href="" class="sub-link"> Export Data for SF</a> </nav>
-      </li>
-      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="zap"></i><span  >Salesforce API</span> </a>
-        <nav class="nav-sub"> <a href="" class="sub-link">Contact </a> <a href="" class="sub-link">Recurring Donation </a> <a href="" class="sub-link">Payments</a> <a href="" class="sub-link">Family Celebration</a> </nav>
-      </li>
+      <li class="nav-item active"> <a href="importexport.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="" class="sub-link">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
       </li>
@@ -79,108 +74,137 @@
   <!-- content-header -->
   <div class="content-body">
     <div class="container-fluid">
-      <div class="row gy-3">
+      <div class="row gy-4">
         <div class="col-lg-12">
-          <h1 class="fs-4 fw-bold text-nowrap">Contacts</h1>
-        </div>
-        <div class="col-lg-4">
-          <div class="card card-1">
+          <div class="card card-2 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Import New Contacts</h5>
-              <div class="my-4">
-                <label for="new" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="new">
+              <div class="row gy-3">
+                <div class="col-lg-12">
+                  <h1 class="fs-4 fw-bold text-nowrap">Contacts</h1>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Import New Contacts</h5>
+                      <div class="my-4">
+                        <label for="new" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="new">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Update Contacts</h5>
+                      <div class="my-4">
+                        <label for="Update" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="Update">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Update Account ID</h5>
+                      <div class="my-4">
+                        <label for="Account" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="Account">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card card-1">
-            <div class="card-body">
-              <h5 class="card-title">Update Contacts</h5>
-              <div class="my-4">
-                <label for="Update" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="Update">
-              </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card card-1">
-            <div class="card-body">
-              <h5 class="card-title">Update Account ID</h5>
-              <div class="my-4">
-                <label for="Account" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="Account">
-              </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-12">
-          <h1 class="fs-4 fw-bold text-nowrap mt-4">Recurring Donation</h1>
-        </div>
-        <div class="col-lg-4">
-          <div class="card card-1">
+          <div class="card card-2 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Import New RD</h5>
-              <div class="my-4">
-                <label for="newRD" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="newRD">
+              <div class="row gy-3">
+                <div class="col-lg-12">
+                  <h1 class="fs-4 fw-bold text-nowrap">Recurring Donation</h1>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Import New RD</h5>
+                      <div class="my-4">
+                        <label for="newRD" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="newRD">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Update RD</h5>
+                      <div class="my-4">
+                        <label for="updatenewRD" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="updatenewRD">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card card-1">
+        <div class="col-lg-12">
+          <div class="card card-2 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Update RD</h5>
-              <div class="my-4">
-                <label for="updatenewRD" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="updatenewRD">
+              <div class="row gy-3">
+                <div class="col-lg-12">
+                  <h1 class="fs-4 fw-bold text-nowrap">Receipts</h1>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Import ECS receipt</h5>
+                      <div class="my-4">
+                        <label for="ECS" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="ECS">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Import Non-ECS  receipt</h5>
+                      <div class="my-4">
+                        <label for="nonECS" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="nonECS">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+            </div>
           </div>
         </div>
-		  
-		  <div class="col-lg-12">
-          <h1 class="fs-4 fw-bold text-nowrap mt-4">Receipts</h1>
-        </div>
-		  <div class="col-lg-4">
-          <div class="card card-1">
+        <div class="col-lg-12">
+          <div class="card card-2 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Import ECS receipt</h5>
-              <div class="my-4">
-                <label for="ECS" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="ECS">
+              <div class="row gy-3">
+                <div class="col-lg-12">
+                  <h1 class="fs-4 fw-bold text-nowrap">Family details</h1>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card card-1 hovershadow">
+                    <div class="card-body">
+                      <h5 class="card-title">Add new members</h5>
+                      <div class="my-4">
+                        <label for="members" class="form-label fw-bold">Upload Excel File</label>
+                        <input class="form-control shadow-sm" type="file" id="members">
+                      </div>
+                      <a class="btn btn-info2 btn-sm fw-semibold text-black" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
-          </div>
-        </div>
-		  
-		  <div class="col-lg-4">
-          <div class="card card-1">
-            <div class="card-body">
-              <h5 class="card-title">Import Non-ECS  receipt</h5>
-              <div class="my-4">
-                <label for="nonECS" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="nonECS">
-              </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
-          </div>
-        </div>
-		  
-		   <div class="col-lg-12">
-          <h1 class="fs-4 fw-bold text-nowrap mt-4">Family details</h1>
-        </div>
-		  <div class="col-lg-4">
-          <div class="card card-1">
-            <div class="card-body">
-              <h5 class="card-title">Add new members</h5>
-              <div class="my-4">
-                <label for="members" class="form-label fw-bold">Upload Excel File</label>
-                <input class="form-control shadow-sm" type="file" id="members">
-              </div>
-              <a class="btn btn-info2 btn-sm fw-semibold" href="#"><img src="assets/images/excel-color.svg" width="20" class="me-1" alt=""> Download Excel Format</a> </div>
+            </div>
           </div>
         </div>
       </div>
