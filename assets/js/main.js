@@ -974,6 +974,7 @@ $("#checkAll").on('change', function () {
 
 $('input[name="daterange"]').daterangepicker({
   opens: 'left',
+  autoUpdateInput: false,
 });
 $('input[name="daterange"]').val('');
 $('input[name="daterange"]').attr("placeholder", "Select Date Range");
