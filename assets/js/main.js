@@ -5,7 +5,6 @@ $(window).on("load", function () {
 // alert box
 
 
-
 $(function () {
   'use script'
 
@@ -973,13 +972,11 @@ $("#checkAll").on('change', function () {
 });
 
 
-$(function () {
-  $('input[name="daterange"]').daterangepicker({
-    opens: 'left'
-  }, function (start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-  });
+$('input[name="daterange"]').daterangepicker({
+  opens: 'left',
 });
+$('input[name="daterange"]').val('');
+$('input[name="daterange"]').attr("placeholder", "Select Date Range");
 
 
 $(".editable").on('click', function () {
@@ -995,17 +992,16 @@ $(".closeeditform").on('click', function () {
 
 
 var membermodal = new bootstrap.Modal(document.getElementById("addnewmember"), {
-	 
+
 });
 document.querySelector(".selectfirst").onclick = function () {
-	var checkedselected = $("#allfamilyrecords > tbody > tr > td input[type=checkbox]:checked").length;
+  var checkedselected = $("#allfamilyrecords > tbody > tr > td input[type=checkbox]:checked").length;
   if (checkedselected == 1) {
-       membermodal.show();
-	  console.log(checkedselected)
+    membermodal.show();
+    console.log(checkedselected)
   } else {
     swal("Hey, Please select only one Donor first");
-	   console.log(checkedselected)
+    console.log(checkedselected)
   }
 
 }
-
