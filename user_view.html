@@ -47,8 +47,7 @@
                     <input id="check3" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Recurring Donation</td>
                 <td><label for="check4" class="d-block">
                     <input id="check4" type="checkbox" checked class="form-check-input form-control">
@@ -60,8 +59,7 @@
                     <input id="check6" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Payments </td>
                 <td><label for="check7" class="d-block">
                     <input id="check7" type="checkbox" checked class="form-check-input form-control">
@@ -73,8 +71,7 @@
                     <input id="check9" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Family Celebration</td>
                 <td><label for="check10" class="d-block">
                     <input id="check10" type="checkbox" checked class="form-check-input form-control">
@@ -86,8 +83,7 @@
                     <input id="check12" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Task And Activity</td>
                 <td><label for="check13" class="d-block">
                     <input id="check13" type="checkbox" checked class="form-check-input form-control">
@@ -99,8 +95,7 @@
                     <input id="check15" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Data Import</td>
                 <td><label for="check16" class="d-block">
                     <input id="check16" type="checkbox" checked class="form-check-input form-control">
@@ -112,8 +107,7 @@
                     <input id="check18" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
-				<tr>
+              <tr>
                 <td>Communication </td>
                 <td><label for="check19" class="d-block">
                     <input id="check19" type="checkbox" checked class="form-check-input form-control">
@@ -125,7 +119,6 @@
                     <input id="check21" type="checkbox" class="form-check-input form-control">
                   </label></td>
               </tr>
-				
             </tbody>
           </table>
         </div>
@@ -149,9 +142,7 @@
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
-      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
-        <nav class="nav-sub"> <a href="user-management.html" class="sub-link active">Users </a> <a href="" class="sub-link">Assisgn modules </a> </nav>
-      </li>
+      <li class="nav-item active"> <a href="user-management.html" class="nav-link"> <i data-feather="settings"></i><span  >Settings</span> </a> </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
         <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link">Feedback List</a> </nav>
       </li>
@@ -202,17 +193,72 @@
                     <div class="col-lg-12">
                       <div class="d-flex align-items-center justify-content-between flex-wrap mb-3" >
                         <h2 class="fs-5 ">Personal Deatils</h2>
-                        <button class="btn btn-primary"> <i data-feather="edit-3" class="w-20 h-20"></i> Edit</button>
                       </div>
                       <ul class="contactdetaillist">
-                        <li><strong>Name :</strong> Sumit</li>
-                        <li><strong>Email :</strong> Surendrasharma@gmail.com</li>
-                        <li><strong>Mobile :</strong> 9958904099</li>
-                        <li><strong>User Type :</strong> Custom</li>
-                        <li><strong>Status :</strong> Active</li>
-                        <li><strong>Manager Name:</strong> Brajesh Kumar</li>
+                        <li class="editable"><strong>Name :</strong> Sumit</li>
+                        <li class="editable"><strong>Email :</strong> Surendrasharma@gmail.com</li>
+                        <li class="editable"><strong>Mobile :</strong> 9958904099</li>
+                        <li class="editable"><strong>User Type :</strong> Custom</li>
+                        <li class="editable"><strong>Status :</strong> Active</li>
+                        <li class="editable"><strong>Manager Name:</strong> Brajesh Kumar</li>
                       </ul>
+						
+						<div class="editform py-2">
+                        <div class="row gy-4">
+                          <div class="col-lg-4">
+                            <div class="floatinginput">
+                              <input type="text" id="Name" class="form-control textdemo" value="Sumit">
+                              <label for="Name" class="form-label">Name</label>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="floatinginput">
+                              <input type="text" id="Email" class="form-control textdemo" value="Surendrasharma@gmail.com">
+                              <label for="Email" class="form-label">Email</label>
+                            </div>
+                          </div>
+							<div class="col-lg-4">
+                            <div class="floatinginput">
+                              <input type="text" id="Mobile" class="form-control textdemo" value="9958904099">
+                              <label for="Mobile" class="form-label">Mobile</label>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="floatingselect">
+                              <select class="form-select addfloat" id="usertype">
+                                <option value="0">User Type</option>
+                                <option value="">Custom</option>
+                                <option value="">Manager</option>
+                              </select>
+                              <label for="usertype" class="form-label">User Type</label>
+                            </div>
+                          </div>
+							<div class="col-lg-4">
+                            <div class="floatingselect">
+                              <select class="form-select addfloat" id="Status">
+                                <option value="0">Status</option>
+                                <option value="">Active</option>
+                                <option value="">Deactive</option>
+                              </select>
+                              <label for="Status" class="form-label">Status</label>
+                            </div>
+                          </div>
+                        
+							 <div class="col-lg-4">
+                            <div class="floatinginput">
+                              <input type="text" id="Manager" class="form-control textdemo" value="Brajesh">
+                              <label for="Manager" class="form-label">Manager Name</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+					  <div class="col-lg-12 text-center">
+					  <div class="btn-group editbuttons">
+                              <button type="button" class="btn btn-secondary closeeditform">Close</button>
+                              <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+					  </div>
                   </div>
                 </div>
               </div>
