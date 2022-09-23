@@ -1099,15 +1099,15 @@ ul.dropdown-menu li a {
   background: rgba(0, 0, 0, 0.9);
 }
 @media (max-width:1000px) {
-	.contactdetaillist li{
-		width: 100%!important
-	}
-	.editbuttons{
-		position: relative!important;
-		margin: 0 auto;
-		top: auto!important;
-		right: auto!important;
-	}
+  .contactdetaillist li {
+    width: 100% !important
+  }
+  .editbuttons {
+    position: relative !important;
+    margin: 0 auto;
+    top: auto !important;
+    right: auto !important;
+  }
   .dataTables_wrapper .dt-buttons button.btn {
     margin-bottom: 5px;
   }
@@ -1543,16 +1543,15 @@ table.dataTable {
   div#allcontacts_wrapper div.dataTables_length, div#allrd_wrapper div.dataTables_length, div#allpayments_wrapper div.dataTables_length, div#allfamilyrecords_wrapper div.dataTables_length {
     top: 116px !important;
   }
- .dataTables_length{
-		top: 60px!important
-	}
+  .dataTables_length {
+    top: 60px !important
+  }
 }
 @media (min-width:600px) and (max-width: 767px) {
   div#allcontacts_wrapper div.dataTables_length, div#allrd_wrapper div.dataTables_length, div#allpayments_wrapper div.dataTables_length, div#allfamilyrecords_wrapper div.dataTables_length {
     top: 60px !important;
   }
 }
-
 @media (max-width: 767px) {
   .dashboard .dataTables_wrapper .dataTables_filter {
     position: relative !important;
@@ -1842,7 +1841,6 @@ table.dataTable > thead .sorting:before, table.dataTable > thead .sorting:after,
 }
 #allcontacts tbody tr {
   position: relative;
-  
 }
 #allcontacts tbody tr:hover td ul.actions {
   opacity: 1;
@@ -1962,11 +1960,11 @@ table.dataTable > tbody > tr.selected > * {
 #contactsbarchart {
   max-height: 220px !important
 }
-#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print, #allpayments_wrapper .buttons-print, #allfamilyrecords_wrapper .buttons-print {
+#allcontacts_wrapper .buttons-print, #allrd_wrapper .buttons-print, #allpayments_wrapper .buttons-print, #allusers_wrapper .buttons-print, #allfamilyrecords_wrapper .buttons-print {
   margin-right: 26px !important;
   position: relative;
 }
-#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after, #allpayments_wrapper .buttons-print:after, #allfamilyrecords_wrapper .buttons-print:after{
+#allcontacts_wrapper .buttons-print:after, #allrd_wrapper .buttons-print:after, #allusers_wrapper .buttons-print:after, #allpayments_wrapper .buttons-print:after, #allfamilyrecords_wrapper .buttons-print:after {
   content: "";
   border-right: 2px solid #fbf3f0;
   position: absolute;
@@ -2000,111 +1998,105 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 .h-20 {
   height: 20px;
 }
-.contactdetaillist{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #fef3ec;
-	padding: 9px;
-	gap: 5px;
+.contactdetaillist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fef3ec;
+  padding: 9px;
+  gap: 5px;
 }
-.contactdetaillist li{
-	margin-bottom: 0px;
-	position: relative;
-	padding-left: 22px;
-	width: calc(33% - 24px);
-	margin: 5px 10px;
-	font-size: 14px;
-	font-weight: 500;
-	/* color: black; */
+.contactdetaillist li {
+  margin-bottom: 0px;
+  position: relative;
+  padding-left: 22px;
+  width: calc(33% - 24px);
+  margin: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  /* color: black; */
 }
-.contactdetaillist li strong{
-	margin-right: 5px;
+.contactdetaillist li strong {
+  margin-right: 5px;
 }
-
-.contactdetaillist li:last-child{
-	/* margin-bottom: 0; */
+.contactdetaillist li:last-child {
+  /* margin-bottom: 0; */
 }
-
-.contactdetaillist li:before{
-	content:
-	"";
-	position: absolute;
-	width: 9px;
-	height: 9px;
-	left: 0px;
-	border-radius: 1px;
-	top: 7px;
-	transform: rotate(45deg);
-	background-color: #ff640038;
-	border: 1px solid #ff6400;
+.contactdetaillist li:before {
+  content:
+    "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 0px;
+  border-radius: 1px;
+  top: 7px;
+  transform: rotate(45deg);
+  background-color: #ff640038;
+  border: 1px solid #ff6400;
 }
-
-
-.apidropdown{
-	min-width: 70px
+.apidropdown {
+  min-width: 70px
 }
-
-
-.apidropdown span{
-	height: 100%;
-	width: 100%;
+.apidropdown span {
+  height: 100%;
+  width: 100%;
 }
-.apidropdown span .dropdown-toggle{
-	height: 100%;
-	padding: 0 8px 0 0;
+.apidropdown span .dropdown-toggle {
+  height: 100%;
+  padding: 0 8px 0 0;
 }
-.py-25{
-	padding-top: 11px!important;
+.py-25 {
+  padding-top: 11px !important;
 }
-.apidropdown .dropdown-menu li:hover{
-	background-color: #ff6400!important;
-	color: white;
+.apidropdown .dropdown-menu li:hover {
+  background-color: #ff6400 !important;
+  color: white;
 }
-.apidropdown .dropdown-menu{
-	min-width: 230px;
+.apidropdown .dropdown-menu {
+  min-width: 230px;
 }
-.apidropdown .dropdown-menu li{
-	padding: 5px 10px;
+.apidropdown .dropdown-menu li {
+  padding: 5px 10px;
 }
-.bgclr1{
-	background-color: #0082b3
+.bgclr1 {
+  background-color: #0082b3
 }
-.bgclr2{
-	background-color: #00a2b3
+.bgclr2 {
+  background-color: #00a2b3
 }
-.bgclr2 .icon-box{
-	color: #00a2b3!important
+.bgclr2 .icon-box {
+  color: #00a2b3 !important
 }
-.bgclr3{
-	background-color: #b39600
-}.bgclr3 .icon-box{
-	color: #b39600!important
+.bgclr3 {
+  background-color: #b39600
 }
-.bgclr4{
-	background-color: #b35b00
+.bgclr3 .icon-box {
+  color: #b39600 !important
 }
-.bgclr4 .icon-box{
-	color: #b35b00!important
+.bgclr4 {
+  background-color: #b35b00
 }
-.card-box .icon-box{
-	background: white;
-	color: #0082b3;
-	padding: 15px;
-	margin: 5px;
-	border-radius: 4px;
+.bgclr4 .icon-box {
+  color: #b35b00 !important
 }
-.card-box{
-	border-radius: 7px;
+.card-box .icon-box {
+  background: white;
+  color: #0082b3;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 4px;
 }
-.rdcreated{
-	height: 250px!important;
+.card-box {
+  border-radius: 7px;
 }
-.contactdetaillist{
-	position: relative;
-	
+.rdcreated {
+  height: 250px !important;
+}
+.contactdetaillist {
+  position: relative;
 }
 /*.contactdetaillist .editable span{
 	cursor: pointer;
@@ -2112,75 +2104,113 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table
 	right: 0;
 	max-width: 34px;
 }*/
-.contactdetaillist .editable{
-	position: relative;
-		cursor:pointer;
-	
+.contactdetaillist .editable {
+  position: relative;
+  cursor: pointer;
 }
-.contactdetaillist .editable:after{
-	position: absolute;
-	content: "";
-	left: 96%;
-	background-image: url("../images/edit-3.svg");
-	width: 18px;
-	height: 18px;
-	background-size: 100%;
-	top: 50%;
-	transform: translateY(-50%);
-	opacity: .8;
+.contactdetaillist .editable:after {
+  position: absolute;
+  content: "";
+  left: 96%;
+  background-image: url("../images/edit-3.svg");
+  width: 18px;
+  height: 18px;
+  background-size: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .8;
 }
-.contactdetaillist .editable:hover:after{
-	background-image: url("../images/form-edit-hover.svg");
-	opacity: 1;
+.contactdetaillist .editable:hover:after {
+  background-image: url("../images/form-edit-hover.svg");
+  opacity: 1;
 }
-.mxw-150px{
-	max-width: 150px;
+.mxw-150px {
+  max-width: 150px;
 }
-#allfamilyrecords thead tr th:first-child{min-width:auto; white-space:nowrap;}
-#allfamilyrecords thead tr th{min-width:120px; white-space:nowrap;}
+#allfamilyrecords thead tr th:first-child {
+  min-width: auto;
+  white-space: nowrap;
+}
+#allfamilyrecords thead tr th {
+  min-width: 120px;
+  white-space: nowrap;
+}
 .editform {
-	display: none;
+  display: none;
 }
-.editbuttons{
-	position: absolute;
-	    top: 20px;
-    right: 15px;
-	display: none;
+.editbuttons {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  display: none;
 }
-.searchicon{
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
+.searchicon {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.swal2-popup .swal2-styled.swal2-confirm{
-	background-color: #ff6400!important;
+.swal2-popup .swal2-styled.swal2-confirm {
+  background-color: #ff6400 !important;
 }
 .swal2-popup .swal2-styled:focus {
-    outline: 0;
-    box-shadow:none!important;
+  outline: 0;
+  box-shadow: none !important;
 }
 input[type="file"]::file-selector-button {
   border: 1px solid #f2bb96 !important;
-  
-	font-weight: 600;
+  font-weight: 600;
   background-color: #f2bb96 !important;
   transition: 1s;
 }
-
 input[type="file"]::-ms-browse:hover {
-	background-color: #ff6400!important;  border: 2px solid #00cec9;
+  background-color: #ff6400 !important;
+  border: 2px solid #00cec9;
 }
-
 input[type="file"]::-webkit-file-upload-button:hover {
-	background-color: #ff6400!important;  border: 2px solid #00cec9;
+  background-color: #ff6400 !important;
+  border: 2px solid #00cec9;
 }
-
 input[type="file"]::file-selector-button:hover {
-	background-color: #ff6400!important;  border: 2px solid #00cec9;
+  background-color: #ff6400 !important;
+  border: 2px solid #00cec9;
 }
-.hovershadow{
-	transition: all 0.3s;
+.hovershadow {
+  transition: all 0.3s;
 }
-.hovershadow:hover{
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+.hovershadow:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.actionbtns {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.actionbtns li {
+  margin: 0 3px;
+}
+.actionbtns li a{
+	background-color: #ffffff;
+	display: block;
+	width: 28px;
+	height: 26px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	box-shadow: 2px 2px #e2e1e1;
+	padding: 5px;
+	/* color: white!important; */
+}
+.actionbtns li a:hover{
+	background-color: antiquewhites
+}
+.actionbtns li a:active{
+	box-shadow: none!important;
+}
+.actionbtns li a svg {
+  width: 20px;
+  height: 20px;
 }
