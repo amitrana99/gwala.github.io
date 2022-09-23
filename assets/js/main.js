@@ -978,7 +978,9 @@ $('input[name="daterange"]').daterangepicker({
 });
 $('input[name="daterange"]').val('');
 $('input[name="daterange"]').attr("placeholder", "Select Date Range");
-
+$('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+  });
 
 $(".editable").on('click', function () {
   $(this).parent().hide();
