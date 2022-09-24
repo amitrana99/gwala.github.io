@@ -19,113 +19,231 @@
 </head>
 
 <body class="skin-base animate">
-<div class="modal fade" id="editpermisions" tabindex="2"  aria-hidden="true">
+<div class="offcanvas offcanvas-top h-auto" tabindex="1" id="editpermisions" >
+  <div class="bank-details-canvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-primary1">Menu Permissions edit</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body h-auto pt-0">
+      <div class="table-responsive">
+        <table class="table dataTable">
+          <thead>
+            <tr>
+              <th>Menu Name</th>
+              <th>Read</th>
+              <th>Write</th>
+              <th>Execute</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Contacts</button> </td>
+              <td><label for="check1" class="d-block">
+                  <input id="check1" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check2" class="d-block">
+                  <input id="check2" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check3" class="d-block">
+                  <input id="check3" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+              <td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Recurring Donation</button></td>
+              <td><label for="check4" class="d-block">
+                  <input id="check4" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check5" class="d-block">
+                  <input id="check5" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check6" class="d-block">
+                  <input id="check6" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+				<td  data-bs-target="#editmenutitle" data-bs-toggle="modal"> <button class="btn btn-sm rounded-pill btn-info2 text-black">Payments</button> </td>
+              <td><label for="check7" class="d-block">
+                  <input id="check7" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check8" class="d-block">
+                  <input id="check8" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check9" class="d-block">
+                  <input id="check9" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+              <td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Family Celebration</button></td>
+              <td><label for="check10" class="d-block">
+                  <input id="check10" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check11" class="d-block">
+                  <input id="check11" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check12" class="d-block">
+                  <input id="check12" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+              <td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Task And Activity</button></td>
+              <td><label for="check13" class="d-block">
+                  <input id="check13" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check14" class="d-block">
+                  <input id="check14" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check15" class="d-block">
+                  <input id="check15" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+				<td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Data Import</button></td>
+              <td><label for="check16" class="d-block">
+                  <input id="check16" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check17" class="d-block">
+                  <input id="check17" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check18" class="d-block">
+                  <input id="check18" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+            <tr>
+              <td data-bs-target="#editmenutitle" data-bs-toggle="modal"><button class="btn btn-sm rounded-pill btn-info2 text-black">Communication</button> </td>
+              <td><label for="check19" class="d-block">
+                  <input id="check19" type="checkbox" checked class="form-check-input form-control">
+                </label></td>
+              <td><label for="check20" class="d-block">
+                  <input id="check20" type="checkbox" class="form-check-input form-control">
+                </label></td>
+              <td><label for="check21" class="d-block">
+                  <input id="check21" type="checkbox" class="form-check-input form-control">
+                </label></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+        <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary mw-100px rounded-pill">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="editmenutitle" tabindex="2"  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-body">
-        <h5 class="fw-bold text-black modal-title">Menu Permissions edit</h5>
+        <h5 class="fw-bold text-black modal-title">Data To Show in Contacts</h5>
         <div class="table-responsive">
           <table class="table dataTable">
             <thead>
               <tr>
-                <th>Menu Name</th>
+                <th>Fields Name</th>
                 <th>Read</th>
-                <th>Edit</th>
-                <th>Create</th>
+                <th>Write</th>
+                <th>Execute</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Contacts</td>
-                <td><label for="check1" class="d-block">
-                    <input id="check1" type="checkbox" checked class="form-check-input form-control">
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Name</td>
+                <td><label for="check22" class="d-block">
+                    <input id="check22" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check2" class="d-block">
-                    <input id="check2" type="checkbox" checked class="form-check-input form-control">
+                <td><label for="check23" class="d-block">
+                    <input id="check23" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check3" class="d-block">
-                    <input id="check3" type="checkbox" checked class="form-check-input form-control">
-                  </label></td>
-              </tr>
-              <tr>
-                <td>Recurring Donation</td>
-                <td><label for="check4" class="d-block">
-                    <input id="check4" type="checkbox" checked class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check5" class="d-block">
-                    <input id="check5" type="checkbox" class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check6" class="d-block">
-                    <input id="check6" type="checkbox" class="form-check-input form-control">
+                <td><label for="check24" class="d-block">
+                    <input id="check24" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
               </tr>
-              <tr>
-                <td>Payments </td>
-                <td><label for="check7" class="d-block">
-                    <input id="check7" type="checkbox" checked class="form-check-input form-control">
+				
+				 <tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Email</td>
+                <td><label for="check25" class="d-block">
+                    <input id="check25" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check8" class="d-block">
-                    <input id="check8" type="checkbox" class="form-check-input form-control">
+                <td><label for="check26" class="d-block">
+                    <input id="check26" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check9" class="d-block">
-                    <input id="check9" type="checkbox" class="form-check-input form-control">
-                  </label></td>
-              </tr>
-              <tr>
-                <td>Family Celebration</td>
-                <td><label for="check10" class="d-block">
-                    <input id="check10" type="checkbox" checked class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check11" class="d-block">
-                    <input id="check11" type="checkbox" class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check12" class="d-block">
-                    <input id="check12" type="checkbox" class="form-check-input form-control">
+                <td><label for="check27" class="d-block">
+                    <input id="check27" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
               </tr>
-              <tr>
-                <td>Task And Activity</td>
-                <td><label for="check13" class="d-block">
-                    <input id="check13" type="checkbox" checked class="form-check-input form-control">
+				
+				 <tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Mobile</td>
+                <td><label for="check28" class="d-block">
+                    <input id="check28" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check14" class="d-block">
-                    <input id="check14" type="checkbox" class="form-check-input form-control">
+                <td><label for="check29" class="d-block">
+                    <input id="check29" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check15" class="d-block">
-                    <input id="check15" type="checkbox" class="form-check-input form-control">
-                  </label></td>
-              </tr>
-              <tr>
-                <td>Data Import</td>
-                <td><label for="check16" class="d-block">
-                    <input id="check16" type="checkbox" checked class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check17" class="d-block">
-                    <input id="check17" type="checkbox" class="form-check-input form-control">
-                  </label></td>
-                <td><label for="check18" class="d-block">
-                    <input id="check18" type="checkbox" class="form-check-input form-control">
+                <td><label for="check30" class="d-block">
+                    <input id="check30" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
               </tr>
-              <tr>
-                <td>Communication </td>
-                <td><label for="check19" class="d-block">
-                    <input id="check19" type="checkbox" checked class="form-check-input form-control">
+				
+				 <tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">whatsapp Number</td>
+                <td><label for="check31" class="d-block">
+                    <input id="check31" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check20" class="d-block">
-                    <input id="check20" type="checkbox" class="form-check-input form-control">
+                <td><label for="check32" class="d-block">
+                    <input id="check32" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
-                <td><label for="check21" class="d-block">
-                    <input id="check21" type="checkbox" class="form-check-input form-control">
+                <td><label for="check33" class="d-block">
+                    <input id="check33" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+              </tr>
+				
+				<tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Created date</td>
+                <td><label for="check34" class="d-block">
+                    <input id="check34" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check35" class="d-block">
+                    <input id="check35" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check36" class="d-block">
+                    <input id="check36" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+              </tr>
+				
+				<tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Status</td>
+                <td><label for="check37" class="d-block">
+                    <input id="check37" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check38" class="d-block">
+                    <input id="check38" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check39" class="d-block">
+                    <input id="check39" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+              </tr>
+				
+				<tr>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">City</td>
+                <td><label for="check40" class="d-block">
+                    <input id="check40" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check41" class="d-block">
+                    <input id="check41" type="checkbox" checked class="form-check-input form-control">
+                  </label></td>
+                <td><label for="check42" class="d-block">
+                    <input id="check42" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
               </tr>
             </tbody>
           </table>
         </div>
-		  <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
-            <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary mw-100px rounded-pill">Update</button>
-          </div>
+        <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
+          <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary mw-100px rounded-pill">Update</button>
+        </div>
       </div>
     </div>
   </div>
@@ -276,10 +394,10 @@
                     <div class="col-lg-12">
                       <div class="d-flex align-items-center justify-content-between flex-wrap mb-3" >
                         <h2 class="fs-5">Menu Access</h2>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editpermisions"> <i data-feather="edit-3" class="w-20 h-20"></i> Edit</button>
+                        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#editpermisions"> <i data-feather="edit-3" class="w-20 h-20"></i> Edit</button>
                       </div>
                       <ul class="contactdetaillist">
-                        <li><strong>Contact :</strong> Read, Edit, Create</li>
+                        <li><strong>Contact :</strong> Read, Write, Execute</li>
                         <li><strong>Recurring Donation :</strong> Read</li>
                         <li><strong>Payments :</strong> Read</li>
                         <li><strong>Family Celebration :</strong> Read</li>
