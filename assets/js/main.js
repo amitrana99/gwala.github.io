@@ -498,7 +498,7 @@ $('#allcontacts').DataTable({
         var column = this;
         var theadname = $("#allcontacts th").eq([d]).text();
         var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            '<select class="form-select tbhdarr w-100 form-select-light "><option value="">'
             + theadname
             + "</option></select>"
           )
@@ -609,7 +609,7 @@ $('#allusers').DataTable({
 
       }
     },
-    
+
     {
       extend: 'colvis',
       columns: ':not(.noVis)',
@@ -617,19 +617,18 @@ $('#allusers').DataTable({
       titleAttr: 'Column Visibility',
       position: 'dropdown'
     },
-    
 
 
   ],
 
   initComplete: function () {
     this.api()
-      .columns([1, 2, 3, 4, 5, 6])
+      .columns([1, 2, 3, 4,  6])
       .every(function (d) {
         var column = this;
         var theadname = $("#allusers th").eq([d]).text();
         var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            '<select class="form-select tbhdarr w-100 form-select-light "><option value="">'
             + theadname
             + "</option></select>"
           )
@@ -657,7 +656,6 @@ $('#allusers').DataTable({
   },
 
 });
-
 
 
 // all family records
@@ -766,7 +764,7 @@ $('#allfamilyrecords').DataTable({
         var column = this;
         var theadname = $("#allfamilyrecords th").eq([d]).text();
         var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            '<select class="form-select tbhdarr w-100 form-select-light "><option value="">'
             + theadname
             + "</option></select>"
           )
@@ -910,7 +908,7 @@ $('#allrd').DataTable({
         var column = this;
         var theadname = $("#allrd th").eq([d]).text();
         var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            '<select class="form-select tbhdarr w-100 form-select-light "><option value="">'
             + theadname
             + "</option></select>"
           )
@@ -1055,7 +1053,7 @@ $('#allpayments').DataTable({
         var column = this;
         var theadname = $("#allpayments th").eq([d]).text();
         var select = $(
-            '<select class="form-select tbhdarr w-100 form-select-light select2"><option value="">'
+            '<select class="form-select tbhdarr w-100 form-select-light"><option value="">'
             + theadname
             + "</option></select>"
           )
@@ -1110,9 +1108,9 @@ $('input[name="daterange"]').daterangepicker({
 });
 $('input[name="daterange"]').val('');
 $('input[name="daterange"]').attr("placeholder", "Select Date Range");
-$('input[name="daterange"]').on('apply.daterangepicker', function(ev, picker) {
-      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-  });
+$('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+  $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+});
 
 $(".editable").on('click', function () {
   $(this).parent().hide();
@@ -1142,25 +1140,25 @@ document.querySelector(".selectfirst").onclick = function () {
 }
 
 
-function ondelete(){
-	Swal.fire({
-  title: 'Are you sure?',
-  text: "You won't be able to revert this!",
-  icon: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#3085d6',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!'
-}).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire(
-      'Deleted!',
-      'Your file has been deleted.',
-      'success'
-    )
-  }
-})
+function ondelete() {
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You want to deactive this user",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, Deactivate it!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
 }
 
-
-
+// [ pre select ]
+    $('#my-select').multiSelect();

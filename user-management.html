@@ -20,75 +20,68 @@
 </head>
 
 <body class="skin-base animate">
-	<div class="modal fade" id="addnewuser" tabindex="-1"  aria-hidden="true">
+<div class="modal fade" id="addnewuser" tabindex="-1"  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-body">
         <label class="col-form-label fw-bold text-black fs-5 ">Add New User</label>
         <div class="row gy-4">
-			<div class="col-lg-12 profile-page">
-			
-				<div class="profile_image position-relative text-center mb-4"> <img src="assets/images/profile-big.png" alt="" width="126">
-                    <button class="position-absolute top-100 camera-img"><img src="assets/images/camera.svg"  alt=""></button>
-                    <input type="file" class="d-none" id="imageupload">
-                  </div>
-			
-			</div>
-              <div class="col-lg-12 col-xl-6">
-                        <div class="floatinginput">
-                          <input type="text" id="lname" class="form-control textdemo">
-                          <label for="lname" class="form-label">Name</label>
-                        </div>
-                      </div>
-                     
-			
-			<div class="col-lg-12 col-xl-6">
-                        <div class="floatinginput">
-                          <input type="text" id="email" class="form-control textdemo">
-                          <label for="email" class="form-label">Email</label>
-                        </div>
-                      </div>
-			<div class="col-lg-12 col-xl-6">
-                        <div class="floatinginput">
-                          <input type="text" id="Mobile" class="form-control textdemo">
-                          <label for="Mobile" class="form-label">Mobile</label>
-                        </div>
-                      </div>
-			
-			<div class="col-lg-12 col-xl-6">
-                        <div class="floatingselect">
-                          <select class="form-select addfloat" id="Type">
-                            <option value="0">User Type</option>
-                            <option value="smt">Custom</option>
-                            <option value="">Manager</option>
-                          </select>
-                          <label for="Type" class="form-label">User Type</label>
-                        </div>
-                      </div>
-			
-			<div class="col-lg-12 col-xl-6">
-                        <div class="floatinginput">
-                          <input type="text" id="Manager" class="form-control textdemo">
-                          <label for="Manager" class="form-label">Manager Name</label>
-                        </div>
-                      </div>
-			<div class="col-lg-12 col-xl-6">
-                        <div class="floatingselect">
-                          <select class="form-select addfloat" id="Status">
-                            <option value="0">Status</option>
-                            <option value="smt">Active</option>
-                            <option value="">Deactive</option>
-                          </select>
-                          <label for="Status" class="form-label">Status</label>
-                        </div>
-                      </div>
-			<div class="col-lg-12">
-                        <div class="form-floating">
-                          <textarea class="form-control" placeholder="Type You Address" id="Building" style="height: 100px"></textarea>
-                          <label for="Building">Type You Address</label>
-                        </div>
-                      </div>
-                      
+          <div class="col-lg-12 profile-page">
+            <div class="profile_image position-relative text-center mb-4"> <img src="assets/images/profile-big.png" alt="" width="126">
+              <button class="position-absolute top-100 camera-img"><img src="assets/images/camera.svg"  alt=""></button>
+              <input type="file" class="d-none" id="imageupload">
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatinginput">
+              <input type="text" id="lname" class="form-control textdemo">
+              <label for="lname" class="form-label">Name</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatinginput">
+              <input type="text" id="email" class="form-control textdemo">
+              <label for="email" class="form-label">Email</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatinginput">
+              <input type="text" id="Mobile" class="form-control textdemo">
+              <label for="Mobile" class="form-label">Mobile</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatingselect">
+              <select class="form-select addfloat" id="Type">
+                <option value="0">User Type</option>
+                <option value="smt">Custom</option>
+                <option value="">Manager</option>
+              </select>
+              <label for="Type" class="form-label">User Type</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatinginput">
+              <input type="text" id="Manager" class="form-control textdemo">
+              <label for="Manager" class="form-label">Manager Name</label>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-6">
+            <div class="floatingselect">
+              <select class="form-select addfloat" id="Status">
+                <option value="0">Status</option>
+                <option value="smt">Active</option>
+                <option value="">Deactive</option>
+              </select>
+              <label for="Status" class="form-label">Status</label>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Type You Address" id="Building" style="height: 100px"></textarea>
+              <label for="Building">Type You Address</label>
+            </div>
+          </div>
         </div>
         <div class="d-flex mt-5 mb-2 gap-2 align-items-center justify-content-center">
           <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
@@ -98,7 +91,6 @@
     </div>
   </div>
 </div>
-	
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -159,6 +151,7 @@
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap " >
               <h1 class="fs-4 fw-bold text-nowrap"> User Management</h1>
               <div class="d-flex  mt-3 mt-md-0 align-items-center">
+                <a href="assign-modules.html" class="btn btn-outline-secondary ms-md-3 text-nowrap"> <i data-feather="plus"></i> Assign Modules</a>
                 <button class="btn btn-primary ms-md-3 text-nowrap" data-bs-target="#addnewuser" data-bs-toggle="modal"> <i data-feather="plus"></i> Add New User</button>
               </div>
             </div>
@@ -175,7 +168,7 @@
                     <th class="thname">Mobile</th>
                     <th>Email</th>
                     <th>Usertype</th>
-                    <th>Status</th>
+                    <th class="text-center">Status</th>
                     <th>Manager Name</th>
                   </tr>
                 </thead>
@@ -185,79 +178,57 @@
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a>
-                        <ul class="actionbtns ms-4">
-                          <li><a href="user_view.html"><i data-feather="eye"></i></a></li>
-                          
-                          <li><a href="javascript:void(0)" onClick="ondelete();"><i data-feather="trash-2"></i></a></li>
-                        </ul>
-                      </div></td>
+                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a> </div></td>
                     <td> 9958904099 </td>
                     <td>sivaramakrishna@gmail.com</td>
                     <td>Custom</td>
-                    <td>active</td>
+                    <td><div class="form-check form-switch form-control-lg d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      </div></td>
                     <td>Rahul</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a>
-                        <ul class="actionbtns ms-4">
-                          <li><a href="user_view.html"><i data-feather="eye"></i></a></li>
-                          
-                          <li><a href="javascript:void(0)" onClick="ondelete();"><i data-feather="trash-2"></i></a></li>
-                        </ul>
-                      </div></td>
+                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a> </div></td>
                     <td> 9958904099 </td>
                     <td>sivaramakrishna@gmail.com</td>
                     <td>Admin</td>
-                    <td>active</td>
+                    <td><div class="form-check form-switch form-control-lg d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      </div></td>
                     <td>Rahul</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                   <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a>
-                        <ul class="actionbtns ms-4">
-                          <li><a href="user_view.html"><i data-feather="eye"></i></a></li>
-                          
-                          <li><a href="javascript:void(0)" onClick="ondelete();"><i data-feather="trash-2"></i></a></li>
-                        </ul>
-                      </div></td>
+                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a> </div></td>
                     <td> 9958904099 </td>
                     <td>sivaramakrishna@gmail.com</td>
                     <td>Manager</td>
-                    <td>active</td>
+                    <td><div class="form-check form-switch form-control-lg d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      </div></td>
                     <td>Rahul</td>
                   </tr>
-					
-					<tr>
+                  <tr>
                     <td><div class="form-check ms-2 mb-0">
                         <input class="form-check-input mt-1" type="checkbox" value="" name="selectrow" id="contact1">
                         <label class="form-check-label" for="contact1"> 1 </label>
                       </div></td>
-                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a>
-                        <ul class="actionbtns ms-4">
-                          <li><a href="user_view.html"><i data-feather="eye"></i></a></li>
-                          
-                          <li><a href="javascript:void(0)" onClick="ondelete();"><i data-feather="trash-2"></i></a></li>
-                        </ul>
-                      </div></td>
+                    <td><div class="d-flex justify-content-between"> <a href="user_view.html">Ayushi</a> </div></td>
                     <td> 9958904099 </td>
                     <td>sivaramakrishna@gmail.com</td>
                     <td>Viewer</td>
-                    <td>active</td>
+                    <td><div class="form-check form-switch form-control-lg d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                      </div></td>
                     <td>Rahul</td>
                   </tr>
-					
-					
-					
                 </tbody>
               </table>
             </div>
