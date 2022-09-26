@@ -2234,3 +2234,7 @@ input[type="file"]::file-selector-button:hover {
 .ms-container{
 	margin: 0 auto
 }
+.note{
+background-color: white;
+	padding: 10px;
+}

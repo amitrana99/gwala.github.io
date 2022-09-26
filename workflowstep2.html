@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - User View</title>
+<title>Krishnayan Gwala - Workflow Step 2</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -32,9 +32,9 @@
           <thead>
             <tr>
               <th>Menu Name</th>
-              <th>View</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>Read</th>
+              <th>Write</th>
+              <th>Execute</th>
             </tr>
           </thead>
           <tbody>
@@ -132,24 +132,23 @@
     </div>
   </div>
 </div>
-
-	<div class="modal" id="editdatatype" tabindex="2"  aria-hidden="true">
+<div class="modal" id="editdatatype" tabindex="2"  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
         <h5 class="fw-bold text-black modal-title">Data To Show in Contacts</h5>
-         <div class="d-flex justify-content-between w-100 pt-3">
-        <select multiple="multiple" id="my-select" name="my-select[]" class="">
-          <option value="elem_1" selected="">Name</option>
-          <option value="elem_2" selected>Email</option>
-          <option value="elem_3" selected>Mobile</option>
-          <option value="elem_4" selected>Whatsapp Number</option>
-          <option value="elem_5" selected>Created Date</option>
-		  <option selected>State</option>
-		  <option selected>City</option>
-		  <option value="">Address</option>
-        </select>
-      </div>
+        <div class="d-flex justify-content-between w-100 pt-3">
+          <select multiple="multiple" id="my-select" name="my-select[]" class="">
+            <option value="elem_1" selected="">Name</option>
+            <option value="elem_2" selected>Email</option>
+            <option value="elem_3" selected>Mobile</option>
+            <option value="elem_4" selected>Whatsapp Number</option>
+            <option value="elem_5" selected>Created Date</option>
+            <option selected>State</option>
+            <option selected>City</option>
+            <option value="">Address</option>
+          </select>
+        </div>
         <div class="d-flex mt-4 mb-2 gap-2 align-items-center justify-content-center">
           <button type="button" class="btn btn-outline-secondary mw-100px rounded-pill" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary mw-100px rounded-pill">Update</button>
@@ -168,14 +167,14 @@
             <thead>
               <tr>
                 <th>Fields Name</th>
-                <th>View</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Read</th>
+                <th>Write</th>
+                <th>Execute</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td >Name</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Name</td>
                 <td><label for="check22" class="d-block">
                     <input id="check22" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -187,7 +186,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >Email</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Email</td>
                 <td><label for="check25" class="d-block">
                     <input id="check25" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -199,7 +198,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >Mobile</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Mobile</td>
                 <td><label for="check28" class="d-block">
                     <input id="check28" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -211,7 +210,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >whatsapp Number</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">whatsapp Number</td>
                 <td><label for="check31" class="d-block">
                     <input id="check31" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -223,7 +222,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >Created date</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Created date</td>
                 <td><label for="check34" class="d-block">
                     <input id="check34" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -235,7 +234,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >Status</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">Status</td>
                 <td><label for="check37" class="d-block">
                     <input id="check37" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -247,7 +246,7 @@
                   </label></td>
               </tr>
               <tr>
-                <td >City</td>
+                <td data-bs-target="#editmenutitle" data-bs-toggle="modal">City</td>
                 <td><label for="check40" class="d-block">
                     <input id="check40" type="checkbox" checked class="form-check-input form-control">
                   </label></td>
@@ -285,9 +284,9 @@
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
-       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
-		 <nav class="nav-sub"> <a href="user-management.html" class="sub-link active">User Management</a> <a href="workflow.html" class="sub-link">Workflow</a> </nav>
-		</li>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
+        <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link active">Workflow</a> </nav>
+      </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
         <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link">Feedback List</a> </nav>
       </li>
@@ -327,211 +326,56 @@
     <div class="container-fluid">
       <div class="row gy-4	">
         <div class="col-md-12">
-          <div class="d-flex align-items-center justify-content-between flex-wrap " > <a href="user-management.html" class="text-black"> <i data-feather="chevron-left"></i> Back to Users</a> </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body ">
-              <div class="d-flex flex-wrap flex-sm-nowrap mb-6">
-                <div class="flex-grow-1 ms-1">
-                  <div class="row gy-4">
-                    <div class="col-lg-12">
-                      <div class="d-flex align-items-center justify-content-between flex-wrap mb-3" >
-                        <h2 class="fs-5 ">Personal Deatils</h2>
-                      </div>
-                      <ul class="contactdetaillist">
-                        <li class="editable"><strong>Name :</strong> Ayushi jain</li>
-                        <li class="editable"><strong>Email :</strong> Surendrasharma@gmail.com</li>
-                        <li class="editable"><strong>Mobile :</strong> 9958904099</li>
-                        <li class="editable"><strong>User Type :</strong> Custom</li>
-                        <li class="editable"><strong>Status :</strong> Active</li>
-                        <li class="editable"><strong>Manager Name:</strong> Brajesh Kumar</li>
-                      </ul>
-                      <div class="editform py-2">
-                        <div class="row gy-4">
-                          <div class="col-lg-4">
-                            <div class="floatinginput">
-                              <input type="text" id="Name" class="form-control textdemo" value="Sumit">
-                              <label for="Name" class="form-label">Name</label>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="floatinginput">
-                              <input type="text" id="Email" class="form-control textdemo" value="Surendrasharma@gmail.com">
-                              <label for="Email" class="form-label">Email</label>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="floatinginput">
-                              <input type="text" id="Mobile" class="form-control textdemo" value="9958904099">
-                              <label for="Mobile" class="form-label">Mobile</label>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="floatingselect">
-                              <select class="form-select addfloat" id="usertype">
-                                <option value="0">User Type</option>
-                                <option value="">Custom</option>
-                                <option value="">Manager</option>
-                              </select>
-                              <label for="usertype" class="form-label">User Type</label>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="floatingselect">
-                              <select class="form-select addfloat" id="Status">
-                                <option value="0">Status</option>
-                                <option value="">Active</option>
-                                <option value="">Deactive</option>
-                              </select>
-                              <label for="Status" class="form-label">Status</label>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="floatinginput">
-                              <input type="text" id="Manager" class="form-control textdemo" value="Brajesh">
-                              <label for="Manager" class="form-label">Manager Name</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 text-center">
-                      <div class="btn-group editbuttons">
-                        <button type="button" class="btn btn-secondary closeeditform">Close</button>
-                        <button type="button" class="btn btn-primary">Update</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="d-flex align-items-center justify-content-between flex-wrap " >
+            <h1 class="fs-4 fw-bold text-nowrap">Workflow</h1>
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body ">
-              <div class="d-flex flex-wrap flex-sm-nowrap mb-6">
-                <div class="flex-grow-1 ms-1">
-                  <div class="row gy-4">
-                    <div class="col-lg-12">
-                      <div class="d-flex align-items-center justify-content-between flex-wrap mb-3" >
-                        <h2 class="fs-5 mb-0">Menu Access</h2>
-                        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#editpermisions"> <i data-feather="edit-3" class="w-20 h-20"></i> Edit</button>
-                      </div>
-                      <ul class="contactdetaillist">
-                        <li><strong>Contact :</strong> Read, Write, Delete</li>
-                        <li><strong>Recurring Donation :</strong> Read</li>
-                        <li><strong>Payments :</strong> Read</li>
-                        <li><strong>Family Celebration :</strong> Read</li>
-                        <li><strong>Task And Activity :</strong> Read</li>
-                        <li><strong>Data Import:</strong> Read</li>
-                        <li><strong>Communication</strong> Read</li>
-                      </ul>
-                    </div>
-                  </div>
+          <div class="card card-1">
+            <div class="card-header">
+              <h2 class=" mb-0 card-title">Workflow Time Triger Edit</h2>
+            </div>
+            <div class="card-body py-4">
+              <div class="row align-items-center gy-4">
+                <div class="col-lg-4 text-end">
+					<label for="" class="fw-bold">Workflow Rule</label>                                    
                 </div>
+				<div class="col-lg-3"><span> Contacts update </span></div>
+				 
               </div>
+				<div class="row gx-3 mt-2">
+				<div class="col-lg-4">
+					
+					</div>
+					<div class="col-lg-2">
+					 <input type="text" class="form-control form-control-sm" value="30">
+					</div>
+					 <div class="col-lg-1">
+				           <select class="form-select form-select-sm">
+                              <option value="">Days</option>
+                            </select>
+				      </div>
+					 <div class="col-lg-1">
+				           <select class="form-select form-select-sm">
+                              <option value="">After</option>
+                            </select>
+				      </div>
+					 <div class="col-lg-2">
+				           <select class="form-select form-select-sm">
+                              <option value="">Rule Trigger Date</option>
+                            </select>
+				      </div>
+				</div>
             </div>
           </div>
         </div>
+        
+        
         <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body ">
-              <div class="row gy-4">
-                <div class="col-lg-12">
-                  <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
-                    <h2 class="fs-5">Manage Data Fields</h2>
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table dataTable">
-                      <thead>
-                        <tr>
-                          <th>Data Name</th>
-                          <th>Current Fields Name</th>
-                          <th>Last Updated by</th>
-                          <th>Last Updated Date</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Contacts</td>
-                          <td><ul class="datatypelist">
-                              <li>Name</li>
-                              <li>Email</li>
-                              <li>Mobile</li>
-                              <li>Whatsapp Number</li>
-                              <li>Created Date</li>
-                              <li>Status</li>
-                              <li>City</li>
-                            </ul></td>
-                          <td>Rahul</td>
-                          <td>20-12-2022</td>
-                          <td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editdatatype">Update</button></td>
-                        </tr>
-						  
-						  <tr>
-                          <td>Recurring Donation</td>
-                          <td><ul class="datatypelist">
-                              <li>UMRN ID</li>
-                              <li>Name</li>
-                              <li>Payment Frequency</li>
-                              <li>ECS Amount</li>
-                              <li>Next Donation Date</li>
-                              <li>Mandate Status</li>
-                              
-                            </ul></td>
-                          <td>Rahul</td>
-                          <td>20-12-2022</td>
-                          <td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editdatatype">Update</button></td>
-                        </tr>
-						  
-						  <tr>
-                          <td>Payments</td>
-                          <td><ul class="datatypelist">
-                              <li>Receipt Number</li>
-                              <li>Amount</li>
-                              <li>Amount</li>
-                              <li>Payment Mode</li>
-                              <li>Payment Date</li>
-                              <li>Status</li>
-                              
-                            </ul></td>
-                          <td>Rahul</td>
-                          <td>20-12-2022</td>
-                          <td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editdatatype">Update</button></td>
-                        </tr>
-						  
-						  <tr>
-                          <td>family Celebration Records</td>
-                          <td><ul class="datatypelist">
-                              <li>Member Name</li>
-                              <li>Type</li>
-                              <li>Date</li>
-                              <li>SF RD ID</li>
-                              <li>Contact Name</li>
-                              <li>Mobile</li>
-                              <li>Gwala Contact ID</li>
-							  <li>Email</li>
-							  <li>Gender</li>
-							  <li>Gotra</li>
-							  <li>Relation</li>
-							  <li>Remark</li>
-							  <li>Gwala RD ID</li>
-							  <li>Amount</li>
-							  <li>Close ID</li>
-                            </ul></td>
-                          <td>Rahul</td>
-                          <td>20-12-2022</td>
-                          <td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editdatatype">Update</button></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="">
+              <button class="btn btn-secondary">Cancel</button>
+              <a href="workflowstep2.html" class="btn btn-primary">Save</a> </div>
           </div>
         </div>
       </div>
@@ -554,10 +398,11 @@
 <script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
-<script type="text/javascript" src="assets/js/main.js"></script>
-	<script>
+<script type="text/javascript" src="assets/js/main.js"></script> 
+<script>
 	// [ pre select ]
     $('#my-select').multiSelect();
+	$('.moduleselect2').select2();
 	</script>
 </body>
 </html>
