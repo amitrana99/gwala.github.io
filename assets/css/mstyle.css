@@ -2192,8 +2192,7 @@ input[type="file"]::file-selector-button:hover {
 }
 .actionbtns li a{
 	background-color: #ffffff;
-	
-	width: 28px;
+	/* width: 28px; */
 	height: 26px;
 	text-align: center;
 	display: flex;
