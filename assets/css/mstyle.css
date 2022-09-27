@@ -2190,50 +2190,56 @@ input[type="file"]::file-selector-button:hover {
 .actionbtns li {
   margin: 0 3px;
 }
-.actionbtns li a{
-	background-color: #ffffff;
-	/* width: 28px; */
-	height: 26px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 4px;
-	box-shadow: 2px 2px #e2e1e1;
-	padding: 5px;
-	/* color: white!important; */
+.actionbtns li a {
+  background-color: #ffffff;
+  /* width: 28px; */
+  height: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 2px 2px #e2e1e1;
+  padding: 5px;
+  /* color: white!important; */
 }
-.actionbtns li a:hover{
-	background-color: antiquewhites
+.actionbtns li a:hover {
+  background-color: antiquewhites
 }
-.actionbtns li a:active{
-	box-shadow: none!important;
+.actionbtns li a:active {
+  box-shadow: none !important;
 }
 .actionbtns li a svg {
   width: 20px;
   height: 20px;
 }
-.datatypelist{
-	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	max-width: 400px;
-	flex-wrap: wrap
+.datatypelist {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 400px;
+  flex-wrap: wrap
 }
-.datatypelist li{
-	margin: 3px 5px 2px 0;
-	background-color: #f8d4a5;
-	padding: 3px 8px;
-	border-radius: 5px;
-	font-size: 13px;
+.datatypelist li {
+  margin: 3px 5px 2px 0;
+  background-color: #f8d4a5;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 13px;
 }
-
-
-.ms-container{
-	margin: 0 auto
+.ms-container {
+  margin: 0 auto;
+  width: 100% !important;
 }
-.note{
-background-color: white;
-	padding: 10px;
+.note {
+  background-color: white;
+  padding: 10px;
+}
+.custom-header {
+  background-color: #ff6400;
+  color: white;
+  padding: 5px 12px;
+ font-size: 14px;
+ 
 }

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krishnayan Gwala - Workflow Step 2</title>
+<title>Krishnayan Gwala - Email Alert Edit</title>
 <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
 <link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
@@ -20,9 +20,6 @@
 </head>
 
 <body class="skin-base animate">
-
-
-
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -88,44 +85,81 @@
         <div class="col-lg-12">
           <div class="card card-1">
             <div class="card-header">
-              <h2 class=" mb-0 card-title">Workflow Time Triger Edit</h2>
+              <h2 class=" mb-0 card-title">Email Alert Edit</h2>
             </div>
             <div class="card-body py-4">
-              <div class="row align-items-center gy-4">
-                <div class="col-lg-4 text-end">
-					<label for="" class="fw-bold">Workflow Rule</label>                                    
+              <div class="row gy-md-4 gy-2">
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Descrition</label>
                 </div>
-				<div class="col-lg-3"><span> Contacts update </span></div>
-				 
+                <div class="col-lg-5">
+                  <textarea class="form-control"></textarea>
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Unique Name</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Email Template</label>
+                </div>
+                <div class="col-lg-5">
+                  <div class="d-flex">
+                    <input type="text" class="form-control">
+                    <button class="btn btn-primary ms-2"><i data-feather="search"></i></button>
+                  </div>
+                </div>
               </div>
-				<div class="row gx-3 mt-2">
-				<div class="col-lg-4">
-					
-					</div>
-					<div class="col-lg-2">
-					 <input type="text" class="form-control form-control-sm" value="30">
-					</div>
-					 <div class="col-lg-1">
-				           <select class="form-select form-select-sm">
-                              <option value="">Days</option>
-                            </select>
-				      </div>
-					 <div class="col-lg-1">
-				           <select class="form-select form-select-sm">
-                              <option value="">After</option>
-                            </select>
-				      </div>
-					 <div class="col-lg-2">
-				           <select class="form-select form-select-sm">
-                              <option value="">Rule Trigger Date</option>
-                            </select>
-				      </div>
-				</div>
+              <div class="row mt-4 gy-4">
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Receipt Type</label>
+                </div>
+                <div class="col-lg-5">
+                  <div class="d-flex align-items-center mb-4">
+                    <select class="form-select me-2">
+                      <option value="">User</option>
+                    </select>
+                    For
+                    <input type="text" class="form-control ms-2" value="30">
+                    <button class="btn btn-primary ms-2"><i data-feather="search"></i></button>
+                  </div>
+                  <select multiple="multiple" id="my-select" name="my-select[]" class="mt-4">
+                    <option value="elem_1" selected="">Name</option>
+                    <option value="elem_2" selected>Email</option>
+                    <option value="elem_3" selected>Mobile</option>
+                    <option value="elem_4" selected>Whatsapp Number</option>
+                    <option value="elem_5" selected>Created Date</option>
+                    <option selected>State</option>
+                    <option selected>City</option>
+                    <option value="">Address</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 text-md-end">
+				<label for="" class="fw-bold"> Additional Email</label> 
+				  </div>
+                <div class="col-lg-5">
+				  <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+					<small>You can enter upto 5 email address</small>
+				  </div>
+				  <div class="col-lg-4 text-md-end">
+				  <label for="" class="fw-bold"> From Email Address</label> 
+				  </div>
+				  <div class="col-lg-5">
+				  <select name="" class="form-select" id="">
+					  <option value="">Current user email address</option>
+					  </select>
+					  <div class="form-check small mt-2">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+  <label class="form-check-label" for="flexCheckChecked">
+    Make this email address the default from email address for this object email alert
+  </label>
+</div>
+				  </div>
+              </div>
             </div>
           </div>
         </div>
-        
-        
         <div class="col-lg-12">
           <div class="d-flex align-items-center justify-content-center">
             <div class="">
@@ -156,7 +190,10 @@
 <script type="text/javascript" src="assets/js/main.js"></script> 
 <script>
 	// [ pre select ]
-    $('#my-select').multiSelect();
+    $('#my-select').multiSelect({
+		  selectableHeader: "<div class='custom-header'>Available Receipts</div>",
+  selectionHeader: "<div class='custom-header'>Selected Receipts</div>",
+	});
 	$('.moduleselect2').select2();
 	</script>
 </body>
