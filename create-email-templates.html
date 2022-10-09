@@ -20,9 +20,6 @@
 </head>
 
 <body class="skin-base animate">
-
-
-
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -40,7 +37,7 @@
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
-        <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link active">Workflow</a><a href="templates.html" class="sub-link">Templates</a> </nav>
+        <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link ">Workflow</a><a href="templates.html" class="sub-link active">Templates</a> </nav>
       </li>
       <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
         <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link">Feedback List</a> </nav>
@@ -81,68 +78,130 @@
     <div class="container-fluid">
       <div class="row gy-4	">
         <div class="col-lg-12">
-          <div class="d-flex align-items-center justify-content-between flex-wrap mb-3" >
-            <h1 class="fs-4 fw-bold text-nowrap">Workflows</h1>
-            <a class="btn btn-primary" href="create-workflow.html">Create New Workflow</a>
-          </div>
-          <div class="table-responsive">
-            <table class="table align-middle dataTable">
-              <thead>
-                <tr>
-                  <th>S No.</th>
-                  <th>Rule Name</th>
-                  <th>Action</th>
-                  <th>Description</th>
-                  <th align="center">Time Dependent</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Email Alert</td>
-                  <td><ul class="actionbtns">
-                      <li><a href=""><i data-feather="delete" class="me-1"></i> Remove</a></li>
-                      <li><a href="emailalertedit.html"><i data-feather="edit" class="me-1"></i> Edit</a></li>
-                    </ul></td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero placeat vel impedit dolor sed ut! Nemo molestias suscipit corrupti! Mollitia laboriosam doloremque voluptatum! Neque mollitia porro cum eius explicabo.</td>
-                  <td align="center">14 days</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Outbound Message</td>
-                  <td><ul class="actionbtns">
-                      <li><a href=""><i data-feather="delete" class="me-1"></i> Remove</a></li>
-                      <li><a href="emailalertedit.html"><i data-feather="edit" class="me-1"></i> Edit</a></li>
-                    </ul></td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero placeat vel impedit dolor sed ut! Nemo molestias suscipit corrupti! Mollitia laboriosam doloremque voluptatum! Neque mollitia porro cum eius explicabo.</td>
-                  <td align="center">7 days</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Email Alert</td>
-                  <td><ul class="actionbtns">
-                      <li><a href=""><i data-feather="delete" class="me-1"></i> Remove</a></li>
-                      <li><a href=""><i data-feather="edit" class="me-1"></i> Edit</a></li>
-                    </ul></td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero placeat vel impedit dolor sed ut! Nemo molestias suscipit corrupti! Mollitia laboriosam doloremque voluptatum! Neque mollitia porro cum eius explicabo.</td>
-                  <td align="center">7 days</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Email Alert</td>
-                  <td><ul class="actionbtns">
-                      <li><a href=""><i data-feather="delete" class="me-1"></i> Remove</a></li>
-                      <li><a href=""><i data-feather="edit" class="me-1"></i> Edit</a></li>
-                    </ul></td>
-                  <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vero placeat vel impedit dolor sed ut! Nemo molestias suscipit corrupti! Mollitia laboriosam doloremque voluptatum! Neque mollitia porro cum eius explicabo.</td>
-                  <td align="center">14 days</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="d-flex align-items-center justify-content-between flex-wrap" >
+            <h1 class="fs-4 fw-bold text-nowrap"> <i data-feather="arrow-left"></i> <a href="templates.html" class="fw-normal fs-5 text-black">Back to Templates</a></h1>
           </div>
         </div>
-        <div class="col-md-12"> </div>
-       
+        <div class="col-lg-12">
+          <div class="card card-1">
+            <div class="card-header">
+              <div class="d-flex align-items-center justify-content-between">
+                <h5 class="mb-0">Email Template Information</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row gy-md-4 gy-2 align-items-center">
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Folder</label>
+                </div>
+                <div class="col-lg-5">
+                  <select name="" class="form-select" id="">
+                    <option value="">Unified public classic email templates</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="chk" class="fw-bold">Available For Use</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="checkbox" class="form-check-input" id="chk">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Email Template Name</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Template Unique Name</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Encoding</label>
+                </div>
+                <div class="col-lg-5">
+                  <select name="" class="form-select" id="">
+                    <option value="">General US & Western Europe</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Description</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label for="" class="fw-bold">Subject</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-12">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="equalwidth">
+                      <button class="btn btn-secondary">Previous</button>
+                      <a href="workflowstep2.html" class="btn btn-primary">Next</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card card-1">
+            <div class="card-header">
+              <div class="d-flex align-items-center justify-content-between">
+                <h5 class="mb-0">Available Merge Fields</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row gy-md-4 gy-2 align-items-center">
+                <div class="col-lg-4">
+                  <label for="" class="fw-bold col-form-label">select Field Type</label>
+                  <select name="" class="form-select" id="">
+                    <option value="">Contact Fields</option>
+                  </select>
+                </div>
+                <div class="col-lg-4">
+                  <label for="" class="fw-bold col-form-label">select Field</label>
+                  <select name="" class="form-select" id="">
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="col-lg-4">
+                  <label class="fw-bold col-form-label">Copy Merge Vield value</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card card-1">
+            <div class="card-header">
+              <div class="d-flex align-items-center justify-content-between">
+                <h5 class="mb-0">HTML Email Content</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row gy-md-4 gy-2">
+                <div class="col-lg-4 text-md-end">
+                  <label class="fw-bold col-form-label">Subject</label>
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-4 text-md-end">
+                  <label class="fw-bold col-form-label">HTML Body</label>
+                </div>
+                <div class="col-lg-5">
+                  <textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -163,14 +222,6 @@
 <script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
-<script type="text/javascript" src="assets/js/main.js"></script> 
-<script>
-	// [ pre select ]
-    $('#my-select').multiSelect({
-		  selectableHeader: "<div class='custom-header'>Selectable items</div>",
-  selectionHeader: "<div class='custom-header'>Selection items</div>"
-	});
-	$('.moduleselect2').select2();
-	</script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
