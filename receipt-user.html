@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishnayan Gwala - Email Alert Edit</title>
+<link rel="icon" href="assets/images/favicon.png" type="image/png" />
+<link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
+<link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
+<link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
+<link rel="stylesheet" href="assets/css/mstyle.css">
+<link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+<link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
+<link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="skin-base animate">
+<div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
+<div class="sidebar">
+  <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
+  <div class="sidebar-body">
+    <ul class="nav-sidebar">
+      <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Receipt</span></a> </li>
+    </ul>
+  </div>
+</div>
+<!-- sidebar -->
+
+<div class="content">
+  <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i> </a>
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <div class=""> <img src="assets/images/logo2.png" width="350" alt="" class="d-none d-lg-block img-fluid"> </div>
+      <div class="d-flex align-items-center ">
+        <button class="ms-auto btn me-4 btn-light d-none d-lg-block"><i data-feather="refresh-ccw"></i></button>
+        <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
+        <div class="dropdown position-relative">
+          <button class="btn btn-outline-light fs-14 d-flex align-items-center  lh-sm text-start text-black border-black-50 rounded-pill p-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="d-flex align-items-center"> <img src="assets/images/avatar.png" class="me-2" width="56" alt="">
+            <div class=""> Welcome<br>
+              Shri Amit Rana<br>
+              <span class="fs-12 text-black-50">ADMIN</span></div>
+          </div>
+          </button>
+          <ul class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-header -->
+  <div class="content-body">
+    <div class="container-fluid">
+      <div class="row gy-4	">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center justify-content-between flex-wrap " >
+            <h1 class="fs-4 fw-bold text-nowrap">Receipts</h1>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="card card-1">
+            <div class="card-header">
+              <h5>Search User</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 offset-md-3">
+                  <div class="form-group position-relative">
+                    <input type="text" class="form-control" placeholder="Search by – Mobile, Email, Gwala id">
+                    <button class="btn btn-primary position-absolute end-0 top-0"> <i data-feather="search"></i> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+			
+		  </div>
+		  
+		   <div class="col-lg-12">
+          <div class="card card-1">
+            <div class="card-header">
+              <h5> Create New Receipt</h5>
+            </div>
+            <div class="card-body">
+              <div class="row gy-4">
+                <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Name</label>
+					</div>
+				  </div>
+                <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="email" class="form-control text-demo">
+					  <label for="">Address</label>
+					</div>
+				  </div>
+                <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Pancard</label>
+					</div></div>
+				  
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Mobile</label>
+					</div></div>
+				  
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Email</label>
+					</div></div>
+				  
+				  <div class="col-lg-4">
+				 <div class="floatingselect">
+              <select class="form-select addfloat" id="Mode">
+                <option value="0">Mode of payment</option>
+                <option value="smt">Online</option>
+                <option value="">Cash</option>
+              </select>
+              <label for="Mode" class="form-label">Mode of payment</label>
+            </div></div>
+				  
+				  <div class="col-lg-4">
+				 <div class="floatingselect">
+              <select class="form-select addfloat" id="Type">
+                <option value="0">Type</option>
+                <option value="smt">Online</option>
+                <option value="">Cash</option>
+              </select>
+              <label for="Type" class="form-label">Type</label>
+            </div></div>
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Amount</label>
+					</div></div>
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Bank Name</label>
+					</div></div>
+				  
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for="">Check Number</label>
+					</div></div>
+				  
+				  <div class="col-lg-4">
+				  <div class="floatinginput">
+					<input type="text" class="form-control text-demo">
+					  <label for=""> Check Date</label>
+					</div></div>
+				  <div class="col-lg-12 text-center">
+				  
+				  <button class="btn btn-primary">Submit</button>
+				  </div>
+				  
+              </div>
+            </div>
+          </div>
+			
+		  </div>
+		  
+		  <div class="col-lg-12">
+          <div class="table-responsive mt-2 dashboard">
+            <table class="table w-100 dataTable">
+              <thead>
+                <tr>
+                
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Pan</th>
+                  <th>Mobile</th>
+                  <th>Email</th>
+                  <th>Mode of Payment</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td>Rahul sharma</td>
+                  <td>Haridwar</td>
+                  <td>SDFSDDFV</td>
+                  <td>9999999999 </td>
+                  <td>rahul@gmail.com</td>
+                  <td>Online</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-body --> 
+</div>
+<!-- content --> 
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
+<script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
+<script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
+<script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
+<script type="text/javascript" src="assets/js/main.js"></script> 
+<script>
+	// [ pre select ]
+    $('#my-select').multiSelect({
+		  selectableHeader: "<div class='custom-header'>Available Receipts</div>",
+  selectionHeader: "<div class='custom-header'>Selected Receipts</div>",
+	});
+	$('.moduleselect2').select2();
+	</script>
+</body>
+</html>
