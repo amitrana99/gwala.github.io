@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
 <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
 <link rel="stylesheet" href="assets/css/mstyle.css">
+
 <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
 <link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
@@ -25,7 +26,27 @@
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
   <div class="sidebar-body">
     <ul class="nav-sidebar">
-      <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Receipt</span></a> </li>
+      <li class="nav-item"> <a href="dashboard-admin.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
+      <li class="nav-item "> <a href="contacts.html" class="nav-link"><i data-feather="users"></i><span>Contacts</span> </a> </li>
+      <li class="nav-item "> <a href="rd.html" class="nav-link"><i data-feather="calendar"></i><span>Recurring Donation</span> </a> </li>
+      <li class="nav-item"> <a href="allpayments.html" class="nav-link"><i data-feather="dollar-sign"></i><span>Payments</span></a> </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="smile"></i><span  >Family Celebration </span> </a>
+        <nav class="nav-sub"> <a href="familycelebrationAllrecords.html" class="sub-link">All Records </a> <a href="schduled-events-report.html" class="sub-link">Schduled Events Report</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file-text"></i><span  >Task and Activities</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
+		 <li class="nav-item active"> <a href="receipt-user.html" class="nav-link"> <i data-feather="file"></i><span  >Receipts</span> </a> </li>
+      <li class="nav-item "> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
+        <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link">Workflow</a><a href="templates.html" class="sub-link">Templates</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="message-circle"></i><span  >Communication</span> </a>
+        <nav class="nav-sub"> <a href="email_log.html" class="sub-link">Email Log </a> <a href="feedbacklist.html" class="sub-link">Feedback List</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="sun"></i><span  >Astrology</span> </a>
+        <nav class="nav-sub"> <a href="" class="sub-link">Query </a> <a href="" class="sub-link">SMS Templates </a> <a href="" class="sub-link">Query Reply</a> </nav>
+      </li>
     </ul>
   </div>
 </div>
@@ -81,86 +102,203 @@
           </div>
         </div>
         <div class="col-lg-12">
+          <div class="table-responsive mt-2 dashboard">
+            <table class="table w-100 dataTable">
+              <thead>
+                <tr>
+                  <th> <div class="form-check mb-0">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="checkAll">
+                      <label class="form-check-label" for="checkAll"> S no </label>
+                    </div>
+                  </th>
+                  <th>Receipt No.</th>
+                  <th>Name</th>
+                  <th>City</th>
+                  <th>Mobile</th>
+                  <th>Mode of Payment</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="form-check mb-0">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                      <label class="form-check-label" for="check1"> 1 </label>
+                    </div></td>
+                  <td>49419494973</td>
+                  <td>Rahul</td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Online</td>
+                  <td>Rs. 5000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-12">
           <div class="card card-1">
             <div class="card-header">
               <h5> Create New Receipt</h5>
             </div>
             <div class="card-body">
-              <div class="row gy-4">
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Name</label>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="bgnew p-3">
+                    <div class="row gy-3">
+                      <div class="col-lg-12"> <strong>Personal Details</strong> </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="Name" placeholder="Name">
+                          <label for="Name">Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="Pancard" placeholder="Name">
+                          <label for="Pancard">Pancard</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="tel" class="form-control" id="Mobile" placeholder="Name">
+                          <label for="Mobile">Mobile</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="Email" placeholder="Name">
+                          <label for="Email">Email</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="email" class="form-control text-demo">
-                    <label for="">Address</label>
+              </div>
+              <div class="row my-3 bigheight">
+                <div class="col-lg-12">
+                  <div class="bgnew p-3">
+                    <div class="row gy-3">
+                      <div class="col-lg-12"> <strong>Address</strong> </div>
+                      <div class="col-lg-3">
+						  
+						  <div class="form-group floating-group floating-diff position-relative">
+								<label class="floating-label">Select Country</label>
+								<select id="country" name="country" class="form-control form-control-sm floating-control select2">
+									<option value="">Select Country</option>   
+									<option value="Afganistan">Afghanistan</option>
+									<option value="Albania">Albania</option>
+									<option value="India">India</option>
+									<option value="American Samoa">American Samoa</option>
+									<option value="Andorra">Andorra</option>
+									<option value="Angola">Angola</option>
+								</select>
+							</div>
+						  
+						  
+                        
+                      </div>
+                      <div class="col-lg-3">
+                         <div class="form-group floating-group floating-diff position-relative">
+								<label class="floating-label">Select State</label>
+								<select id="state" name="state" class="form-control form-control-sm floating-control select2">
+									<option value="">Select Country</option>   
+									<option value="Afganistan">Afghanistan</option>
+									<option value="Albania">Albania</option>
+									<option value="India">India</option>
+									<option value="American Samoa">American Samoa</option>
+									<option value="Andorra">Andorra</option>
+									<option value="Angola">Angola</option>
+								</select>
+							</div>
+                      </div>
+                      <div class="col-lg-3">
+                       <div class="form-floating mb-3">
+                          <input type="tel" class="form-control" id="City" placeholder="Name">
+                          <label for="City">City</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Pancard</label>
+              </div>
+              <div class="row my-3 bigheight align-items-baseline">
+                <div class="col-lg-12">
+                  <div class="bgnew p-3">
+                    <div class="row gy-3">
+                      <div class="col-lg-12"> <strong>Payment</strong> </div>
+                      <div class="col-lg-3">
+						  
+						  <div class="form-group floating-group floating-diff position-relative">
+								<label class="floating-label">Mode of payment</label>
+								<select id="Mode" name="Mode" class="form-control form-control-sm floating-control select2">
+									<option value="">Mode of payment</option>   
+									<option value="Afganistan">Online</option>
+									<option value="Albania">Cash</option>								
+								</select>
+							</div>
+						  
+                       
+                      </div>
+                      <div class="col-lg-3">
+						   <div class="form-group floating-group floating-diff position-relative">
+								<label class="floating-label">Type</label>
+								<select id="Type" name="Type" class="form-control form-control-sm floating-control select2">
+									<option value="">Type</option>   
+									   <option value="anniversary">Anniversary</option>
+                            <option value="bhusa-fodder">Bhusa / Fodder</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="cow-shed-construction">Cow Shed / Construction</option>
+                            <option value="ecs">ECS</option>
+                            <option value="gau-katha">Gau Katha</option>
+                            <option value="gaudaan">Gaudaan</option>
+                            <option value="gausewa">Gausewa</option>
+                            <option value="hospital">Hospital</option>
+                            <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                            <option value="yagya">Yagya / Pooja</option>							
+								</select>
+							</div>
+						  
+                   
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="Amount" placeholder="Name">
+                          <label for="Amount">Amount</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Mobile</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="bgnew p-3">
+                    <div class="row gy-3">
+                      <div class="col-lg-12"> <strong>Bank Details</strong> </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="BankName" placeholder="Name">
+                          <label for="BankName">Bank Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="Check" placeholder="Name">
+                          <label for="Check">Check Number</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="Date" placeholder="Name">
+                          <label for="Date">Check Date</label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Email</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatingselect">
-                    <select class="form-select addfloat" id="Mode">
-                      <option value="0">Mode of payment</option>
-                      <option value="smt">Online</option>
-                      <option value="">Cash</option>
-                    </select>
-                    <label for="Mode" class="form-label">Mode of payment</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatingselect">
-                    <select class="form-select addfloat" id="Type">
-                      <option value="0">Type</option>
-                      <option value="smt">Online</option>
-                      <option value="">Cash</option>
-                    </select>
-                    <label for="Type" class="form-label">Type</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Amount</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Bank Name</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for="">Check Number</label>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="floatinginput">
-                    <input type="text" class="form-control text-demo">
-                    <label for=""> Check Date</label>
-                  </div>
-                </div>
+              </div>
+              <div class="row gy-4 mt-4">
                 <div class="col-lg-12 text-center">
                   <button class="btn btn-primary">Submit</button>
                 </div>
@@ -168,94 +306,44 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="table-responsive mt-2 dashboard">
-            <table class="table w-100 dataTable">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Address</th>
-                  <th>Pan</th>
-                  <th>Mobile</th>
-                  <th>Email</th>
-                  <th>Mode of Payment</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Rahul sharma</td>
-                  <td>Haridwar</td>
-                  <td>SDFSDDFV</td>
-                  <td>9999999999 </td>
-                  <td>rahul@gmail.com</td>
-                  <td>Online</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-		  
-		  <div class="col-lg-6">
+        <div class="col-lg-6">
           <div class="card card-1">
             <div class="card-header">
               <h5 class="mb-0">User Details</h5>
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-lg-3">
-                 <strong>Address</strong>
-                </div>
-				  <div class="col-lg-9">
-				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				  </div>
+                <div class="col-lg-3"> <strong>Address</strong> </div>
+                <div class="col-lg-9"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
               </div>
-				 <div class="row my-3">
-                <div class="col-lg-3">
-                 <strong>Mobile</strong>
-                </div>
-				  <div class="col-lg-9">
-				  9958994616 
-				  </div>
+              <div class="row my-3">
+                <div class="col-lg-3"> <strong>Mobile</strong> </div>
+                <div class="col-lg-9"> 9958994616 </div>
               </div>
-				 <div class="row">
-                <div class="col-lg-3">
-                 <strong>Email</strong>
-                </div>
-				  <div class="col-lg-9">
-				  amit@gmail.com
-				  </div>
+              <div class="row">
+                <div class="col-lg-3"> <strong>Email</strong> </div>
+                <div class="col-lg-9"> amit@gmail.com </div>
               </div>
             </div>
           </div>
         </div>
-		  
-		   <div class="col-lg-6">
+        <div class="col-lg-6">
           <div class="card card-1">
             <div class="card-header">
               <h5 class="mb-0">Cash Amount Limit</h5>
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-lg-3">
-                 <strong>Max Limit</strong>
-                </div>
-				  <div class="col-lg-9">
-				  Rs. 25000
-				  </div>
+                <div class="col-lg-3"> <strong>Max Limit</strong> </div>
+                <div class="col-lg-9"> Rs. 25000 </div>
               </div>
-				 <div class="row my-3">
-                <div class="col-lg-3">
-                 <strong>Used Limit</strong>
-                </div>
-				  <div class="col-lg-9">
-				 Rs. 5000 
-				  </div>
+              <div class="row my-3">
+                <div class="col-lg-3"> <strong>Used Limit</strong> </div>
+                <div class="col-lg-9"> Rs. 5000 </div>
               </div>
-				 
             </div>
           </div>
         </div>
-		  
       </div>
     </div>
   </div>
@@ -270,20 +358,39 @@
 <script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
 <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
-<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
+<!--<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
-<script type="text/javascript" src="assets/js/contactchartinit.js"></script> 
+<script type="text/javascript" src="assets/js/contactchartinit.js"></script>--> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script> 
 <script>
-	// [ pre select ]
-    $('#my-select').multiSelect({
-		  selectableHeader: "<div class='custom-header'>Available Receipts</div>",
-  selectionHeader: "<div class='custom-header'>Selected Receipts</div>",
-	});
-	$('.moduleselect2').select2();
+
+
+$('.select2').select2();
+
+// ----floatin input label in input and select
+
+$('.form-group').find('.floating-control').each(function (index, ele) {
+	var $ele = $(ele);
+	if($ele.val() != '' || $ele.is(':selected') === true){
+		$ele.parents('.floating-group').addClass('focused');
+	}
+})
+
+
+$('.floating-control').on('change', function (e) {
+	if($(this).is('select')){
+		if($(this).val() === $("option:first", $(this)).val()) {
+			$(this).parents('.floating-group').removeClass('focused');
+		}
+		else{
+			$(this).parents('.floating-group').addClass('focused');
+		}
+	}
+})
+
 	</script>
 </body>
 </html>
