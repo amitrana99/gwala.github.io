@@ -2300,3 +2300,8 @@ input[type="file"]::file-selector-button:hover {
 .bigheight .focused .select2-container--default .select2-selection--single .select2-selection__rendered{
 	padding-top: 8px;
 }
+
+.select2-container {
+    width: 100% !important;
+    padding: 0;
+}

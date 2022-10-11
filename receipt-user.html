@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
 <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
 <link rel="stylesheet" href="assets/css/mstyle.css">
-
 <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
 <link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
@@ -21,6 +20,113 @@
 </head>
 
 <body class="skin-base animate">
+<div class="offcanvas offcanvas-top h-auto" tabindex="-1" id="userinfo" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="offcanvas-header px-0 mt-0 pt-0">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">User Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <ul class="contactdetaillist">
+            <li><strong>Name: </strong> Rahul Sharma</li>
+            <li><strong>Pancard: </strong> BSAXXXXX5</li>
+            <li><strong>Mobile: </strong>64XXXXXX65</li>
+            <li><strong>Email: </strong>rXXXX@gmail.com</li>
+            <li><strong>Address: </strong> 135 ,Gurunanakpura , RajaPark</li>
+            <li><strong>State</strong>: Rajasthan</li>
+            <li><strong>City</strong>: Jaipur</li>
+            <li><strong>Country</strong>: India</li>
+            <li><strong>Pincode</strong>: 302004</li>
+			  <li><strong>Max Limit</strong>: 20000</li>
+            <li><strong>Used Limit</strong>: 5000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row my-3 bigheight align-items-baseline">
+        <div class="col-lg-12">
+          <div class="bgnew p-3">
+            <div class="row gy-3">
+              <div class="col-lg-12"> <strong>Payment</strong> </div>
+              <div class="col-lg-3">
+                <div class="form-group floating-group floating-diff position-relative">
+                  <label class="floating-label">Mode of payment</label>
+                  <select id="Mode" name="Mode" class="form-control form-control-sm floating-control select2">
+                    <option value="">Mode of payment</option>
+                    <option value="Afganistan">Online</option>
+                    <option value="Albania">Cash</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group floating-group floating-diff position-relative">
+                  <label class="floating-label">Type</label>
+                  <select id="Type2" name="Type2" class="form-control form-control-sm floating-control select2">
+                    <option value="">Type</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="bhusa-fodder">Bhusa / Fodder</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="cow-shed-construction">Cow Shed / Construction</option>
+                    <option value="ecs">ECS</option>
+                    <option value="gau-katha">Gau Katha</option>
+                    <option value="gaudaan">Gaudaan</option>
+                    <option value="gausewa">Gausewa</option>
+                    <option value="hospital">Hospital</option>
+                    <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                    <option value="yagya">Yagya / Pooja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="Amount" placeholder="Name">
+                  <label for="Amount">Amount</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bgnew p-3">
+            <div class="row gy-3">
+              <div class="col-lg-12"> <strong>Bank Details</strong> </div>
+              <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="BankName" placeholder="Name">
+                  <label for="BankName">Bank Name</label>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Check" placeholder="Name">
+                  <label for="Check">Check Number</label>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Date" placeholder="Name">
+                  <label for="Date">Check Date</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		  
+		 
+                <div class="col-lg-12 text-center mt-4">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              
+		  
+      </div>
+    </div>
+  </div>
+</div>
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -37,7 +143,9 @@
         <nav class="nav-sub"> <a href="" class="sub-link">Create Task </a> <a href="" class="sub-link">Assigmed Task</a> </nav>
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
-		 <li class="nav-item active"> <a href="receipt-user.html" class="nav-link"> <i data-feather="file"></i><span  >Receipts</span> </a> </li>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Receipts</span> </a>
+        <nav class="nav-sub"> <a href="receipts.html" class="sub-link ">All Receipts</a> <a href="receipt-user.html" class="sub-link active">Create New receipt</a> </nav>
+      </li>
       <li class="nav-item "> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link">Workflow</a><a href="templates.html" class="sub-link">Templates</a> </nav>
       </li>
@@ -82,7 +190,7 @@
         <div class="col-md-12">
           <div class="d-flex align-items-center justify-content-between flex-wrap " >
             <h1 class="fs-4 fw-bold text-nowrap">Receipts</h1>
-          </div>
+            <a href="create-new-receipt.html" class="btn btn-primary"> Create New Receipt </a> </div>
         </div>
         <div class="col-lg-12">
           <div class="card card-1">
@@ -116,6 +224,7 @@
                   <th>City</th>
                   <th>Mobile</th>
                   <th>Mode of Payment</th>
+                  <th>Date</th>
                   <th>Amount</th>
                 </tr>
               </thead>
@@ -126,224 +235,57 @@
                       <label class="form-check-label" for="check1"> 1 </label>
                     </div></td>
                   <td>49419494973</td>
-                  <td>Rahul</td>
+                  <td><button class="btn btn-sm rounded-pill btn-info2 text-black px-3" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Rahul </button></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-                  <td>Online</td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
+                  <td>Rs. 5000</td>
+                </tr>
+                <tr>
+                  <td><div class="form-check mb-0">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                      <label class="form-check-label" for="check1"> 1 </label>
+                    </div></td>
+                  <td>49419494973</td>
+                  <td><button class="btn btn-sm rounded-pill btn-info2 text-black px-3" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Rahul </button></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
+                  <td>Rs. 5000</td>
+                </tr>
+                <tr>
+                  <td><div class="form-check mb-0">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                      <label class="form-check-label" for="check1"> 1 </label>
+                    </div></td>
+                  <td>49419494973</td>
+                  <td><button class="btn btn-sm rounded-pill btn-info2 text-black px-3" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Rahul </button></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
+                  <td>Rs. 5000</td>
+                </tr>
+                <tr>
+                  <td><div class="form-check mb-0">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
+                      <label class="form-check-label" for="check1"> 1 </label>
+                    </div></td>
+                  <td>49419494973</td>
+                  <td><button class="btn btn-sm rounded-pill btn-info2 text-black px-3" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Rahul </button></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
                   <td>Rs. 5000</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="card card-1">
-            <div class="card-header">
-              <h5> Create New Receipt</h5>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="bgnew p-3">
-                    <div class="row gy-3">
-                      <div class="col-lg-12"> <strong>Personal Details</strong> </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="Name" placeholder="Name">
-                          <label for="Name">Name</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="Pancard" placeholder="Name">
-                          <label for="Pancard">Pancard</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="tel" class="form-control" id="Mobile" placeholder="Name">
-                          <label for="Mobile">Mobile</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="Email" placeholder="Name">
-                          <label for="Email">Email</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row my-3 bigheight">
-                <div class="col-lg-12">
-                  <div class="bgnew p-3">
-                    <div class="row gy-3">
-                      <div class="col-lg-12"> <strong>Address</strong> </div>
-                      <div class="col-lg-3">
-						  
-						  <div class="form-group floating-group floating-diff position-relative">
-								<label class="floating-label">Select Country</label>
-								<select id="country" name="country" class="form-control form-control-sm floating-control select2">
-									<option value="">Select Country</option>   
-									<option value="Afganistan">Afghanistan</option>
-									<option value="Albania">Albania</option>
-									<option value="India">India</option>
-									<option value="American Samoa">American Samoa</option>
-									<option value="Andorra">Andorra</option>
-									<option value="Angola">Angola</option>
-								</select>
-							</div>
-						  
-						  
-                        
-                      </div>
-                      <div class="col-lg-3">
-                         <div class="form-group floating-group floating-diff position-relative">
-								<label class="floating-label">Select State</label>
-								<select id="state" name="state" class="form-control form-control-sm floating-control select2">
-									<option value="">Select Country</option>   
-									<option value="Afganistan">Afghanistan</option>
-									<option value="Albania">Albania</option>
-									<option value="India">India</option>
-									<option value="American Samoa">American Samoa</option>
-									<option value="Andorra">Andorra</option>
-									<option value="Angola">Angola</option>
-								</select>
-							</div>
-                      </div>
-                      <div class="col-lg-3">
-                       <div class="form-floating mb-3">
-                          <input type="tel" class="form-control" id="City" placeholder="Name">
-                          <label for="City">City</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row my-3 bigheight align-items-baseline">
-                <div class="col-lg-12">
-                  <div class="bgnew p-3">
-                    <div class="row gy-3">
-                      <div class="col-lg-12"> <strong>Payment</strong> </div>
-                      <div class="col-lg-3">
-						  
-						  <div class="form-group floating-group floating-diff position-relative">
-								<label class="floating-label">Mode of payment</label>
-								<select id="Mode" name="Mode" class="form-control form-control-sm floating-control select2">
-									<option value="">Mode of payment</option>   
-									<option value="Afganistan">Online</option>
-									<option value="Albania">Cash</option>								
-								</select>
-							</div>
-						  
-                       
-                      </div>
-                      <div class="col-lg-3">
-						   <div class="form-group floating-group floating-diff position-relative">
-								<label class="floating-label">Type</label>
-								<select id="Type" name="Type" class="form-control form-control-sm floating-control select2">
-									<option value="">Type</option>   
-									   <option value="anniversary">Anniversary</option>
-                            <option value="bhusa-fodder">Bhusa / Fodder</option>
-                            <option value="birthday">Birthday</option>
-                            <option value="cow-shed-construction">Cow Shed / Construction</option>
-                            <option value="ecs">ECS</option>
-                            <option value="gau-katha">Gau Katha</option>
-                            <option value="gaudaan">Gaudaan</option>
-                            <option value="gausewa">Gausewa</option>
-                            <option value="hospital">Hospital</option>
-                            <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
-                            <option value="yagya">Yagya / Pooja</option>							
-								</select>
-							</div>
-						  
-                   
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating">
-                          <input type="text" class="form-control" id="Amount" placeholder="Name">
-                          <label for="Amount">Amount</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="bgnew p-3">
-                    <div class="row gy-3">
-                      <div class="col-lg-12"> <strong>Bank Details</strong> </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="BankName" placeholder="Name">
-                          <label for="BankName">Bank Name</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="Check" placeholder="Name">
-                          <label for="Check">Check Number</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="Date" placeholder="Name">
-                          <label for="Date">Check Date</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gy-4 mt-4">
-                <div class="col-lg-12 text-center">
-                  <button class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card card-1">
-            <div class="card-header">
-              <h5 class="mb-0">User Details</h5>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-3"> <strong>Address</strong> </div>
-                <div class="col-lg-9"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-              </div>
-              <div class="row my-3">
-                <div class="col-lg-3"> <strong>Mobile</strong> </div>
-                <div class="col-lg-9"> 9958994616 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3"> <strong>Email</strong> </div>
-                <div class="col-lg-9"> amit@gmail.com </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card card-1">
-            <div class="card-header">
-              <h5 class="mb-0">Cash Amount Limit</h5>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-3"> <strong>Max Limit</strong> </div>
-                <div class="col-lg-9"> Rs. 25000 </div>
-              </div>
-              <div class="row my-3">
-                <div class="col-lg-3"> <strong>Used Limit</strong> </div>
-                <div class="col-lg-9"> Rs. 5000 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
