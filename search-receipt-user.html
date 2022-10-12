@@ -20,6 +20,96 @@
 </head>
 
 <body class="skin-base animate">
+<div class="offcanvas offcanvas-top h-auto" tabindex="-1" id="userinfo" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="offcanvas-header px-0 mt-0 pt-0 mb-4">
+            <h5 class="offcanvas-title text-center w-100 fw-bold" id="offcanvasTopLabel">Create New Receipt for Rahul ji</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+		  <div class="col-lg-4 text-center">
+		  <strong>Allowed Limit</strong>: 20000
+		  </div>
+		  <div class="col-lg-4 text-center"><strong>Used Limit</strong>: 5000</div>
+		  <div class="col-lg-4 text-center"><strong>In process Limit</strong>: 50</div>
+		  
+        
+      </div>
+      <div class="row my-3 bigheight align-items-baseline mt-4">
+        <div class="col-lg-12">
+          <div class="bgnew p-3">
+            <div class="row justify-content-center">
+              <div class="col-lg-9 mb-2"> <strong>Payment</strong> </div>
+				<div class="clearfix"></div>
+				<div class="col-lg-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="Amount" placeholder="Name">
+                  <label for="Amount">Amount</label>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group floating-group floating-diff position-relative">
+                  <label class="floating-label">Mode of payment</label>
+                  <select id="Mode" name="Mode" class="form-control form-control-sm floating-control select2">
+                    <option value="">Mode of payment</option>
+                    <option value="Afganistan">Online</option>
+                    <option value="Albania">Cash</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group floating-group floating-diff position-relative">
+                  <label class="floating-label">Type</label>
+                  <select id="Type2" name="Type2" class="form-control form-control-sm floating-control select2">
+                    <option value="">Type</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="bhusa-fodder">Bhusa / Fodder</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="cow-shed-construction">Cow Shed / Construction</option>
+                    <option value="ecs">ECS</option>
+                    <option value="gau-katha">Gau Katha</option>
+                    <option value="gaudaan">Gaudaan</option>
+                    <option value="gausewa">Gausewa</option>
+                    <option value="hospital">Hospital</option>
+                    <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                    <option value="yagya">Yagya / Pooja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-9 mt-4 mb-2"> <strong>Bank Details</strong> </div>
+				<div class="clearfix"></div>
+				  <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="BankName" placeholder="Name">
+                  <label for="BankName">Bank Name</label>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Check" placeholder="Name">
+                  <label for="Check">Check Number</label>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Date" placeholder="Name">
+                  <label for="Date">Check Date</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		    <div class="col-lg-12 text-center mt-4">
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -37,7 +127,7 @@
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Receipts</span> </a>
-        <nav class="nav-sub"> <a href="receipts.html" class="sub-link active">All Receipts</a> </nav>
+        <nav class="nav-sub"> <a href="receipt-user.html" class="sub-link active">All Receipts</a> <a href="create-new-receipt.html" class="sub-link">Create New receipt</a> </nav>
       </li>
       <li class="nav-item "> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link">Workflow</a><a href="templates.html" class="sub-link">Templates</a> </nav>
@@ -82,12 +172,30 @@
       <div class="row gy-4	">
         <div class="col-md-12">
           <div class="d-flex align-items-center justify-content-between flex-wrap " >
-            <h1 class="fs-4 fw-bold text-nowrap">Receipts</h1>
+            <a href="receipt-user.html" class="fs-5 fw-semibold text-nowrap text-black"> <i data-feather="arrow-left"></i>Back</a>
+			  <a href="create-new-receipt.html" class="btn btn-primary">Create New Receipts</a>
+        </div>
+		  
+        <div class="col-lg-12 mt-4">
+          <div class="card card-1">
+            <div class="card-header">
+              <h5>Search User</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 offset-md-3">
+                  <div class="form-group position-relative">
+                    <input type="text" class="form-control" placeholder="Search by – Mobile, Email, Gwala id">
+                    <button class="btn btn-primary position-absolute end-0 top-0"> <i data-feather="search"></i> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-12">
           <div class="table-responsive mt-2 dashboard">
-            <table class="table w-100 resdatatable " id="">
+            <table class="table w-100 dataTable">
               <thead>
                 <tr>
                   <th> <div class="form-check mb-0">
@@ -100,50 +208,74 @@
                   <th>City</th>
                   <th>Mobile</th>
                   <th>Mode of Payment</th>
-                  <th>date</th>
-                  <th>Limits Allowed : Used</th>
+                  <th>Date</th>
+					                  <th>Limits Allowed : Used</th>
                   <th>Amount</th>
-                  <th>Staus</th>
-                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><div class="form-check mb-0">
+                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
                       <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                       <label class="form-check-label" for="check1"> 1 </label>
                     </div></td>
-                  <td><a href="allpayment-detail.html">49419494973</a></td>
+                  
+                 <td><a href="allpayment-detail.html">49419494973</a></td>
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-                  <td>Online</td>
+                  <td>Cash</td>
                   <td>20/12/2022</td>
-                  <td>20000 : 5000</td>
+					                  <td>20000 : 5000</td>
                   <td>Rs. 5000</td>
-                  <td><span class="text-danger">Not Received</span></td>
-                  <td><button class="btn btn-primary btn-sm">Update</button></td>
                 </tr>
                 <tr>
-                  <td><div class="form-check mb-0">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
-                      <label class="form-check-label" for="check1"> 1 </label>
+                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check2">
+                      <label class="form-check-label" for="check1"> 2 </label>
+                    </div></td>
+                 <td><a href="allpayment-detail.html">49419494973</a></td>
+                  <td><a href="contactdetail.html">Rahul</a></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
+					                  <td>20000 : 5000</td>
+                  <td>Rs. 5000</td>
+                </tr>
+                <tr>
+                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check3">
+                      <label class="form-check-label" for="check1"> 3 </label>
                     </div></td>
                   <td><a href="allpayment-detail.html">49419494973</a></td>
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-                  <td>Online</td>
+                  <td>Cash</td>
                   <td>20/12/2022</td>
-                  <td>20000 : 500</td>
-                  <td>Rs. 500</td>
-                  <td><span class="text-success">Received</span></td>
-                  <td><button class="btn btn-primary btn-sm">Update</button></td>
+					                  <td>20000 : 5000</td>
+                  <td>Rs. 5000</td>
+                </tr>
+                <tr>
+                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
+                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check4">
+                      <label class="form-check-label" for="check1"> 4 </label>
+                    </div></td>
+                 <td><a href="allpayment-detail.html">49419494973</a></td>
+                  <td><a href="contactdetail.html">Rahul</a></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+                  <td>Cash</td>
+                  <td>20/12/2022</td>
+					                  <td>20000 : 5000</td>
+                  <td>Rs. 5000</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -164,6 +296,33 @@
 <script type="text/javascript" src="assets/js/contactchartinit.js"></script>--> 
 <script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script> 
+<script>
+
+
+$('.select2').select2();
+
+// ----floatin input label in input and select
+
+$('.form-group').find('.floating-control').each(function (index, ele) {
+	var $ele = $(ele);
+	if($ele.val() != '' || $ele.is(':selected') === true){
+		$ele.parents('.floating-group').addClass('focused');
+	}
+})
+
+
+$('.floating-control').on('change', function (e) {
+	if($(this).is('select')){
+		if($(this).val() === $("option:first", $(this)).val()) {
+			$(this).parents('.floating-group').removeClass('focused');
+		}
+		else{
+			$(this).parents('.floating-group').addClass('focused');
+		}
+	}
+})
+
+	</script>
 </body>
 </html>
