@@ -25,20 +25,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="offcanvas-header px-0 mt-0 pt-0 mb-4">
-            <h5 class="offcanvas-title text-center w-100 fw-bold" id="offcanvasTopLabel">Create New Receipt for Rahul ji</h5>
+          <div class="offcanvas-header px-0 mt-0 pt-0">
+            <h5 class="offcanvas-title text-center w-100 fw-bold" id="offcanvasTopLabel">Create Receipt for Rahul ji</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
         </div>
-		  <div class="col-lg-4 text-center">
-		  <strong>Allowed Limit</strong>: 20000
-		  </div>
-		  <div class="col-lg-4 text-center"><strong>Used Limit</strong>: 5000</div>
-		  <div class="col-lg-4 text-center"><strong>In process Limit</strong>: 50</div>
+		  
 		  
         
       </div>
-      <div class="row my-3 bigheight align-items-baseline mt-4">
+      <div class="row my-3 bigheight align-items-baseline ">
         <div class="col-lg-12">
           <div class="bgnew p-3">
             <div class="row justify-content-center">
@@ -169,14 +165,14 @@
   <!-- content-header -->
   <div class="content-body">
     <div class="container-fluid">
-      <div class="row gy-4	">
+      <div class="row">
         <div class="col-md-12">
           <div class="d-flex align-items-center justify-content-between flex-wrap " >
             <a href="receipt-user.html" class="fs-5 fw-semibold text-nowrap text-black"> <i data-feather="arrow-left"></i>Back</a>
 			  <a href="create-new-receipt.html" class="btn btn-primary">Create New Receipts</a>
         </div>
 		  
-        <div class="col-lg-12 mt-4">
+        <div class="col-lg-12 my-4">
           <div class="card card-1">
             <div class="card-header">
               <h5>Search User</h5>
@@ -195,81 +191,55 @@
         </div>
         <div class="col-lg-12">
           <div class="table-responsive mt-2 dashboard">
-            <table class="table w-100 dataTable">
+            <table class="table w-100 resdatatable " id="">
               <thead>
                 <tr>
-                  <th> <div class="form-check mb-0">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="checkAll">
-                      <label class="form-check-label" for="checkAll"> S no </label>
-                    </div>
-                  </th>
+                  <th> S no. </th>
                   <th>Receipt No.</th>
+                  <th>date</th>
+                  <th>Amount</th>
+                  <th>Mode of Payment</th>
                   <th>Name</th>
                   <th>City</th>
                   <th>Mobile</th>
-                  <th>Mode of Payment</th>
-                  <th>Date</th>
-					                  <th>Limits Allowed : Used</th>
-                  <th>Amount</th>
+					<th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
-                      <label class="form-check-label" for="check1"> 1 </label>
-                    </div></td>
-                  
-                 <td><a href="allpayment-detail.html">49419494973</a></td>
-                  <td><a href="contactdetail.html">Rahul</a></td>
-                  <td>Delhi</td>
-                  <td>9999999999 </td>
-                  <td>Cash</td>
-                  <td>20/12/2022</td>
-					                  <td>20000 : 5000</td>
-                  <td>Rs. 5000</td>
-                </tr>
-                <tr>
-                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check2">
-                      <label class="form-check-label" for="check1"> 2 </label>
-                    </div></td>
-                 <td><a href="allpayment-detail.html">49419494973</a></td>
-                  <td><a href="contactdetail.html">Rahul</a></td>
-                  <td>Delhi</td>
-                  <td>9999999999 </td>
-                  <td>Cash</td>
-                  <td>20/12/2022</td>
-					                  <td>20000 : 5000</td>
-                  <td>Rs. 5000</td>
-                </tr>
-                <tr>
-                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check3">
-                      <label class="form-check-label" for="check1"> 3 </label>
-                    </div></td>
+                  <td>1</td>
                   <td><a href="allpayment-detail.html">49419494973</a></td>
+                  <td>20/12/2022</td>
+                  <td>Rs. 5000</td>
+                  <td>Cash</td>
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-                  <td>Cash</td>
-                  <td>20/12/2022</td>
-					                  <td>20000 : 5000</td>
-                  <td>Rs. 5000</td>
+					<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
                 </tr>
                 <tr>
-                  <td><div class="form-check mb-0" data-bs-toggle="offcanvas" data-bs-target="#userinfo">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check4">
-                      <label class="form-check-label" for="check1"> 4 </label>
-                    </div></td>
-                 <td><a href="allpayment-detail.html">49419494973</a></td>
+                  <td>2</td>
+                  <td><a href="allpayment-detail.html">49419494973</a></td>
+                  <td>20/12/2022</td>
+                  <td>Rs. 5000</td>
+                  <td>Cash</td>
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-                  <td>Cash</td>
+										<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
+
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="allpayment-detail.html">49419494973</a></td>
                   <td>20/12/2022</td>
-					                  <td>20000 : 5000</td>
                   <td>Rs. 5000</td>
+                  <td>Cash</td>
+                  <td><a href="contactdetail.html">Rahul</a></td>
+                  <td>Delhi</td>
+                  <td>9999999999 </td>
+										<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
+
                 </tr>
               </tbody>
             </table>

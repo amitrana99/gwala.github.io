@@ -2305,3 +2305,8 @@ input[type="file"]::file-selector-button:hover {
     width: 100% !important;
     padding: 0;
 }
+.card-3 {
+    border-color: #ff6400;
+    border-style: dashed;
+    border-width: 2px;
+}
