@@ -2310,3 +2310,6 @@ input[type="file"]::file-selector-button:hover {
     border-style: dashed;
     border-width: 2px;
 }
+.fs-15{
+	font-size: 15px;
+}
