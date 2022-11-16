@@ -1546,6 +1546,7 @@ table.dataTable {
   .dataTables_length {
     top: 60px !important
   }
+	
 }
 @media (min-width:600px) and (max-width: 767px) {
   div#allcontacts_wrapper div.dataTables_length, div#allrd_wrapper div.dataTables_length, div#allpayments_wrapper div.dataTables_length, div#allfamilyrecords_wrapper div.dataTables_length {
@@ -2353,4 +2354,9 @@ input[type="file"]::file-selector-button:hover {
 background-color: #feebe0;
 	
 border: 1px dashed;
+}
+@media (max-width:600px){
+	.profile-upload span{
+		min-height: 127px;
+	}
 }
