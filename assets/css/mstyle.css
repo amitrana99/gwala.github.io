@@ -2339,7 +2339,7 @@ input[type="file"]::file-selector-button:hover {
 	text-align: center;
 	flex-direction: column;
 	gap: 10px;
-	margin: 27% 0;
+	height: 100%;
 }
 .footer-id{
 	background-color: #eacda6;
