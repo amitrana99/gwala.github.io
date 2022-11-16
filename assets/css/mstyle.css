@@ -2313,3 +2313,44 @@ input[type="file"]::file-selector-button:hover {
 .fs-15{
 	font-size: 15px;
 }
+.contact-list{
+	list-style: none;
+	padding: 10px;
+}
+.profile-upload{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: antiquewhite;
+	width: 100%;
+	border: 2px dashed #fb9c5f;
+	border-radius: 6px;
+	font-weight: 600;
+	color: #c97300;
+	flex-direction: column;
+	text-align: center;
+	/* padding-top: 27%; */
+	height: 100%;
+}
+.profile-upload span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	gap: 10px;
+	margin: 27% 0;
+}
+.footer-id{
+	background-color: #eacda6;
+	border-radius: 0 0 5px 5px;
+	margin: auto 1px 1px 1px;
+	padding: 4px;
+	color: #2f2727;
+}
+.inputdsn input, .inputdsn select{
+	
+background-color: #ffeadd;
+	
+border: 1px dashed;
+}
