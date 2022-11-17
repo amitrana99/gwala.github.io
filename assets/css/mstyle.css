@@ -15,6 +15,7 @@ body {
   border-color: var(--primarybg);
   color: black;
   box-shadow: none !important;
+  background-color: white;
 }
 .btn-outline-primary:hover, .btn-outline-primary:focus {
   background-color: var(--primarybg);
@@ -713,9 +714,9 @@ a {
 }
 .skin-base .nav-sidebar .nav-item.active .nav-link {
   color: var(--primarybg);
-  /* border: 1px solid var(--primarybg); */
-  background-color: #FEEBE0;
-  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 0 0 black;
 }
 .skin-base .nav-sidebar .nav-item.active .nav-link svg {
   color: var(--primarybg);
@@ -1654,8 +1655,9 @@ textarea:focus {
   min-height: fit-content;
 }
 .form-control:focus, .form-select:focus {
-  box-shadow: none;
-  border-color: #ff6400
+  box-shadow: 3px 3px 0px 0px #ff6400;
+  transition: all 0.2s ease-in;
+  border-color: #000;
 }
 .inputbg {
   border-color: #feebe0;
@@ -2322,16 +2324,18 @@ input[type="file"]::file-selector-button:hover {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	background-color: antiquewhite;
+	background-color: white;
 	width: 100%;
-	border: 2px dashed #fb9c5f;
+	border: 2px  #000000;
 	border-radius: 6px;
 	font-weight: 600;
-	color: #c97300;
+	color: #000000;
 	flex-direction: column;
 	text-align: center;
 	/* padding-top: 27%; */
 	height: 100%;
+	cursor: pointer;
+	border-style: dashed;
 }
 .profile-upload span{
 	display: flex;
@@ -2343,7 +2347,7 @@ input[type="file"]::file-selector-button:hover {
 	height: 100%;
 }
 .footer-id{
-	background-color: #eacda6;
+	background-color: #ffffff;
 	border-radius: 0 0 5px 5px;
 	margin: auto 1px 1px 1px;
 	padding: 4px;
@@ -2351,12 +2355,41 @@ input[type="file"]::file-selector-button:hover {
 }
 .inputdsn input, .inputdsn select{
 	
-background-color: #feebe0;
+background-color: #ffffff;
 	
-border: 1px dashed;
+border: 1px dashed #000;
+	
+font-size: 15px;
+	
+font-weight: 500;
+	
+transition: all 0.2s ease-in;
+	
+box-shadow: 2px 2px 0px 0px;
 }
 @media (max-width:600px){
 	.profile-upload span{
 		min-height: 127px;
 	}
+}
+.inputdsn label {
+	font-weight: 500
+}
+.flatshadow{
+	box-shadow: 2px 2px 0 0 black;
+}
+.flatshadow:focus{
+	box-shadow: 2px 2px 0 0 #ff6400;
+}
+.profile-upload img{
+	height: 100%;
+	object-fit: cover;	
+}
+.inputdsn{
+	
+/* border: 1px #ffd7bd; */
+	
+/* border-style: inset; */
+	
+/* height: 100%; */
 }
