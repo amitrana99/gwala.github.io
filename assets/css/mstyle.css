@@ -566,6 +566,7 @@ a {
   width: 36px;
   height: 36px;
   border-radius: 100%;
+
   position: relative;
 }
 .avatar.online::after {
@@ -2357,7 +2358,7 @@ input[type="file"]::file-selector-button:hover {
 	
 background-color: #ffffff;
 	
-border: 1px dashed #000;
+border: 1px solid #000;
 	
 font-size: 15px;
 	
