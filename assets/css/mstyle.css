@@ -2334,9 +2334,10 @@ input[type="file"]::file-selector-button:hover {
 	flex-direction: column;
 	text-align: center;
 	/* padding-top: 27%; */
-	height: 100%;
+	/* height: 100%; */
 	cursor: pointer;
 	border-style: dashed;
+	height: 254px;
 }
 .profile-upload span{
 	display: flex;
@@ -2384,7 +2385,7 @@ box-shadow: 2px 2px 0px 0px;
 }
 .profile-upload img{
 	height: 100%;
-	object-fit: cover;	
+	object-fit: cover;
 }
 .inputdsn{
 	
