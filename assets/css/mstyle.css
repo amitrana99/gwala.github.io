@@ -2338,6 +2338,7 @@ input[type="file"]::file-selector-button:hover {
 	cursor: pointer;
 	border-style: dashed;
 	height: 254px;
+	overflow: hidden;
 }
 .profile-upload span{
 	display: flex;
@@ -2386,6 +2387,8 @@ box-shadow: 2px 2px 0px 0px;
 .profile-upload img{
 	height: 100%;
 	object-fit: cover;
+	background-color: #fad388;
+	max-height: calc(100% - 30px);
 }
 .inputdsn{
 	
