@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
 <link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
+<link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -110,10 +111,22 @@
             <div class="card-body p-md-5">
               <div class="row justify-content-center gy-4">
                 <div class="col-lg-4 text-center">
-                  <div class="profile-upload mb-2"> <img src="assets/images/upload.jpg"  class="img-fluid w-100" alt="">
-                    <div class="footer-id">COW ID : YSHHJFW4</div>
+                  <div class="profile-upload mb-2">
+					  <img src="assets/images/upload.jpg"  class="img-fluid w-100" alt="">                   
                   </div>
-                  <small class="text-black fw-bold mt-4">Please upload image in 800 X 600 pixels or 4x3 ratio</small> </div>
+                  <small class="text-black-50 fw-bold my-4">You can upload image/video and please upload image in 800 X 600 pixels or 4x3 ratio</small> 
+				  
+					 
+<ul id="sortable1" class="thumbnail-alignment">
+  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span>  </li>
+  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+</ul>
+		 <!--  <small class="text-black-50 fw-bold my-4">You can drag and drop thumbnails for make sequence</small> -->
+						  
+				  
+				  </div>
                 <div class="col-lg-8">
                   <div class="row gy-4">
 					  <div class="col-lg-6 col-xxl-4">
@@ -128,7 +141,7 @@
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
                         <label for="Name" class="form-label  ">COW ID:</label>
-                        <input type="text" autofocus class="form-control  " id="Name" placeholder="">
+                        <input type="text" class="form-control  " id="Name" placeholder="">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
@@ -139,8 +152,8 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="breed" class="form-label  ">Category</label>
-                        <select class="form-select  " id="breed">
+                        <label for="Category" class="form-label  ">Category</label>
+                        <select class="form-select  " id="Category">
                           <option selected>Cow</option>
                           <option value="1">OX</option>
 							<option value="Bull"> Bull</option>
@@ -195,7 +208,7 @@
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
-                      <label for="" class="form-label  ">Is Adopted</label>
+                      <label for="" class="form-label">Available for adoption</label>
                       <div class="btn-group d-flex w-100  flatshadow" role="group">
                         <input type="radio" class="btn-check" name="Addoptted" id="btnradio13" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio13">Yes </label>
@@ -203,11 +216,26 @@
                         <label class="btn btn-outline-primary" for="btnradio14">No </label>
                       </div>
                     </div>
+					    <div class="col-lg-6 col-xxl-4">
+                      <div class="form-group">
+                        <label for="Status" class="form-label  ">Current Status</label>
+                        <select class="form-select  " id="Status">
+                          <option selected>Live</option>
+                          <option value="1">Theft</option>
+                        </select>
+                      </div>
+                    </div>
+					  <div class="col-lg-6 col-xxl-4">
+                      <div class="form-group">
+                        <label for="damt" class="form-label">Donation Amount</label>
+                        <input type="text" class="form-control" id="damt">
+                      </div>
+                    </div>
                     <div class="col-lg-12"> <br>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Entry" class="form-label  ">Entry Date</label>
+                        <label for="Entry" class="form-label  ">Rescued Date</label>
                         <input type="date" class="form-control  " id="Entry">
                       </div>
                     </div>
@@ -231,10 +259,17 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Father" class="form-label  ">Father OX ID </label>
-                        <input type="text" class="form-control  " id="Father" placeholder="">
+                        <label for="Father" class="form-label">Father OX ID </label>
+                        <input type="text" class="form-control" id="Father" placeholder="">
                       </div>
                     </div>
+					  
+					  <div class="col-lg-12">
+						  <div class="form-group">
+						    <label for="" class="form-label">Description</label>
+							<textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+						  </div>
+					  </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -256,6 +291,7 @@
 <!-- content --> 
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
@@ -270,6 +306,15 @@
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script> 
 <script>
+	
+	  $( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  
+	
+	
     // [ pre select ]
     $('#my-select').multiSelect();
     $('.moduleselect2').select2();
