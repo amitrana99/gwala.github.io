@@ -384,6 +384,51 @@ $('.resdatatable').DataTable({
 
 });
 
+$('.cow-adoption').DataTable({
+  dom: 'Bfrltp',
+  "bLengthChange": true,
+  oLanguage: {
+    sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
+  },
+  responsive: true,
+  //scrollX: '100%',
+  pageLength: 10,
+  lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
+  language: {
+    search: '<img src="assets/images/search.svg">',
+    searchPlaceholder: "Search records",
+    paginate: {
+      next: '&#8594;', // or '→'
+      previous: '&#8592;' // or '←' 
+    }
+  },
+
+  buttons: [{
+      extend: 'copyHtml5',
+      text: '<img src="assets/images/copy.svg">',
+      titleAttr: 'Copy'
+    }, {
+      extend: 'excelHtml5',
+      text: '<img src="assets/images/excel.svg">',
+      titleAttr: 'Excel'
+    }, {
+      extend: 'csvHtml5',
+      text: '<img src="assets/images/csv.svg">',
+      titleAttr: 'CSV'
+    }, {
+      extend: 'pdfHtml5',
+      text: '<img src="assets/images/pdf.svg">',
+      titleAttr: 'PDF'
+    }, {
+      extend: 'print',
+      text: '<img src="assets/images/print.svg">',
+      titleAttr: 'Print'
+    }
+
+  ]
+
+});
+
 // contactcs
 $('#allcontacts').DataTable({
   dom: 'Bfrltip',

@@ -2406,3 +2406,18 @@ input[type="file"]::file-selector-button:hover {
 	opacity: 0.5;
 	cursor: grabbing!important;
 }
+.smbtns{
+    /* background-color: #fff7f2; */
+    padding: 5px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+    /* width: 32px; */
+    /* height: 32px; */
+}
+.smbtns:hover{
+	background-color: antiquewhite;
+}
+.smbtns svg{
+	color: #ff6400;
+}
