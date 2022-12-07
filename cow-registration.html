@@ -111,28 +111,28 @@
             <div class="card-body p-md-5">
               <div class="row justify-content-center gy-4">
                 <div class="col-lg-4 text-center">
-                  <div class="profile-upload mb-2">
-					  <img src="assets/images/upload.jpg"  class="img-fluid w-100" alt="">                   
+                  <div class="profile-upload mb-2"> <img src="assets/images/upload.jpg"  class="img-fluid w-100" alt=""> </div>
+                  <div class="form-check text-start fs-6 my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="video-check">
+                    <label class="form-check-label" for="video-check"> Click Here if Upload Video </label>
                   </div>
-                  <small class="text-black-50 fw-bold my-4">You can upload image/video and please upload image in 800 X 600 pixels or 4x3 ratio</small> 
-				  
-					 
-<ul id="sortable1" class="thumbnail-alignment">
-  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span>  </li>
-  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
-  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
-  <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
-</ul>
-		 <!--  <small class="text-black-50 fw-bold my-4">You can drag and drop thumbnails for make sequence</small> -->
-						  
-				  
-				  </div>
+                  <div class="form-group dnone" id="video_url">
+                    <input type="text" class="form-control mb-3" id="Name" placeholder="Paste video url here">
+                  </div>
+                  <ul id="sortable1" class="thumbnail-alignment">
+                    <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+                    <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+                    <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+                    <li><img src="assets/images/thumb.png" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+                    <li class="video-thumb"> <img src="assets/images/thumb.png" class="thumb" alt=""> <span class="delete-thumb"> <i data-feather="x-circle"></i> </span> </li>
+                  </ul>
+                </div>
                 <div class="col-lg-8">
                   <div class="row gy-4">
-					  <div class="col-lg-6 col-xxl-4">
+                    <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
                         <label for="floatingSelect" class="form-label">Gaushala Location</label>
-                        <select class="form-select  " id="floatingSelect">
+                        <select class="form-select" id="floatingSelect">
                           <option selected>Open this select menu</option>
                           <option value="1">Krishnayan Gauraksha</option>
                         </select>
@@ -140,28 +140,28 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Name" class="form-label  ">COW ID:</label>
-                        <input type="text" class="form-control  " id="Name" placeholder="">
+                        <label for="cowid" class="form-label">COW ID:</label>
+                        <input type="text" class="form-control" id="cowid" placeholder="">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="dob" class="form-label  ">Date of birth</label>
-                        <input type="date" class="form-control  " id="dob">
+                        <label for="dob" class="form-label">Date of birth</label>
+                        <input type="date" class="form-control" id="dob">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Category" class="form-label  ">Category</label>
-                        <select class="form-select  " id="Category">
+                        <label for="Category" class="form-label">Category</label>
+                        <select class="form-select" id="Category">
                           <option selected>Cow</option>
                           <option value="1">OX</option>
-							<option value="Bull"> Bull</option>
+                          <option value="Bull"> Bull</option>
                         </select>
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
-                      <label for="" class="form-label  ">Gender</label>
+                      <label for="" class="form-label">Gender</label>
                       <div class="btn-group d-flex w-100 flatshadow " role="group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio1">Male</label>
@@ -171,8 +171,8 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="colorofcow" class="form-label  ">Color of Cow/OX/Bull</label>
-                        <select class="form-select  " id="colorofcow">
+                        <label for="colorofcow" class="form-label">Color of Cow/OX/Bull</label>
+                        <select class="form-select" id="colorofcow">
                           <option selected>Open this select menu</option>
                           <option value="1">Krishnayan Gauraksha</option>
                         </select>
@@ -180,15 +180,15 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="breed" class="form-label  ">Breed</label>
-                        <select class="form-select  " id="breed">
+                        <label for="breed" class="form-label">Breed</label>
+                        <select class="form-select" id="breed">
                           <option selected>Open this select menu</option>
                           <option value="1">Krishnayan Gauraksha</option>
                         </select>
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
-                      <label for="" class="form-label  ">Health</label>
+                      <label for="" class="form-label">Health</label>
                       <div class="btn-group d-flex w-100  flatshadow" role="group">
                         <input type="radio" class="btn-check" name="Health" id="btnradio8" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio8">Good</label>
@@ -199,7 +199,7 @@
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
-                      <label for="" class="form-label  ">Milch <small>(Option Select only for Cow)</small> </label>
+                      <label for="" class="form-label">Milch <small>(Option Select only for Cow)</small> </label>
                       <div class="btn-group d-flex w-100  flatshadow" role="group">
                         <input type="radio" class="btn-check" name="Milch" id="btnradio11" autocomplete="off" checked>
                         <label class="btn btn-outline-primary" for="btnradio11">Yes </label>
@@ -216,16 +216,16 @@
                         <label class="btn btn-outline-primary" for="btnradio14">No </label>
                       </div>
                     </div>
-					    <div class="col-lg-6 col-xxl-4">
+                    <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Status" class="form-label  ">Current Status</label>
-                        <select class="form-select  " id="Status">
+                        <label for="Status" class="form-label">Current Status</label>
+                        <select class="form-select" id="Status">
                           <option selected>Live</option>
                           <option value="1">Theft</option>
                         </select>
                       </div>
                     </div>
-					  <div class="col-lg-6 col-xxl-4">
+                    <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
                         <label for="damt" class="form-label">Donation Amount</label>
                         <input type="text" class="form-control" id="damt">
@@ -235,26 +235,26 @@
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Entry" class="form-label  ">Rescued Date</label>
-                        <input type="date" class="form-control  " id="Entry">
+                        <label for="Entry" class="form-label">Rescued Date</label>
+                        <input type="date" class="form-control" id="Entry">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Last" class="form-label  ">Last Date of Cow</label>
-                        <input type="date" class="form-control  " id="Last">
+                        <label for="Last" class="form-label">Last Date of Cow</label>
+                        <input type="date" class="form-control" id="Last">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Source" class="form-label  ">Source <small>(Where the cow came from?)</small> </label>
-                        <input type="text" class="form-control  " id="Source" placeholder="">
+                        <label for="Source" class="form-label">Source <small>(Where the cow came from?)</small> </label>
+                        <input type="text" class="form-control" id="Source" placeholder="">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
                       <div class="form-group">
-                        <label for="Mother" class="form-label  ">Mother Cow ID</label>
-                        <input type="text" class="form-control  " id="Mother" placeholder="">
+                        <label for="Mother" class="form-label">Mother Cow ID</label>
+                        <input type="text" class="form-control" id="Mother" placeholder="">
                       </div>
                     </div>
                     <div class="col-lg-6 col-xxl-4">
@@ -263,13 +263,12 @@
                         <input type="text" class="form-control" id="Father" placeholder="">
                       </div>
                     </div>
-					  
-					  <div class="col-lg-12">
-						  <div class="form-group">
-						    <label for="" class="form-label">Description</label>
-							<textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
-						  </div>
-					  </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="" class="form-label">Description</label>
+                        <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -291,7 +290,7 @@
 <!-- content --> 
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
-<script type="text/javascript" src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery-ui/jquery-ui.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
@@ -306,6 +305,47 @@
 <script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
 <script type="text/javascript" src="assets/js/main.js"></script> 
 <script>
+	
+	
+	const inputUrl = document.querySelector('#video_url input');
+	let preview = document.querySelector('.video-thumb');
+	let thumb = preview.querySelector('.thumb');
+	
+	
+	inputUrl.onkeyup = () => {
+		let url = inputUrl.value;
+		preview.classList.add('current');	
+		
+		const pattern1 = 'https://www.youtube.com/watch?v='
+		const pattern2 = 'https://youtube.com/watch?v='
+		const pattern3 = 'https://youtu.be/'
+		const pattern4 = 'https://www.youtu.be/'
+		
+		if(url.indexOf(pattern1) != -1 || url.indexOf(pattern2) != -1){
+			let valid = url.split('watch?v=')[1].substring(0, 11);
+			var imageThumb = `https://img.youtube.com/vi/${valid}/hqdefault.jpg`;
+			thumb.src = imageThumb;
+		}else if (url.indexOf(pattern3) != -1 || url.indexOf(pattern4) != -1){
+			let valid = url.split('be/')[1].substring(0, 11);
+			var imageThumb = `https://img.youtube.com/vi/${valid}/hqdefault.jpg`;
+			thumb.src = imageThumb
+		}
+		else{
+			thumb.src = "";
+			preview.classList.remove('current');
+		}
+		
+	}
+	
+	
+	
+	$(function(){
+  $("#video-check").change(function() {
+    $("#video_url").toggleClass("d-block", this.checked)
+  }).change();
+});
+	
+	
 	
 	  $( function() {
     $( "#sortable1, #sortable2" ).sortable({
