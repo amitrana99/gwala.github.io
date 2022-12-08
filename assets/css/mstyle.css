@@ -3003,7 +3003,7 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .cwlist h5 {
-    font-size: 1rem;
+    font-size: .9rem;
     margin: .3rem 0;
 }
 
@@ -3080,7 +3080,7 @@ input[type="file"]::file-selector-button:hover {
 
 .cowslistingpanel {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cowslistingpanel .cowsListing {
@@ -3091,7 +3091,7 @@ input[type="file"]::file-selector-button:hover {
     min-width: 10rem;
     background: #FFFAF7;
     border: 1px solid #FCE8DD;
-    max-height: 76vh;
+    /* max-height: 76vh; */
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
