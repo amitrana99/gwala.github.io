@@ -1369,6 +1369,7 @@ ul.dropdown-menu li a {
 }
 
 @media (max-width:1000px) {
+
     .contactdetaillist li {
         width: 100% !important
     }
@@ -1898,7 +1899,18 @@ table.dataTable {
     border: 1px solid #dee2e6 !important;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-
+.totalSummaryMobile{
+    background-color:  #ff6400;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: .4px;
+}
 @media (max-width: 600px) {
     div#allcontacts_wrapper div.dataTables_length,
     div#allrd_wrapper div.dataTables_length,
@@ -1908,6 +1920,16 @@ table.dataTable {
     }
     .dataTables_length {
         top: 60px !important
+    }
+
+    .cowslistingpanel .cowsListing{
+        width: 100%!important;
+    }
+
+    .filterbtns{
+        gap: 10px!important;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
@@ -3053,10 +3075,12 @@ input[type="file"]::file-selector-button:hover {
     align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
+    gap: 15px;
 }
 
 .filterbtns li {
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .zoom-icon {
@@ -3081,6 +3105,7 @@ input[type="file"]::file-selector-button:hover {
 .cowslistingpanel {
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 .cowslistingpanel .cowsListing {
