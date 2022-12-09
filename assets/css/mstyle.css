@@ -1369,7 +1369,6 @@ ul.dropdown-menu li a {
 }
 
 @media (max-width:1000px) {
-
     .contactdetaillist li {
         width: 100% !important
     }
@@ -1899,8 +1898,9 @@ table.dataTable {
     border: 1px solid #dee2e6 !important;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-.totalSummaryMobile{
-    background-color:  #ff6400;
+
+.totalSummaryMobile {
+    background-color: #ff6400;
     color: white;
     position: fixed;
     bottom: 0;
@@ -1911,6 +1911,7 @@ table.dataTable {
     font-weight: 600;
     letter-spacing: .4px;
 }
+
 @media (max-width: 600px) {
     div#allcontacts_wrapper div.dataTables_length,
     div#allrd_wrapper div.dataTables_length,
@@ -1921,12 +1922,10 @@ table.dataTable {
     .dataTables_length {
         top: 60px !important
     }
-
-    .cowslistingpanel .cowsListing{
+    .cowslistingpanel .cowsListing {
         width: 100%!important;
     }
-
-    .filterbtns{
+    .filterbtns {
         gap: 10px!important;
         justify-content: space-between;
         width: 100%;
