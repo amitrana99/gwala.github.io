@@ -3,7 +3,9 @@ $(window).on("load", function () {
 });
 
 // alert box
-
+$(function () {
+  $('.fotorama').fotorama();
+});
 
 $(function () {
   'use script'
@@ -182,7 +184,9 @@ $(function () {
   // content menu
   $('.contentMenu').on('click', function (e) {
     e.preventDefault();
-
+$(function () {
+  $('.fotorama').fotorama();
+});
     $(this).children().toggleClass('fa-arrow-right-long')
     $('.sidebar').toggleClass('minimized');
 

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishnayan Gwala - Cow Adoption extra Activity</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/datatable/datatables.min.css" />
+    <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="assets/vendors/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/mstyle.css" />
+    <link rel="stylesheet" href="theme-settings.css" />
+</head>
+
+<body class="skin-base animate">
+    <div class="sidebar">
+        <div class="sidebar-header justify-content-between">
+            <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt="" />
+            </a>
+            <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i
+          class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+        <div class="sidebar-body">
+            <ul class="nav-sidebar">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span class="lang"
+              key="dashboard">Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="my_profile.html" class="nav-link"><i data-feather="user"></i><span class="lang" key="my profile">My
+              Profile</span></a>
+                </li>
+
+                <li class="nav-item active show">
+                    <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="sun"></i><span class="lang"
+              key="my donation">Cow Adoption</span></a>
+                    <nav class="nav-sub">
+                        <a href="donor-adopted-cows-list.html" class="sub-link lang" key="consolidated receipt">Adopted Cows</a>
+                        <a href="adoptacow.html" class="sub-link lang active" key="consolidated receipt">Adopt a cow</a>
+
+                    </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="sun"></i><span class="lang"
+              key="my donation">My Donation</span></a>
+                    <nav class="nav-sub">
+                        <a href="" class="sub-link lang" key="consolidated receipt">Consolidated receipt</a>
+                    </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang"
+              key="online donation">Online Donation</span></a>
+                    <nav class="nav-sub">
+                        <a href="monthly-donation.html" class="sub-link lang" key="donate monthly">Donate Monthly</a>
+                        <a href="" class="sub-link lang" key="birthday / anniversary">Birthday / Anniversary
+            </a>
+                    </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i data-feather="heart"></i><span class="lang"
+              key="celebrate in gaushala">Celebrate in Gaushala</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i data-feather="users"></i><span class="lang" key="my references">My
+              References</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i data-feather="headphones"></i><span class="lang"
+              key="feedback / complaints">Feedback / Complaints</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar-body -->
+        <div class="sidebar-footer">
+            <button class="btn btn-outline-primary2">Refer Friend</button>
+        </div>
+        <!-- sidebar-footer -->
+    </div>
+    <!-- sidebar -->
+
+    <div class="content">
+        <div class="content-header d-flex align-items-center justify-content-between">
+            <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i>
+      </a>
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="">
+                    <img src="assets/images/logo2.png" width="280" alt="" class="d-none d-lg-block img-fluid" />
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-primary2 rounded-pill me-4 px-4 py-3 d-none d-lg-flex">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" class="me-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.4 20.9789C14.7437 20.993 13.1104 21 10.5 21C7.88958 21 6.25625 20.993 5.6 20.9789C3.74792 20.9366 2.35156 20.8167 1.41094 20.6193C0.470312 20.422 0 20.0906 0 19.6254C0 19.3434 0.145833 18.7759 0.4375 17.923C0.729167 17.07 1.05 16.1747 1.4 15.2372C1.75 14.2996 2.07083 13.221 2.3625 12.0015C2.65417 10.782 2.8 9.714 2.8 8.79758C2.8 6.09063 5.36667 4.73716 10.5 4.73716C15.6333 4.73716 18.2 6.09063 18.2 8.79758C18.2 9.714 18.3458 10.782 18.6375 12.0015C18.9292 13.221 19.25 14.2996 19.6 15.2372C19.95 16.1747 20.2708 17.07 20.5625 17.923C20.8542 18.7759 21 19.3434 21 19.6254C21 20.0906 20.5297 20.422 19.5891 20.6193C18.6484 20.8167 17.2521 20.9366 15.4 20.9789ZM10.5 9.47432C11.4917 9.47432 12.3193 9.58711 12.9828 9.81269C13.6464 10.0383 13.9854 10.3696 14 10.8066V10.8278C14 11.0111 14.0693 11.1697 14.2078 11.3036C14.3464 11.4376 14.5104 11.5045 14.7 11.5045C14.8896 11.5045 15.0536 11.4376 15.1922 11.3036C15.3307 11.1697 15.4 11.0111 15.4 10.8278C15.4 9.17825 14 8.28298 11.2 8.14199V7.44411C11.2 7.26083 11.1307 7.10222 10.9922 6.96828C10.8536 6.83434 10.6896 6.76737 10.5 6.76737C10.3104 6.76737 10.1464 6.83434 10.0078 6.96828C9.86927 7.10222 9.8 7.26083 9.8 7.44411V8.14199C7 8.28298 5.6 9.17825 5.6 10.8278C5.6 11.138 5.6474 11.4058 5.74219 11.6314C5.83698 11.857 5.9901 12.0438 6.20156 12.1918C6.41302 12.3399 6.64271 12.4597 6.89062 12.5514C7.13854 12.643 7.46667 12.71 7.875 12.7523C8.28333 12.7946 8.67708 12.8228 9.05625 12.8369C9.43542 12.851 9.91667 12.858 10.5 12.858C11.5062 12.858 12.3411 12.9743 13.0047 13.2069C13.6682 13.4396 14 13.7744 14 14.2115C14 14.6485 13.6682 14.9834 13.0047 15.216C12.3411 15.4486 11.5062 15.565 10.5 15.565C9.50833 15.565 8.68073 15.4522 8.01719 15.2266C7.35365 15.001 7.01458 14.6697 7 14.2326V14.2115C7 14.0282 6.93073 13.8696 6.79219 13.7357C6.65365 13.6017 6.48958 13.5347 6.3 13.5347C6.11042 13.5347 5.94635 13.6017 5.80781 13.7357C5.66927 13.8696 5.6 14.0282 5.6 14.2115C5.6 15.861 7 16.7563 9.8 16.8973V17.5952C9.8 17.7784 9.86927 17.9371 10.0078 18.071C10.1464 18.2049 10.3104 18.2719 10.5 18.2719C10.6896 18.2719 10.8536 18.2049 10.9922 18.071C11.1307 17.9371 11.2 17.7784 11.2 17.5952V16.8973C14 16.7563 15.4 15.861 15.4 14.2115C15.4 12.4068 13.7667 11.5045 10.5 11.5045C10.2958 11.5045 10.0406 11.5081 9.73437 11.5151C9.42812 11.5222 9.18021 11.5292 8.99062 11.5363C8.80104 11.5433 8.58958 11.5433 8.35625 11.5363C8.12292 11.5292 7.93333 11.5116 7.7875 11.4834C7.64167 11.4552 7.50312 11.4164 7.37187 11.3671C7.24062 11.3177 7.14583 11.2472 7.0875 11.1556C7.02917 11.0639 7 10.9547 7 10.8278C7 10.3907 7.33542 10.0559 8.00625 9.82326C8.67708 9.59063 9.50833 9.47432 10.5 9.47432ZM10.5 3.38369C9.625 3.38369 8.82292 3.42598 8.09375 3.51057C7.7875 2.91843 7.52865 2.34391 7.31719 1.78701C7.10573 1.23011 7 0.86002 7 0.676737C7 0.451158 7.18958 0.225579 7.56875 0C7.91875 0.197382 8.36354 0.359517 8.90312 0.486405C9.44271 0.613293 9.975 0.676737 10.5 0.676737C11.025 0.676737 11.5573 0.613293 12.0969 0.486405C12.6365 0.359517 13.0812 0.197382 13.4312 0C13.8104 0.225579 14 0.451158 14 0.676737C14 0.86002 13.8943 1.23011 13.6828 1.78701C13.4714 2.34391 13.2125 2.91843 12.9062 3.51057C12.1771 3.42598 11.375 3.38369 10.5 3.38369Z"
+                fill="#F97C36" />
+            </svg>
+            Donate online
+          </button>
+                    <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1">
+            <img src="assets/images/english.svg" width="32" alt="" />
+          </button>
+                    <div class="dropdown position-relative">
+                        <button class="btn btn-outline-light fs-14 d-flex align-items-center lh-sm text-start text-black border-black-50 rounded-pill p-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/avatar.png" class="me-2" width="56" alt="" />
+                <div class="">
+                  Welcome<br />
+                  Shri Amit Rana<br />
+                  <span class="fs-12 text-black-50"> ID: 88948944</span>
+                </div>
+              </div>
+            </button>
+                        <ul class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-header -->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row gy-4">
+                    <div class="col-md-12">
+                        <div class="h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h1 class="fs-4 fw-bold mb-0">Adopt a Cow</h1>
+                                <ul class="filterbtns inputdsn">
+                                    <li>
+                                        <Select class="form-select"><option value="">Select Type</option></Select>
+                                    </li>
+                                    <li>
+                                        <Select class="form-select"><option value="">Select Color</option></Select>
+                                    </li>
+                                    <li>
+                                        <Select class="form-select"><option value="">Select Health</option></Select>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="extraactivitypanel">
+                         
+                                <div class="row gy-4">
+                                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6">
+                                        <div class="card h-100 border-0 extraactivitycard">
+                                            <div class="position-relative">
+                                                <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                                                    <img src="assets/images/zoom.svg" alt="">
+                                                </a>
+                                                <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body py-3 bgfaceclr">
+                                                <div class="d-flex flex-wrap justify-content-between text-center">
+                                                    <h5 class="fs-6 fs-bolder text-center w-100">Perform Cow Pooja</h5>
+                                                     
+                                                    <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-0 overflow-hidden border-top-0">
+                                                <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Add Items</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                           
+                           
+                        </div>
+                        <div class="extratotalSummary">
+                            
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <p class="mb-0 text-black fw-bold">Total 4 Items selected </p>
+                                    <div class="totalright d-flex align-items-center text-black fw-bold">
+                                        Total Amount is: <span class="px-3 bg-light border mx-3 py-2 rounded-1">1000</span> <button class="btn btn-primary">Pay Now</button>
+                                    </div>
+                                </div>
+                            
+                           
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- content-body -->
+    </div>
+    <!-- content -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="extramodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bgfaceclr">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Perform Cow Pooja</h1>
+          <span class="px-3 py-2 rouded-1 bgfaceclrdark text-black fw-bold" disabled>Total Amount Rs 500/-</span>
+        </div>
+        <div class="modal-body">
+          <div class="row gy-4">
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6 col-md-6">
+                <div class="card h-100 border-0 extraactivitycard">
+                    <div class="position-relative">
+                        <a href="assets/images/cows-listing.jpg" data-fancybox="gallery" data-caption="" class="zoom-icon">
+                            <img src="assets/images/zoom.svg" alt="">
+                        </a>
+                        <img src="assets/images/cows-listing.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="fs-6 fs-bolder text-center">Perform Cow Pooja</h5>
+                            <h5 class="fs-6 fs-bolder text-center">₹500/-</h5>
+                            <p class="mb-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quam quos deleniti    </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-0 overflow-hidden border-top-0">
+                        <button class="btn btn-unselected"  data-bs-toggle="modal" data-bs-target="#extramodal">Select</button>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer bgfaceclrdark justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+          <button type="button" class="btn btn-primary">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/fancybox/fancybox.umd.js"></script>
+    <script src="assets/vendors/datatable/datatables.min.js"></script>
+    <script src="assets/vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/lazysizes.min.js" async=""></script>
+    <script src="assets/vendors/feathericons/feather.min.js" async=""></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
