@@ -20,92 +20,89 @@
 </head>
 
 <body class="skin-base animate">
-<div class="offcanvas offcanvas-top h-auto" tabindex="-1" id="userinfo" aria-labelledby="offcanvasTopLabel">
-  <div class="offcanvas-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="offcanvas-header px-0 mt-0 pt-0">
-            <h5 class="offcanvas-title text-center w-100 fw-bold" id="offcanvasTopLabel">Create Receipt for Rahul ji</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+
+  <div class="modal fade newreceiptfields" id="userinfo" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bgnew">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" >Create Receipt for Rahul ji</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-		  
-		  
+        <div class="modal-body ">
+          <div class="row justify-content-center gy-4">
+                 
+            
+            <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="Amount" class="mb-1">Amount</label>
+                      <input type="text" class="form-control" id="Amount" placeholder="Name">
+                     
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group ">
+                      <label class="mb-1">Mode of payment</label>
+                      <select id="Mode" name="Mode" class="form-select">
+                        <option value="">Mode of payment</option>
+                        <option value="Afganistan">Online</option>
+                        <option value="Albania">Cash</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group ">
+                      <label class="mb-1">Type</label>
+                      <select id="Type2" name="Type2" class="form-select">
+                        <option value="">Type</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="bhusa-fodder">Bhusa / Fodder</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="cow-shed-construction">Cow Shed / Construction</option>
+                        <option value="ecs">ECS</option>
+                        <option value="gau-katha">Gau Katha</option>
+                        <option value="gaudaan">Gaudaan</option>
+                        <option value="gausewa">Gausewa</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                        <option value="yagya">Yagya / Pooja</option>
+                      </select>
+                    </div>
+                  </div>
+             
+            
+              <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="BankName" class="mb-1">Bank Name</label>
+                      <input type="text" class="form-control" id="BankName" placeholder="Name">
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="Check" class="mb-1">Check Number</label>
+                      <input type="text" class="form-control" id="Check" placeholder="Name">
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="Date" class="mb-">Check Date</label>
+                      <input type="date" class="form-control" id="Date" placeholder="Name">
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-12 text-center mt-4">
+                    <button class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+         
+        </div>
         
       </div>
-      <div class="row my-3 bigheight align-items-baseline ">
-        <div class="col-lg-12">
-          <div class="bgnew p-3">
-            <div class="row justify-content-center">
-              <div class="col-lg-9 mb-2"> <strong>Payment</strong> </div>
-				<div class="clearfix"></div>
-				<div class="col-lg-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="Amount" placeholder="Name">
-                  <label for="Amount">Amount</label>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group floating-group floating-diff position-relative">
-                  <label class="floating-label">Mode of payment</label>
-                  <select id="Mode" name="Mode" class="form-control form-control-sm floating-control select2">
-                    <option value="">Mode of payment</option>
-                    <option value="Afganistan">Online</option>
-                    <option value="Albania">Cash</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group floating-group floating-diff position-relative">
-                  <label class="floating-label">Type</label>
-                  <select id="Type2" name="Type2" class="form-control form-control-sm floating-control select2">
-                    <option value="">Type</option>
-                    <option value="anniversary">Anniversary</option>
-                    <option value="bhusa-fodder">Bhusa / Fodder</option>
-                    <option value="birthday">Birthday</option>
-                    <option value="cow-shed-construction">Cow Shed / Construction</option>
-                    <option value="ecs">ECS</option>
-                    <option value="gau-katha">Gau Katha</option>
-                    <option value="gaudaan">Gaudaan</option>
-                    <option value="gausewa">Gausewa</option>
-                    <option value="hospital">Hospital</option>
-                    <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
-                    <option value="yagya">Yagya / Pooja</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-9 mt-4 mb-2"> <strong>Bank Details</strong> </div>
-				<div class="clearfix"></div>
-				  <div class="col-lg-3">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="BankName" placeholder="Name">
-                  <label for="BankName">Bank Name</label>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="Check" placeholder="Name">
-                  <label for="Check">Check Number</label>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="Date" placeholder="Name">
-                  <label for="Date">Check Date</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		    <div class="col-lg-12 text-center mt-4">
-                  <button class="btn btn-primary">Submit</button>
-                </div>
-      </div>
-     
     </div>
   </div>
-</div>
+
+
 <div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
 <div class="sidebar">
   <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
@@ -208,7 +205,7 @@
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-					<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
+					<td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#userinfo">Create Receipt</button></td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -219,7 +216,7 @@
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-										<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
+										<td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#userinfo">Create Receipt</button></td>
 
                 </tr>
                 <tr>
@@ -231,7 +228,7 @@
                   <td><a href="contactdetail.html">Rahul</a></td>
                   <td>Delhi</td>
                   <td>9999999999 </td>
-										<td><button class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#userinfo">Create Receipt</button></td>
+										<td><button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#userinfo">Create Receipt</button></td>
 
                 </tr>
               </tbody>
