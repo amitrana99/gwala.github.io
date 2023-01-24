@@ -37,7 +37,7 @@
       </li>
       <li class="nav-item"> <a href="importdata.html" class="nav-link"> <i data-feather="file"></i><span  >Import Data</span> </a> </li>
       <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Receipts</span> </a>
-        <nav class="nav-sub"> <a href="receipts.html" class="sub-link active">All Receipts</a> </nav>
+        <nav class="nav-sub"> <a href="receipts.html" class="sub-link active">Receipt Users</a> </nav>
       </li>
       <li class="nav-item "> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="settings"></i><span  >Settings</span> </a>
         <nav class="nav-sub"> <a href="user-management.html" class="sub-link">User Management</a> <a href="workflow.html" class="sub-link">Workflow</a><a href="templates.html" class="sub-link">Templates</a> </nav>
@@ -82,7 +82,7 @@
       <div class="row gy-4	">
         <div class="col-md-12">
           <div class="d-flex align-items-center justify-content-between flex-wrap " >
-            <h1 class="fs-4 fw-bold text-nowrap">Receipts</h1>
+            <h1 class="fs-4 fw-bold text-nowrap">Receipts Users</h1>
           </div>
         </div>
         <div class="col-lg-12">
@@ -94,17 +94,14 @@
                       <input class="form-check-input" type="checkbox" value="" name="selectrow" id="checkAll">
                       <label class="form-check-label" for="checkAll"> S no </label>
                     </div>
-                  </th>
-                  <th>Receipt No.</th>
-                  <th>Name</th>
-                  <th>City</th>
+                  </th>                  
+                  <th>User Name</th>                  
                   <th>Mobile</th>
-                  <th>Mode of Payment</th>
-                  <th>date</th>
-                  <th>Limits Allowed : Used</th>
-                  <th>Amount</th>
-                  <th>Staus</th>
-                  <th>Action</th>
+				  <th>Email</th>                  
+                  <th>Sanctioned Amt.</th>
+				  <th>Used Amt.</th>
+				  <th>Total Receipts</th>                
+                  
                 </tr>
               </thead>
               <tbody>
@@ -112,34 +109,17 @@
                   <td><div class="form-check mb-0">
                       <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
                       <label class="form-check-label" for="check1"> 1 </label>
-                    </div></td>
-                  <td><a href="allpayment-detail.html">49419494973</a></td>
-                  <td><a href="contactdetail.html">Rahul</a></td>
-                  <td>Delhi</td>
+                    </div>
+				  </td>
+                  <td><a href="contactdetail.html">Rahul</a></td>                 
                   <td>9999999999 </td>
-                  <td>Online</td>
-                  <td>20/12/2022</td>
-                  <td>20000 : 5000</td>
-                  <td>Rs. 5000</td>
-                  <td><span class="text-danger">Not Received</span></td>
-                  <td><button class="btn btn-primary btn-sm">Update</button></td>
+                  <td>rahul@gmail.com</td>                 
+                  <td>20000</td>
+				  <td><a href="#" class="text-decoration-underline">5000</a></td>
+                  <td>75000</td>                 
+               
                 </tr>
-                <tr>
-                  <td><div class="form-check mb-0">
-                      <input class="form-check-input" type="checkbox" value="" name="selectrow" id="check1">
-                      <label class="form-check-label" for="check1"> 1 </label>
-                    </div></td>
-                  <td><a href="allpayment-detail.html">49419494973</a></td>
-                  <td><a href="contactdetail.html">Rahul</a></td>
-                  <td>Delhi</td>
-                  <td>9999999999 </td>
-                  <td>Online</td>
-                  <td>20/12/2022</td>
-                  <td>20000 : 500</td>
-                  <td>Rs. 500</td>
-                  <td><span class="text-success">Received</span></td>
-                  <td><button class="btn btn-primary btn-sm">Update</button></td>
-                </tr>
+                
               </tbody>
             </table>
           </div>

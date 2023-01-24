@@ -349,8 +349,11 @@ $('.resdatatable').DataTable({
   oLanguage: {
     sLengthMenu: " <img src='assets/images/table.svg'> _MENU_",
   },
-  responsive: true,
-  scrollX: '100%',
+ // responsive: true,
+ // scrollX: '100%',
+	 "initComplete": function (settings, json) {
+                            $(".resdatatable").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+                        },
   pageLength: 10,
   lengthMenu: [0, 5, 10, 20, 50, 100, 200, 500],
   language: {

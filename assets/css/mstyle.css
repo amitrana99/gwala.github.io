@@ -14,8 +14,8 @@ body {
 .btn.active,
 .btn.show,
 .btn:active {
-  background-color: #ff6400;
-  border-color: #ff6400;
+  /* background-color: #ff6400; */
+  /* border-color: #ff6400; */
 }
 
 .btn-outline-primary {
@@ -1818,7 +1818,7 @@ label.input-has-value {
 .dashboard div.dataTables_wrapper div.dataTables_filter {
   position: absolute;
   right: 108px;
-  top: 0px;
+  top: 1px;
   display: flex;
   gap: 8px;
 }
@@ -1918,9 +1918,9 @@ div.dataTables_scrollBody {
 }
 
 table.dataTable {
-  margin-top: 0px !important;
+  /* margin: 0px !important; */
   vertical-align: middle;
-  border-spacing: 0 10px;
+  border-spacing: 0px 2px;
 }
 
 .dataTables_scrollHeadInner,
@@ -2120,9 +2120,9 @@ textarea:focus {
 
 .form-control:focus,
 .form-select:focus {
-  box-shadow: 0 0 0 0.25rem rgb(182 134 111 / 30%);
+  box-shadow: 0 0 0 0.1rem rgb(255 230 219);
   transition: all 0.2s ease-in;
-  border-color: #0000;
+  border-color: #fff0!important;
 }
 
 .inputbg {
@@ -2879,9 +2879,14 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .bgnew {
-  background-color: #fff6ef;
   border-radius: 20px;
   border: 1px dashed #b6866f;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+.bgnew2 {
+  border-radius: 20px;
+  border: 1px dashed #b6866f;
+  background-color: #fffaf7;
 }
 
 .bigheight
@@ -3286,4 +3291,53 @@ letter-spacing: 1px;
   }
 .newreceiptfields .form-control::placeholder{
   
+}
+
+.newreceiptfields2 .form-control {
+  border: 1px dashed #ffffff;
+  }
+.newreceiptfields2 .form-select{
+	border: 1px dashed #f9733e;
+}
+.newreceiptfields2 .form-control::placeholder{
+  
+}
+.newreceiptfields2 label{
+	
+color: white;
+	
+font-size: .9rem;
+	
+font-weight: 600;
+}
+.sbi-css2 {
+    background: #271e7933;
+    padding: 15px;
+    border: 1px #271e79 inset;
+    border-style: dashed;
+    text-align: center;
+}
+.modal-close-btn{
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	background-color: #ffffff;
+	filter: none;
+	opacity: 1;
+	border-radius: 50px;
+	padding: 4px!important;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.modal-close-btn:hover{
+	opacity: 1!important
+}
+.newreceiptfields label{
+	
+color: black;
+	
+font-size: .9rem;
+}
+.bbm{
+	border-bottom: 1px solid #ffffff33;
 }
