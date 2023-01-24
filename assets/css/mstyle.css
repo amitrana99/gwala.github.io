@@ -1871,7 +1871,7 @@ label.input-has-value {
 }
 
 .dataTables_wrapper label .form-control:focus {
-  box-shadow: none;
+ 
 }
 
 .dataTable thead tr th {
