@@ -2120,7 +2120,7 @@ textarea:focus {
 
 .form-control:focus,
 .form-select:focus {
-  box-shadow: 0 0 0 0.1rem rgb(255 230 219);
+  box-shadow: 0 0 0 0.1rem rgb(246 204 190);
   transition: all 0.2s ease-in;
   border-color: #fff0!important;
 }
@@ -3287,7 +3287,8 @@ letter-spacing: 1px;
 }
 
 .newreceiptfields .form-control, .newreceiptfields .form-select{
-  border: 1px dashed #b6866f;
+  border: 1px dashed #9c5431;
+  background-color: #feebe0;
   }
 .newreceiptfields .form-control::placeholder{
   
