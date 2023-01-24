@@ -3320,15 +3320,16 @@ font-weight: 600;
 }
 .modal-close-btn{
 	position: absolute;
-	top: -2px;
-	right: -2px;
+	top: 1px;
+	right: 1px;
 	background-color: #ffffff;
 	filter: none;
 	opacity: 1;
 	border-radius: 50px;
-	padding: 4px!important;
+	padding: 3px!important;
 	width: 1.5rem;
 	height: 1.5rem;
+	background-size: 46%;
 }
 .modal-close-btn:hover{
 	opacity: 1!important
