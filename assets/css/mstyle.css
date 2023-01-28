@@ -3343,3 +3343,11 @@ font-size: .9rem;
 .bbm{
 	border-bottom: 1px solid #ffffff33;
 }
+.modal-switch.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ff6400'/%3e%3c/svg%3e")!important;
+}
+.modal-switch .form-check-input:checked {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
