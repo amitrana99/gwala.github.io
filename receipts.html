@@ -37,12 +37,13 @@
 				<table class="table align-middle text-white">
                 <thead>
                   <tr>
-                    <th>Name</th>
+					<th>Date</th>
+					<th>Receipt Number</th>
                     <th>Gwala ID</th>
+					<th>Name</th>
                     <th>Mobile Number</th>
-                    <th>Current Limit</th>
-					<th>Used Limit</th>
-					<th>Payment for approval</th>
+					<th>Amount</th>					
+                    <th>Mode of Payment</th>					
 					<th>Received </th>
                   </tr>
 
@@ -51,12 +52,13 @@
                   <tr>
                     <td>Rahul Sharma</td>
                     <td>GW0018750</td>
-                    <td>9999999999</td>
-					  <td>20000</td>
-					  <td>3000</td>
-					  <td>3000</td>
-                    <td><div class="form-check form-switch modal-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="p1">
+                    <td>GW0018750</td>
+					  <td>Sumit</td>
+					  <td>9999999999</td>
+					  <td>12000</td>
+					  <th>Online</th>
+                    <td><div class="form-check form-switch modal-switch" >
+  <input class="form-check-input" type="checkbox" role="switch" id="p1" checked>
   <label class="form-check-label" for="p1"></label>
 </div></td>
                   </tr>
@@ -64,22 +66,25 @@
 					<tr>
                     <td>Rahul Sharma</td>
                     <td>GW0018750</td>
-                    <td>9999999999</td>
-					  <td>20000</td>
-					  <td>2000</td>
-					  <td>0</td>
-                    <td><div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="p2" disabled>
+                    <td>GW0018750</td>
+					  <td>Sumit</td>
+					  <td>9999999999</td>
+					  <td>3000</td>
+					  <th>Cash</th>
+                    <td><div class="form-check form-switch modal-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="p2">
   <label class="form-check-label" for="p2"></label>
 </div></td>
                   </tr>
 					
+					
+					
                 </tbody>
 					<tfoot>
 					<tr>
-						<th colspan="4">Total</th>
-						<th>5000</th>
-						<th>3000</th>
+						<th colspan="5">Total</th>
+						<th>15000</th>
+						<th></th>
 						<th></th>
 						</tr>
 					</tfoot>
@@ -290,7 +295,7 @@
                     <th>Email</th>
                     <th>Sanctioned Amt.</th>
                     <th>Used Amt.</th>
-					<th>Request for payment Received</th>
+					<th>Deposited Amt.</th>
                     <th>Total Receipts</th>
 
                   </tr>
@@ -304,9 +309,9 @@
                     <td>9999999999 </td>
                     <td>rahul@gmail.com</td>
                     <td>20000</td>
-                    <td><button class="btn btn-warning btn-sm" data-bs-target="#usedlimit" data-bs-toggle="modal">5000</button></td>
-					<td>3000</td>
-                    <td>75000</td>
+                    <td><button class="btn btn-warning btn-sm" data-bs-target="#usedlimit" data-bs-toggle="modal">15000</button></td>
+					<td><button class="btn btn-warning btn-sm" data-bs-target="#usedlimit" data-bs-toggle="modal">3000</button></td>
+                    <td>17000</td>
 
                   </tr>
 
