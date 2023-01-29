@@ -21,6 +21,74 @@
 </head>
 
 <body class="skin-base animate">
+  <div class="modal fade  newreceiptfields2" id="depostedamt" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bgnew">
+        <div class="modal-header bbm">
+          <h1 class="modal-title fs-6 text-uppercase fw-bold text-white mx-auto">Deposited Amount</h1>
+          <button type="button" class="btn-close btn-close-white modal-close-btn" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center justify-content-center gy-4">
+           
+            <div class="col-lg-12">
+			  <div class="table-responsive">
+				<table class="table align-middle text-white">
+                <thead>
+                  <tr>
+					<th>Date</th>
+					<th>Receipt Number</th>
+                    <th>Gwala ID</th>
+					<th>Name</th>
+                    <th>Mobile Number</th>
+					<th>Amount</th>					
+                    <th>Mode of Payment</th>					
+					<th>Received </th>
+                  </tr>
+
+                </thead>
+                <tbody>
+                 
+					
+					<tr>
+                    <td>Rahul Sharma</td>
+                    <td>GW0018750</td>
+                    <td>GW0018750</td>
+					  <td>Sumit</td>
+					  <td>9999999999</td>
+					  <td>3000</td>
+					  <th>Cash</th>
+                    <td><div class="form-check form-switch modal-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="p2">
+  <label class="form-check-label" for="p2"></label>
+</div></td>
+                  </tr>
+					
+					
+					
+                </tbody>
+					<tfoot>
+					<tr>
+						<th colspan="5">Total</th>
+						<th>3000</th>
+						<th></th>
+						<th></th>
+						</tr>
+					</tfoot>
+
+              </table>
+				</div>
+			  </div>
+
+          
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 	<div class="modal fade  newreceiptfields2" id="usedlimit" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content bgnew">
@@ -150,32 +218,35 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <table class="table align-middle text-white">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Gwala ID</th>
-                    <th>Mobile Number</th>
-                    <th>Current Limit</th>
-                  </tr>
-
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Rahul Sharma</td>
-                    <td>GW0018750</td>
-                    <td>9999999999</td>
-                    <td><button class="btn btn-warning btn-sm" data-bs-target="#updatelimit" data-bs-toggle="modal">₹0/-</button></td>
-                  </tr>
-					<tr>
-                    <td>Rahul Sharma</td>
-                    <td>GW0018751</td>
-                    <td>9999956898</td>
-                    <td><button class="btn btn-warning btn-sm" data-bs-target="#updatelimit" data-bs-toggle="modal">₹20,000/-</button></td>
-                  </tr>
-                </tbody>
-
-              </table>
+              <div class="table-responsive">
+                <table class="table align-middle text-white">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Gwala ID</th>
+                      <th>Mobile Number</th>
+                      <th>Current Limit</th>
+                    </tr>
+  
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rahul Sharma</td>
+                      <td>GW0018750</td>
+                      <td>9999999999</td>
+                      <td><button class="btn btn-warning btn-sm" data-bs-target="#updatelimit" data-bs-toggle="modal">₹0/-</button></td>
+                    </tr>
+            <tr>
+                      <td>Rahul Sharma</td>
+                      <td>GW0018751</td>
+                      <td>9999956898</td>
+                      <td><button class="btn btn-warning btn-sm" data-bs-target="#updatelimit" data-bs-toggle="modal">₹20,000/-</button></td>
+                    </tr>
+                  </tbody>
+  
+                </table>
+              </div>
+             
             </div>
 
             <div class="col-lg-12 text-center">
@@ -310,7 +381,7 @@
                     <td>rahul@gmail.com</td>
                     <td>20000</td>
                     <td><button class="btn btn-warning btn-sm" data-bs-target="#usedlimit" data-bs-toggle="modal">15000</button></td>
-					<td><button class="btn btn-warning btn-sm" data-bs-target="#usedlimit" data-bs-toggle="modal">3000</button></td>
+					<td><button class="btn btn-warning btn-sm" data-bs-target="#depostedamt" data-bs-toggle="modal">3000</button></td>
                     <td>17000</td>
 
                   </tr>
