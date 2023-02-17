@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishnayan Gwala - Payment page</title>
+<link rel="icon" href="assets/images/favicon.png" type="image/png" />
+<link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
+<link href="assets/vendors/datatable/datatables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
+<link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
+<link rel="stylesheet" href="assets/css/mstyle.css">
+<link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+<link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
+<link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="skin-base animate">
+<div class="loader"> <img src="assets/images/loader.svg" alt=""> </div>
+<div class="sidebar">
+  <div class="sidebar-header justify-content-between"> <a href="#" class="sidebar-logo"><img src="assets/images/logo-left.png" class="img-fluid" height="110" width="110" alt=""> </a> <a href="#" class="contentMenu content-menu d-none d-lg-flex sidebar-logo-text"><i class="fa-solid fa-arrow-left-long"></i></a> </div>
+  <div class="sidebar-body">
+    <ul class="nav-sidebar">
+      <li class="nav-item "><a href="dashboard.html" class="nav-link"><i data-feather="home"></i><span class="lang" key="dashboard">Dashboard</span></a> </li>
+      <li class="nav-item"> <a href="my_profile.html" class="nav-link"><i data-feather="user"></i><span class="lang" key="my profile">My Profile</span></a> </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang" key="online donation">My Donation</span></a>
+        <nav class="nav-sub"> <a href="my-payments.html" class="sub-link lang" key="donate monthly">My Payments</a> <a href="my-monthly-donation.html" class="sub-link lang" key="donate monthly">My Monthly Donations</a> <a href="consolidated-receipts.html" class="sub-link lang" key="birthday / anniversary">Consolidated Receipt</a> </nav>
+      </li>
+      <li class="nav-item"> <a href="javascript:void(0)" class="nav-link with-sub"><i data-feather="globe"></i><span class="lang" key="online donation">Online Donation</span></a>
+        <nav class="nav-sub"> <a href="online-donation.html" class="sub-link lang">Donate Online</a> <a href="Donatemonthly.html" class="sub-link lang">Monthly Donation</a> <a href="feedfodder.html" class="sub-link lang">Feed Fodder</a> <a href="event.html" class="sub-link lang">Event</a> <a href="shradhandtarpan.html" class="sub-link lang">Shradh & Tarpan</a> </nav>
+      </li>
+      <li class="nav-item active show"> <a href="javascript:void(0)" class="nav-link with-sub"> <i data-feather="file"></i><span  >Receipts</span> </a>
+        <nav class="nav-sub"> <a href="receipt-user.html" class="sub-link ">All Receipts</a> <a href="create-new-receipt.html" class="sub-link">Create New receipt</a> <a href="payment-page.html" class="sub-link active">Payment page</a></nav>
+      </li>
+      <li class="nav-item"><a href="celebrateingaushala.html" class="nav-link"><i data-feather="heart"></i><span class="lang" key="celebrate in gaushala">Celebrate in Gaushala</span></a></li>
+      <li class="nav-item"><a href="myrefrences.html" class="nav-link"><i data-feather="users"></i><span class="lang" key="my references">My References</span></a></li>
+      <li class="nav-item"><a href="feedback.html" class="nav-link"><i data-feather="headphones"></i><span class="lang" key="feedback / complaints">Feedback / Complaints</span></a> </li>
+    </ul>
+  </div>
+</div>
+<!-- sidebar -->
+
+<div class="content">
+  <div class="content-header d-flex align-items-center justify-content-between"> <a id="mobileMenu" href="#" class="content-menu d-lg-none"><i data-feather="menu"></i> </a>
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <div class=""> <img src="assets/images/logo2.png" width="350" alt="" class="d-none d-lg-block img-fluid"> </div>
+      <div class="d-flex align-items-center ">
+        <button class="ms-auto btn me-4 btn-light d-none d-lg-block"><i data-feather="refresh-ccw"></i></button>
+        <button class="bg-transparent border-0 me-4 translate" id="en" colspan="1"> <img src="assets/images/english.svg"  width="32" alt=""> </button>
+        <div class="dropdown position-relative">
+          <button class="btn btn-outline-light fs-14 d-flex align-items-center  lh-sm text-start text-black border-black-50 rounded-pill p-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="d-flex align-items-center"> <img src="assets/images/avatar.png" class="me-2" width="56" alt="">
+            <div class=""> Welcome<br>
+              Shri Amit Rana<br>
+              <span class="fs-12 text-black-50">ADMIN</span></div>
+          </div>
+          </button>
+          <ul class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-header -->
+  <div class="content-body">
+    <div class="container-fluid">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-md-12">
+          <div class="d-flex align-items-center justify-content-between flex-wrap " > <a href="#" class="fs-5 fw-semibold text-nowrap text-black d-flex align-items-center gap-1"> <i data-feather="arrow-left"></i>Payment Page</a> </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card bgnew newreceiptfields2">
+			   <h1 class="card-title fs-5 text-uppercase fw-bold text-white mx-auto mt-4" >Create Payment Receipt</h1>
+            <div class="card-body">
+              <div class="row gy-3">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="" class="col-form-label">Payment Date</label>
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="" class="col-form-label">Payment Amount <span class="">*</span> </label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+				  <div class="col-lg-6">
+            <div class="form-group ">
+              <label class="col-form-label">Donation Type</label>
+              <select id="Type2" name="Type2" class="form-select">
+                <option value="">Type</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="bhusa-fodder">Bhusa / Fodder</option>
+                <option value="birthday">Birthday</option>
+                <option value="cow-shed-construction">Cow Shed / Construction</option>
+                <option value="ecs">ECS</option>
+                <option value="gau-katha">Gau Katha</option>
+                <option value="gaudaan">Gaudaan</option>
+                <option value="gausewa">Gausewa</option>
+                <option value="hospital">Hospital</option>
+                <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                <option value="yagya">Yagya / Pooja</option>
+              </select>
+            </div>
+          </div>
+                <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Payment Method <span class="">*</span></label>
+                    <select id="modeOfPayment" name="Mode" class="form-select">
+                      <option value="">Mode of payment</option>
+                      <option value="online">NEFT / RTGS</option>
+                      <option value="cash">Cash</option>
+                      <option value="banktransfer">Bank Transfer</option>
+                      <option value="check">Cheque</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 dnone" id="onlinetransfer" >
+					<label for="" class="col-form-label">Select Bank</label>
+                    <select name="" id="" class="form-select">
+					  <option value="">Cash</option>
+					  <option value="">Axis Bank</option>
+					  <option value="">Punjab National Bank (378)</option>
+					  <option value="">Punjab National Bank (Saving)</option>
+					  <option value="">State Bank Of India</option>
+					  <option value="">HDFC Bank</option>
+					  <option value="" selected>YES Bank</option>
+					  <option value="">Axis Bank (Peeli)</option>
+					  <option value="">HDFC 5701</option>
+					  <option value="">HDFC 85</option>
+					  <option value="">SBI FCRA</option>
+					  <option value="">PNB RANIGHATI</option>
+				  </select>
+                </div>
+                <div class="col-md-6 dnone" id="banktransferbox">
+                  <div class="form-group">
+                    <label for="utrnumber" class="col-form-label">UTR Number</label>
+                    <input type="text" class="form-control" id="utrnumber" placeholder="Enter UTR Number">
+                  </div>
+                </div>
+                <div class="col-lg-12 dnone" id="checkbox">
+                  <div class="row g-3">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="BankName" class="col-form-label">Bank Name</label>
+                        <input type="text" class="form-control" id="BankName" placeholder="Enter Bank Name">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="Check" class="col-form-label">Check Number</label>
+                        <input type="text" class="form-control" id="Check" placeholder="Enter Check Number">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="Date" class="mb-">Check Date</label>
+                        <input type="date" class="form-control" id="Date" placeholder="Name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+				<div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Deposited In Account <span class="">*</span></label>
+                    <select  name="Mode" class="form-select">
+                      <option value="">Yes</option>
+                      <option value="online">No</option>
+                     
+                    </select>
+                  </div>
+                </div>
+				  <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Opportunity <span class="">*</span></label>
+                    <select  name="Mode" class="form-select">
+                      <option value="">Yes</option>
+                      <option value="online">No</option>
+                     
+                    </select>
+                  </div>
+                </div>
+				  
+				   <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Contact</label>
+                    <select  name="Mode" class="form-select">
+                      <option value="">Yes</option>
+                      <option value="online">No</option>
+                     
+                    </select>
+                  </div>
+                </div> <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Narration</label>
+                    <select  name="Mode" class="form-select">
+                      <option value="">Yes</option>
+                      <option value="online">No</option>
+                     
+                    </select>
+                  </div>
+                </div>
+				  <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Check if want to send</label>
+                   <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Send SMS / Email / WhatsApp
+  </label>
+</div>
+                  </div>
+                </div>
+				 <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Volunteer
+</label>
+                                       <input type="text" class="form-control">
+
+                  </div>
+                </div>
+				  
+                <div class="col-lg-12 text-center mt-4">
+                  <button class="btn btn-light fw-bold">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-body --> 
+  </div>
+  <!-- content --> 
+  
+</div>
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/datatable/datatables.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
+<script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
+<!--<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
+<script type="text/javascript" src="assets/js/contactchartinit.js"></script>--> 
+<script type="text/javascript" src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+<script type="text/javascript" src="assets/vendors/multi-select/js/jquery.multi-select.js"></script> 
+<script type="text/javascript" src="assets/js/main.js"></script> 
+<script>
+
+
+$('.select2').select2();
+
+$('select#modeOfPayment').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+    if(valueSelected == "online"){
+	   $("#onlinetransfer").show();
+	   }
+	else{
+		 $("#onlinetransfer").hide();
+	}
+	
+	if(valueSelected == "banktransfer"){
+	   $("#banktransferbox").show();
+	   }
+	else{
+		 $("#banktransferbox").hide();
+	}
+	if(valueSelected == "check"){
+	   $("#checkbox").show();
+	   }
+	else{
+		 $("#checkbox").hide();
+	}
+});
+	</script>
+</body>
+</html>
