@@ -3357,3 +3357,9 @@ font-size: .9rem;
 .select2-container--default .select2-selection--single .select2-selection__rendered{
 	line-height: 35.6px!important
 }
+.checquebox{
+	    background-color: #a84328;
+    padding: 14px 15px 24px;
+    border-radius: 13px;
+    border: 1px dashed white;
+}
