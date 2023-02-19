@@ -76,9 +76,9 @@
         </div>
         <div class="col-lg-7">
           <div class="card bgnew newreceiptfields2">
-			   <h1 class="card-title fs-5 text-uppercase fw-bold text-white mx-auto mt-4" >Create Payment Receipt</h1>
+            <h1 class="card-title fs-5 text-uppercase fw-bold text-white mx-auto mt-4" >Create Payment Receipt</h1>
             <div class="card-body">
-              <div class="row gy-3">
+              <div class="row g-3">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label for="" class="col-form-label">Payment Date</label>
@@ -91,66 +91,83 @@
                     <input type="text" class="form-control">
                   </div>
                 </div>
-				  <div class="col-lg-6">
-            <div class="form-group ">
-              <label class="col-form-label">Donation Type</label>
-              <select id="Type2" name="Type2" class="form-select">
-                <option value="">Type</option>
-                <option value="anniversary">Anniversary</option>
-                <option value="bhusa-fodder">Bhusa / Fodder</option>
-                <option value="birthday">Birthday</option>
-                <option value="cow-shed-construction">Cow Shed / Construction</option>
-                <option value="ecs">ECS</option>
-                <option value="gau-katha">Gau Katha</option>
-                <option value="gaudaan">Gaudaan</option>
-                <option value="gausewa">Gausewa</option>
-                <option value="hospital">Hospital</option>
-                <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
-                <option value="yagya">Yagya / Pooja</option>
-              </select>
-            </div>
-          </div>
+                <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Opportunity <span class="">*</span></label>
+                    <select  name="Mode" class="form-select select2withtag">
+                      <option value="">Rahul</option>
+                      <option value="online">Amit</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group ">
+                    <label class="col-form-label">Contact</label>
+                    <select  name="Mode" class="form-select select2withtag">
+                      <option value="">Rahul</option>
+                      <option value="online">Amit</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="col-lg-6">
                   <div class="form-group ">
                     <label class="col-form-label">Payment Method <span class="">*</span></label>
                     <select id="modeOfPayment" name="Mode" class="form-select">
                       <option value="">Mode of payment</option>
-                      <option value="online">NEFT / RTGS</option>
                       <option value="cash">Cash</option>
-                      <option value="banktransfer">Bank Transfer</option>
                       <option value="check">Cheque</option>
+                      <option value="banktransfer">Bank Transfer</option>
+                      <option value="online">GPay</option>
+                      <option value="online">Paytm</option>
+                      <option value="online">Phone pe</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-md-6 dnone" id="onlinetransfer" >
-					<label for="" class="col-form-label">Select Bank</label>
-                    <select name="" id="" class="form-select">
-					  <option value="">Cash</option>
-					  <option value="">Axis Bank</option>
-					  <option value="">Punjab National Bank (378)</option>
-					  <option value="">Punjab National Bank (Saving)</option>
-					  <option value="">State Bank Of India</option>
-					  <option value="">HDFC Bank</option>
-					  <option value="" selected>YES Bank</option>
-					  <option value="">Axis Bank (Peeli)</option>
-					  <option value="">HDFC 5701</option>
-					  <option value="">HDFC 85</option>
-					  <option value="">SBI FCRA</option>
-					  <option value="">PNB RANIGHATI</option>
-				  </select>
+                  <label for="" class="col-form-label">Select Bank</label>
+                  <select name="" id="" class="form-select">
+                   
+                    <option value="" selected>YES Bank</option>
+                   
+                  </select>
                 </div>
                 <div class="col-md-6 dnone" id="banktransferbox">
                   <div class="form-group">
-                    <label for="utrnumber" class="col-form-label">UTR Number</label>
-                    <input type="text" class="form-control" id="utrnumber" placeholder="Enter UTR Number">
+                     <label for="" class="col-form-label">Select Bank</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">Axis Bank</option>
+                    <option value="">Punjab National Bank (378)</option>
+                    <option value="">Punjab National Bank (Saving)</option>
+                    <option value="">State Bank Of India</option>
+                    <option value="">HDFC Bank</option>
+                    <option value="" selected>YES Bank</option>
+                    <option value="">Axis Bank (Peeli)</option>
+                    <option value="">HDFC 5701</option>
+                    <option value="">HDFC 85</option>
+                    <option value="">SBI FCRA</option>
+                    <option value="">PNB RANIGHATI</option>
+                  </select>
                   </div>
                 </div>
                 <div class="col-lg-12 dnone" id="checkbox">
                   <div class="row g-3">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="BankName" class="col-form-label">Bank Name</label>
-                        <input type="text" class="form-control" id="BankName" placeholder="Enter Bank Name">
+                       <label for="" class="col-form-label">Select Bank</label>
+                  <select name="" id="" class="form-select">
+					  <option value="">Cash</option>
+                    <option value="">Axis Bank</option>
+                    <option value="">Punjab National Bank (378)</option>
+                    <option value="">Punjab National Bank (Saving)</option>
+                    <option value="">State Bank Of India</option>
+                    <option value="">HDFC Bank</option>
+                    <option value="" selected>YES Bank</option>
+                    <option value="">Axis Bank (Peeli)</option>
+                    <option value="">HDFC 5701</option>
+                    <option value="">HDFC 85</option>
+                    <option value="">SBI FCRA</option>
+                    <option value="">PNB RANIGHATI</option>
+                  </select>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -167,66 +184,61 @@
                     </div>
                   </div>
                 </div>
-				<div class="col-lg-6">
+                <div class="col-lg-6">
                   <div class="form-group ">
                     <label class="col-form-label">Deposited In Account <span class="">*</span></label>
-                    <select  name="Mode" class="form-select">
-                      <option value="">Yes</option>
-                      <option value="online">No</option>
-                     
-                    </select>
+                  
+                  <select name="" id="" class="form-select">
+                    <option value="">Axis Bank</option>
+                    <option value="">Punjab National Bank (378)</option>
+                    <option value="">Punjab National Bank (Saving)</option>
+                    <option value="">State Bank Of India</option>
+                    <option value="">HDFC Bank</option>
+                    <option value="" selected>YES Bank</option>
+                    <option value="">Axis Bank (Peeli)</option>
+                    <option value="">HDFC 5701</option>
+                    <option value="">HDFC 85</option>
+                    <option value="">SBI FCRA</option>
+                    <option value="">PNB RANIGHATI</option>
+                  </select>
                   </div>
                 </div>
-				  <div class="col-lg-6">
+                <div class="col-lg-6">
                   <div class="form-group ">
-                    <label class="col-form-label">Opportunity <span class="">*</span></label>
-                    <select  name="Mode" class="form-select">
-                      <option value="">Yes</option>
-                      <option value="online">No</option>
-                     
-                    </select>
-                  </div>
-                </div>
-				  
-				   <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Contact</label>
-                    <select  name="Mode" class="form-select">
-                      <option value="">Yes</option>
-                      <option value="online">No</option>
-                     
-                    </select>
-                  </div>
-                </div> <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Narration</label>
-                    <select  name="Mode" class="form-select">
-                      <option value="">Yes</option>
-                      <option value="online">No</option>
-                     
+                    <label class="col-form-label">Donation Type</label>
+                    <select id="Type2" name="Type2" class="form-select">
+                      <option value="">Type</option>
+                      <option value="anniversary">Anniversary</option>
+                      <option value="bhusa-fodder">Bhusa / Fodder</option>
+                      <option value="birthday">Birthday</option>
+                      <option value="cow-shed-construction">Cow Shed / Construction</option>
+                      <option value="ecs">ECS</option>
+                      <option value="gau-katha">Gau Katha</option>
+                      <option value="gaudaan">Gaudaan</option>
+                      <option value="gausewa">Gausewa</option>
+                      <option value="hospital">Hospital</option>
+                      <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                      <option value="yagya">Yagya / Pooja</option>
                     </select>
                   </div>
                 </div>
 				  <div class="col-lg-6">
                   <div class="form-group ">
                     <label class="col-form-label">Check if want to send</label>
-                   <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Send SMS / Email / WhatsApp
-  </label>
-</div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault"> Send SMS / Email / WhatsApp </label>
+                    </div>
                   </div>
                 </div>
-				 <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="form-group ">
-                    <label class="col-form-label">Volunteer
-</label>
-                                       <input type="text" class="form-control">
-
+                    <label class="col-form-label">Narration</label>
+                   <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
                   </div>
                 </div>
-				  
+                
+                
                 <div class="col-lg-12 text-center mt-4">
                   <button class="btn btn-light fw-bold">Submit</button>
                 </div>
@@ -258,7 +270,10 @@
 <script>
 
 
-$('.select2').select2();
+$('.select2withtag').select2({
+	tags:true
+});
+
 
 $('select#modeOfPayment').on('change', function (e) {
     var optionSelected = $("option:selected", this);

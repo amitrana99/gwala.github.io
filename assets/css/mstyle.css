@@ -3351,3 +3351,9 @@ font-size: .9rem;
     background-color: #ffffff;
     border-color: #ffffff;
 }
+.select2-container .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__arrow{
+	height: 37.5px!important
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height: 35.6px!important
+}
