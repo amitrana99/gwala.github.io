@@ -14,8 +14,8 @@ body {
 .btn.active,
 .btn.show,
 .btn:active {
-  /* background-color: #ff6400; */
-  /* border-color: #ff6400; */
+  background-color: #ff6400;
+  border-color: #ff6400;
 }
 .text-primary{
 	 color: var(--primarybg)!important;
@@ -3363,11 +3363,12 @@ font-size: .9rem;
 	    background-color: #ffffff;
 	    padding: 10px 15px 17px;
 	    border-radius: 13px;
-	    border: 1px dashed white;
+	    border: 1px dashed #ffa87c;
 }
 .card-4{
-	background-color: #ffd8c1;
-	border: 1px dashed #ff6400;
+	background-color: var(--primarybg2);
+	border: 0;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 
