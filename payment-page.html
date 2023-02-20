@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="assets/vendors/date-rangepicker/daterangepicker.css">
 <link rel="stylesheet" href="assets/vendors/multi-select/css/multi-select.css">
+<link rel="stylesheet" href="assets/vendors/flatpickr/flatpickr.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -75,44 +76,45 @@
           <div class="d-flex align-items-center justify-content-between flex-wrap " > <a href="#" class="fs-5 fw-semibold text-nowrap text-black d-flex align-items-center gap-1"> <i data-feather="arrow-left"></i>Payment Page</a> </div>
         </div>
         <div class="col-lg-7">
-          <div class="card bgnew newreceiptfields2">
-            <h1 class="card-title fs-5 text-uppercase fw-bold text-white mx-auto mt-4" >Create Payment Receipt</h1>
+          <div class="card card-4">
+            <h1 class="card-title fs-5 text-uppercase fw-bold text-primary mx-auto mt-4" >Create Payment Receipt</h1>
             <div class="card-body">
-              <div class="row g-3">
+              <div class="row gy-4">
                 <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Payment Date</label>
-                    <input type="date" class="form-control">
+                  <div class="floating-label">                   
+                      <input type="text" class="form-control dateflatpickr" id="date1" placeholder="dd-mm-yyyy" > 
+					  <label for="date1">Payment Date</label>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Payment Amount <span class="">*</span> </label>
-                    <input type="text" class="form-control">
+                  <div class="floating-label">
+                    <input type="text" class="form-control" placeholder=" ">
+					<label for="" > Payment Amount<span class="text-danger">*</span> </label>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="col-form-label">Opportunity <span class="">*</span></label>
+                  <div class="floating-label">                   
+                    <select class="form-select select2withtag" id="opportunity">
+                      <option value="">Rahul</option>
+                      <option value="online">Amit</option>
+                    </select>
+					<label class="select-label" for="opportunity">Opportunity <span class="">*</span></label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="floating-label">
+                   
                     <select  name="Mode" class="form-select select2withtag">
                       <option value="">Rahul</option>
                       <option value="online">Amit</option>
                     </select>
+					   <label class="select-label">Contact</label>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Contact</label>
-                    <select  name="Mode" class="form-select select2withtag">
-                      <option value="">Rahul</option>
-                      <option value="online">Amit</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Payment Method <span class="">*</span></label>
-                    <select id="modeOfPayment" name="Mode" class="form-select">
+                  <div class="floating-label ">
+                   
+                    <select id="modeOfPayment" name="Mode" class="form-select" >
                       <option value="">Select</option>
                       <option value="cash">Cash</option>
                       <option value="check">Cheque</option>
@@ -121,15 +123,20 @@
                       <option value="online">Paytm</option>
                       <option value="online">Phone pe</option>
                     </select>
+					  <label class="" >Payment Method <span class="">*</span></label>
                   </div>
                 </div>
                 
                 
-                <div class="col-lg-12 dnone checquebox" id="checkbox">
-                  <div class="row g-3">
+                <div class="col-lg-12 dnone " id="checkbox">
+					<div class="checquebox">
+					<div class="row g-3">
+					  <div class="col-lg-12">
+					<h4 class="mb-0 fs-6">Enter Cheque Details</h4>  
+					  </div>
                     <div class="col-lg-6">
-                      <div class="form-group">
-                       <label for="" class="col-form-label">Select Bank</label>
+                      <div class="floating-label">
+                      
                   <select name="" id="" class="form-select">
 					  <option value="">Cash</option>
                     <option value="">Axis Bank</option>
@@ -143,27 +150,29 @@
                     <option value="">HDFC 85</option>
                     <option value="">SBI FCRA</option>
                     <option value="">PNB RANIGHATI</option>
-                  </select>
+                  </select> <label for="" >Select Bank</label>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="Check" class="col-form-label">Check Number</label>
+                      <div class="floating-label">
+                       
                         <input type="text" class="form-control" id="Check" placeholder="Enter Check Number">
+						<label for="Check">Check Number</label>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="Date" class="mb-">Check Date</label>
-                        <input type="date" class="form-control" id="Date" placeholder="Name">
+                      <div class="floating-label">
+                        
+                        <input type="text" class="form-control dateflatpickr" id="Date" placeholder="dd/mm/yyyy">
+						  <label for="Date" class="mb-">Check Date</label>
                       </div>
                     </div>
                   </div>
+					</div>
+                  
                 </div>
                 <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Deposited In Account <span class="">*</span></label>
-                  
+                  <div class="floating-label">
                   <select name="" id="depositedac" class="form-select">
 					<option value="cash">cash</option>
                     <option value="">Axis Bank</option>
@@ -178,11 +187,12 @@
                     <option value="">SBI FCRA</option>
                     <option value="">PNB RANIGHATI</option>
                   </select>
+					  <label class="">Deposited In Account <span class="">*</span></label>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="form-group ">
-                    <label class="col-form-label">Donation Type</label>
+                  <div class="floating-label">
+                    
                     <select id="Type2" name="Type2" class="form-select">
                       <option value="">Type</option>
                       <option value="anniversary">Anniversary</option>
@@ -197,27 +207,29 @@
                       <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
                       <option value="yagya">Yagya / Pooja</option>
                     </select>
+					  <label class="col-form-label">Donation Type</label>
                   </div>
                 </div>
 				  <div class="col-lg-6">
                   <div class="form-group ">
-                    <label class="col-form-label">Check if want to send</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    
+                    <div class="form-control mt-2">
+                      <input class="form-check-input ms-0" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault"> Send SMS / Email / WhatsApp </label>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
-                  <div class="form-group ">
-                    <label class="col-form-label">Narration</label>
-                   <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                  <div class="floating-label">
+                    
+                   <textarea name="" class="form-control" id="" cols="30" rows="3" placeholder=" "></textarea>
+					  <label class="col-form-label">Narration</label>
                   </div>
                 </div>
                 
                 
                 <div class="col-lg-12 text-center mt-4">
-                  <button class="btn btn-light fw-bold">Submit</button>
+                  <button class="btn btn-primary fw-bold">Submit</button>
                 </div>
               </div>
             </div>
@@ -237,6 +249,7 @@
 <script type="text/javascript" src="assets/vendors/date-rangepicker/moment.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/date-rangepicker/daterangepicker.js"></script> 
 <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script> 
+<script type="text/javascript" src="assets/vendors/flatpickr/flatpickr.js"></script>
 <!--<script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-plugin-datalabels.min.js"></script> 
 <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script> 
@@ -250,7 +263,10 @@
 $('.select2withtag').select2({
 	tags:true
 });
+$(".dateflatpickr").flatpickr({
 
+	
+});
 
 $('select#modeOfPayment').on('change', function (e) {
     var optionSelected = $("option:selected", this);
