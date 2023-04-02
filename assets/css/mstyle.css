@@ -790,8 +790,9 @@ a {
 }
 
 .content-header {
-  padding: 20px 25px;
+  padding: 8px 15px 15px;
   position: relative;
+  border-bottom: 1px solid rgba(249, 124, 54, 0.2);
 }
 
 .content-menu {
@@ -3649,4 +3650,10 @@ font-size: .9rem;
     border: 0px;
     background-color: #feebe0 !important;
     box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+.bg-theme{
+  background-color: #FFEDDE;
+}
+.card-primary{
+  background-color: #ff6400;
 }
