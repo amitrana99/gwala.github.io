@@ -3034,11 +3034,22 @@ input[type="file"]::file-selector-button:hover {
 .inputdsn select,
 .inputdsn textarea {
   background-color: #ffffff;
-  border: 1px solid #000;
+  border: 1px solid #b1b1b1!important;
   /* font-size: 15px; */
   font-weight: 500;
   transition: all 0.2s ease-in;
-  box-shadow: 2px 2px 0px 0px;
+  box-shadow: 2px 2px 0px 0px #8d8d8d;
+}
+
+.inputdsn input:focus,
+.inputdsn select:focus,
+.inputdsn textarea:focus {
+  background-color: #ffffff;
+  border: 1px solid #ff6400!important;
+  /* font-size: 15px; */
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+  box-shadow: 2px 2px 0px 0px #ff6400;
 }
 
 @media (max-width: 600px) {
@@ -3656,4 +3667,66 @@ font-size: .9rem;
 }
 .card-primary{
   background-color: #ff6400;
+}
+
+#calendarContainer {
+  height: 66vh; /* Adjust the percentage value as needed */
+  width: 100%;
+}
+#calendar {
+  height: 100%;
+  width: 100%;
+}
+.fc-day{
+  background-color: white;
+}
+.fc-day.fc-day-other{
+  background-color: #eaeaea63;
+}
+#calendarContainer a{
+  color: #303134;
+}
+.fc-theme-standard th{
+  background-color: #F9F5F1;
+  border: 0;
+}
+.fc-header-toolbar{
+  margin-bottom: 0!important;
+  background-color: white;
+  padding: .8rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.fc .fc-toolbar-title{
+  font-size: 1.2rem!important;
+}
+.fc-theme-standard .fc-scrollgrid{
+  border: 0px;
+}
+
+.fc-theme-standard tr td:last-child{
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.fc .fc-button-primary{
+  background-color: #FF6200;
+  border-color: #FF6200;
+}
+.fc-button-primary:focus, .fc-button-primary:active{
+  box-shadow: none!important;
+}
+.fc-theme-standard td {
+  border: 2px solid #FFEDDE;
+}
+
+.fc .fc-bg-event{
+  opacity: 1;
+}
+.timeslots{list-style: none; padding: 0; margin: 0; display: flex; align-items: center; flex-wrap: wrap;}
+.timeslots li{width: calc(33.33% - 20px); margin: 10px;}
+.timeslots li button{border: 2px dashed black; border-radius: 7px; padding: 1rem; width: 100%; transition: all 0.3s; background-color: white; font-weight: 500;}
+.timeslots li button:hover{
+  background-color: #f0f0f0;
+}
+.fc-bg-event{
+  cursor: pointer;
 }

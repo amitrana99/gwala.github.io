@@ -1,3 +1,70 @@
+//calendar
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    // Add your calendar options here
+    // ...
+    events: [
+      {
+        title: 'Booked',
+        start: '2023-05-25',
+       // modalId: 'modal-event-1', // Add a custom property to specify the related modal ID
+        display: 'background', // Set the event display to 'background' to hide it in the regular event rendering
+        color: '#c8c8c8',
+      },
+      {
+        title: 'Available',
+        start: '2023-05-26',
+        modalId: 'selectslottime',
+        display: 'background',
+        color: '#ffeb3b',
+      },
+      {
+        title: '1PM to 1:15P',
+        start: '2023-05-27',
+        //modalId: 'eventModal',
+        display: 'background',
+        color: '#d3bdfb',
+      },
+      {
+        title: 'Available',
+        start: '2023-05-28',
+        modalId: 'selectslottime',
+        display: 'background',
+        color: '#ffeb3b',
+      },
+      {
+        title: 'Available',
+        start: '2023-05-29',
+        modalId: 'selectslottime',
+        display: 'background',
+        color: '#ffeb3b',
+      },
+      // Add other events
+    ],
+    eventRender: function(info) {
+      var eventTitle = info.event.title;
+      if (eventTitle === 'Booked') {
+        alert("sd")
+        info.el.classList.add('disabled');
+      }
+    },
+    eventClick: function(info) {
+      var modalId = info.event.extendedProps.modalId; // Get the modal ID associated with the clicked event
+      $('#' + modalId).modal('show'); // Show the corresponding modal
+    },
+    
+  });
+  
+  calendar.render();
+});
+
+
+
+
+
+
 $(window).on("load", function () {
   $('.loader').hide();
 });
@@ -15,6 +82,8 @@ $(function () {
   const sb = new PerfectScrollbar('.sidebar-body', {
     suppressScrollX: true
   });
+
+  
 
   $('.sidebar').on('mouseenter mouseleave', function (e) {
     var isHover = (e.type === 'mouseenter') ? true : false;
@@ -184,6 +253,10 @@ $(function () {
   // content menu
   $('.contentMenu').on('click', function (e) {
     e.preventDefault();
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, { });
+  
+    calendar.updateSize();
 $(function () {
   $('.fotorama').fotorama();
 });
@@ -192,6 +265,7 @@ $(function () {
 
     $('.sidebar-body').scrollTop(0);
     sb.update();
+    
   });
 
   // mobile menu
