@@ -2138,7 +2138,7 @@ textarea:focus {
 /**/
 
 .content.astropage {
-  background-color: #f4f0ed;
+  background-color: #FFEDDE;
 }
 
 .form_box {
@@ -3681,7 +3681,7 @@ font-size: .9rem;
   background-color: white;
 }
 .fc-day.fc-day-other{
-  background-color: #eaeaea63;
+  background-color: #F9F5F1;
 }
 #calendarContainer a{
   color: #303134;
