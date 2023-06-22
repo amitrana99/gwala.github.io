@@ -41,6 +41,9 @@ ul {
 }
 
 @media (max-width:500px) {
+    .donatespecial{
+        border-radius: 3rem!important;
+    }
     header {
 
         img {
@@ -350,4 +353,18 @@ body {
     justify-content: center;
     gap: 10px;
     z-index: 10000;
+}
+.leaf4{
+    position: absolute;
+    
+    right: 0;
+    top: 57px;
+    max-width: 10%;
+}
+.leaf5{
+    position: absolute;
+    
+    left: 0;
+    bottom: -157px;
+    max-width: 20%;
 }
