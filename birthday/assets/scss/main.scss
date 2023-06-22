@@ -367,3 +367,21 @@ body {
     bottom: -157px;
     max-width: 20%;
 }
+.social-share{
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+    li{
+        a{
+            img{width: 32px; height:24px}
+        }
+    }
+}
+.fundr{
+    
+    padding: 7px 14px;
+    border-radius: 1rem;
+    font-style: italic;
+    background-color: white;
+}
