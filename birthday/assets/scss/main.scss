@@ -55,6 +55,9 @@ ul {
     .w-100-mobile{
         width: 100%;
     }
+    .test-content{
+        padding-top: 6rem!important;
+    }
 }
 
 header {
@@ -245,7 +248,7 @@ body {
 
 .testimonial-card {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 1rem;
+    padding: 16px;
     border-radius: 1rem;
     margin-top: 7rem;
     text-align: center;
@@ -254,10 +257,10 @@ body {
 
     .profile-image {
         position: absolute;
-        max-width: 40%;
-        top: -14%;
+        max-width: 120px;
+        top: -13.3%;
         left: 50%;
-        transform: translate(-50%, -12%);
+        transform: translate(-50%, -13.3%);
 
         &::after {
 
@@ -278,6 +281,7 @@ body {
     .test-content {
         background-color: white;
         padding: 4rem 1rem 1rem;
+        border-radius: 1.2rem;
     }
 
     &::after {
@@ -288,8 +292,8 @@ body {
         height: 25px;
         background-size: 100%;
         background-repeat: no-repeat;
-        top: -2%;
-        left: 9%;
+        top: -3%;
+        left: 11%;
         background-color: #f9f9f9;
         padding: 6px;
         display: block;
@@ -303,8 +307,8 @@ body {
         height: 25px;
         background-size: 100%;
         background-repeat: no-repeat;
-        bottom: -4%;
-        right: 9%;
+        bottom: -5%;
+        right: 11%;
         background-color: #f9f9f9;
         padding: 6px;
         display: block;
@@ -332,4 +336,18 @@ body {
     border-radius: 0 5px 5px 0;
     padding: 8px;
     border: 0;
+}
+.sub-total{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10000;
 }
