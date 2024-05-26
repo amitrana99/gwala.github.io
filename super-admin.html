@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishnayan Gwala - Super Dashboard</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/vendors/bootstrap-5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/vendors/fontawesome-6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendors/remixicon/fonts/remixicon.css">
+
+  
+
+  <link rel="stylesheet" href="assets/css/mstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css">
+
+  <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/ag-grid-enterprise.min.js"></script>
+  <link rel="stylesheet" href="assets/css/ag-grid-theme-builder.css">
+  
+  <style>
+    .header-1 {
+      background-color: #ff6400;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      gap: 1rem;
+      padding: .5rem 1rem;
+    }
+  .table-height{
+    height: 100vh;
+  }
+  </style>
+</head>
+
+<body class="skin-base animate">
+  <div class="loader">
+    <img src="assets/images/loader.svg" alt="">
+  </div>
+
+
+
+  <header class="header-1">
+    <button class="btn btn-primary text-white btn-lg" data-bs-toggle="offcanvas" data-bs-target="#loggedinmenu">
+      <div class="">
+        <i class="fa-solid fa-bars-sort me-2"></i> Menu
+      </div>
+    </button>
+
+
+    <a href="/Donor/Panchang" class="text-nowrap short-panchang  me-auto d-flex align-items-center text-white gap-3"
+      data-ripple="">
+      <div class="monthdate">
+
+        <h6 id="t_month_tithi">ज्येष्ठ<br>कृष्ण तृतीया</h6>
+      </div>
+      <div class="festival-name d-none d-lg-block" id="div_festival">संकष्टी चतुर्थी</div>
+    </a>
+
+
+
+
+
+    <button class="btn items-added" onclick="refresh();"><i class="fa-sharp fa-solid fa-rotate-right"></i></button>
+
+
+
+    <div class="dropdown position-relative me-3">
+      <button class="dropdown-toggle btn btn-warning rounded-pill" type="button" id="dropdownMenuButton1"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-hands-praying me-2"></i> <span id="lbladminname">Brajesh</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="ChangePassword">Change Password</a></li>
+        <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+
+      </ul>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row gy-5">
+    
+      <div class="col-md-6">
+        <div class="card card-2 h-100">
+          <div class="card-body">
+            <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"> <i
+                  data-feather="users"></i> </span> <span class="ms-4">New online RD</span></h1>
+            <div class="d-flex align-items-center justify-content-between mt-4">
+              <div class=""> <a href="#"> <span class="fs-14">Domestic</span>
+                  <h2 class="fs-4 text-bl fw-bold">500</h2>
+                </a> <a href="#"><span class="fs-14 mt-3">International </span>
+                  <h2 class="fs-4 text-primary1 fw-bold">200</h2>
+                </a> </div>
+              <div class="w-120px mx-auto mt-2">
+                <canvas id="newrdcchart" class="w-100"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-2 h-100">
+          <div class="card-body">
+            <h1 class="card-title d-flex align-items-center ps-5 position-relative"> <span class="title-icon"> <i
+                  data-feather="dollar-sign"></i> </span> <span class="ms-4">Payments</span></h1>
+            <div class="d-flex align-items-center justify-content-between mt-4">
+              <div class=""> <a href="#"><span class="fs-14">Failed </span>
+                  <h2 class="fs-4 text-bl fw-bold">2000</h2>
+                </a> <a href="#"><span class="fs-14 mt-3">Pending </span>
+                  <h2 class="fs-4 text-primary1 fw-bold">300</h2>
+                </a> </div>
+              <div class="w-120px mx-auto mt-2">
+                <canvas id="paymentchart" class="w-100"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="table-height">
+          <div id="myGrid" style="width: 100%; height: 100%;" class="ag-theme-custom"></div>
+      
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  
+
+
+
+  <script type="text/javascript">
+    
+
+$(window).on("load", function () {
+  $('.loader').hide();
+});
+
+const columnDefs = [
+  { field: "sno", minWidth: 100 },
+  { field: "id" },
+  { field: "receipt_no" },
+  { headerName: "Amount", field: "paid_amt", aggFunc: 'sum'},
+  { field: "paymentmode_name" },
+  { field: "paymentmode" },
+  { field: "payreceivedate" },
+  { field: "mobile_no" },
+  { field: "payment_status_" },
+  { field: "donor_id" },
+  { field: "fullname" },
+  { field: "email" },
+  { field: "state" },
+  { field: "donate_for_" },
+  { field: "deposited_acct" },
+  { field: "createddatetime" },
+  { field: "krishnayan_transaction_id" },
+  { field: "utm_source" },
+  { field: "utm_campaign" },
+  { field: "order_no" },
+  { field: "is_cash_receipt_name" },
+  { field: "donate_for" },
+  { field: "payment_date" },
+  { field: "cancel" },
+  { field: "pause" },
+  { field: "resume" },
+  { field: "payment_gateway_key_id" },
+
+];
+
+let gridApi;
+
+const gridOptions = {
+  rowData: null,
+  columnDefs: columnDefs,
+  
+  //pagination: true,
+  //paginationPageSize: 14,
+  //paginationPageSizeSelector: [14, 20, 50, 100],
+  
+  defaultColDef: {
+    editable: false,
+    filter: true,
+    flex: 1,
+    minWidth: 150,
+  },
+  
+  autoGroupColumnDef: {
+    minWidth: 300,
+  },
+ 
+  grandTotalRow: "bottom",
+  //rowData: getData(),
+  
+};
+
+// setup the grid after the page has finished loading
+document.addEventListener("DOMContentLoaded", function () {
+  var gridDiv = document.querySelector("#myGrid");
+  gridApi = agGrid.createGrid(gridDiv, gridOptions);
+
+  fetch("assets/data/payments.json")
+    .then((response) => response.json())
+    .then((data) => gridApi.setGridOption("rowData", data));
+});
+  </script>
+
+  <script type="text/javascript" src="assets/vendors/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/vendors/feathericons/feather.min.js" async=""></script>
+  <script type="text/javascript" src="assets/vendors/chartjs/chart.js"></script>
+  <script type="text/javascript" src="assets/vendors/chartjs/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/chart_initial.js"></script>
+
+
+
+</body>
+
+</html>
